@@ -80,12 +80,13 @@ body.dark{
 
 .sidebar .text,
 .sidebar .icon{
-    color: var(--text-color);
+    color: #fff;
     transition: var(--tran-03);
 }
 
 .sidebar .text{
     font-size: 20px;
+    color: #fff;
     font-weight: 400;
     white-space: nowrap;
     opacity: 1;
@@ -104,13 +105,13 @@ body.dark{
     align-items: center;
 }
 .sidebar header .logo-text{
-    color: #ffffff;
+    transform: translateY(22px) translateX(-9px);
     display: flex;
     flex-direction: column;
 }
 header .image-text .name{
     margin-top: 1px;
-    transform: translateY(20px) translateX(-15px);
+    transform: translateY(15px) translateX(-11px);
     font-size: 35px;
     letter-spacing: -2px;
     font-weight: 500;
@@ -195,11 +196,11 @@ body.dark .sidebar header .toggle{
 }
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text{
-    color: var(--sidebar-color);
+    color: #ffffff;
 }
 body.dark .sidebar li a:hover .icon,
 body.dark .sidebar li a:hover .text{
-    color: var(--text-color);
+    color: #fff;
 }
 
 .sidebar .menu-bar{
