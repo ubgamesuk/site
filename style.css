@@ -102,7 +102,7 @@ body{
     align-items: center;
 }
 .sidebar header .logo-text{
-    transform: translateY(18px) translateX(-10px);
+    transform: translateY(21px) translateX(-10px);
     display: flex;
     flex-direction: column;
 }
@@ -276,7 +276,8 @@ body.dark .switch::before{
     position: fixed;
     top: 0;
     top: 0;
-    height: 100%;
+    left: 250px;
+    height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
