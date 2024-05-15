@@ -282,6 +282,19 @@ body.dark .switch::before{
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
+.message{
+    display: none;
+}
+.homepage{
+    position: relative;
+    top: 0;
+    top: 0;
+    left: 50px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
 .home .text{
     font-size: 50px;
     font-weight: 300;
@@ -301,6 +314,16 @@ body.dark .home .text{
     color: #fff;
     padding: 5px 60px;
 }
+.home-gamename{    
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 60px;
+}
+.home-gamename a{
+    text-decoration: solid;
+    color: #fff;
+}
 .home-school{
     font-size: 23px;
     font-weight: 400;
@@ -317,25 +340,43 @@ body.dark .home .text{
     text-decoration: solid;
     color: #fff;
 }
-.home-caption{
+.scroll-container{
+    margin-left: 80px;
+    white-space: nowrap;
+  }
+.scroll-container h1{
     color: #fff;
-    padding: 5px 60px;
-}
-.home-school{
-    font-size: 23px;
-    font-weight: 400;
-    padding: 0px 60px;
-    color: #fff;
-}
-.home-gamename{    
     font-size: 30px;
-    font-weight: 400;
-    color: #ffffff;
-    padding: 60px;
+    font-weight: 500;
+    margin-left: 15px;
 }
-.home-gamename a{
-    text-decoration: solid;
+.scroll-container h2{
     color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    transform: translateX(145px) translateY(-29.5px);
+}
+.scroll-container h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+.scroll-container img {
+    position: relative;
+    object-fit: cover;
+    margin-left: 11px;
+    border-radius: 21px;
+    height: 150px;
+    width: 250px;
+    transition: .5s ease;
+  }
+.scroll-container img:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    outline: #e4e4e4 solid 3px;
+    transition: 0.5s ease;
 }
 body {
     background: #000000;
@@ -465,6 +506,8 @@ body {
     }
     .mobile .message{
         color: #fff;
+        position: absolute;
+        z-index: 9999;
     }
     .mobile .message h1{
         font-size: 35px;
