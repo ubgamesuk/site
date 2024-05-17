@@ -375,8 +375,26 @@ body.dark .home .text{
 .scroll-container img:hover{
     cursor: pointer;
     opacity: 0.9;
-    outline: #e4e4e4 solid 3px;
+    outline: #e4e4e4 solid 3.5px;
+    transform: scale(1.05);
     transition: 0.5s ease;
+}
+.scroll-container button{
+    display: inline;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: none;
+    transform: translateY(-1px);
+    border-radius: 7px;
+    font-size: 20px;
+    transition: 0.5s ease;
+
+}
+.scroll-container button:hover{
+    background-color: #c9c9c9;
+    transition: 0.5s ease;
+    transform: translateY(-3px);
 }
 body {
     background: #000000;
