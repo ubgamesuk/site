@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95MX2CCB14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95MX2CCB14');
+</script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <title>Games A-Z | ubgames</title>
+    <meta name="description" content="Our full collection of games all the way from A to Z." />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="images/uborange.png">
+                </span>
+                <div class="text logo-text">
+                    <img src="images/ubgtextsvg.svg"
+                    height="52px">
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Find a game">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="all-games">
+                            <i class='bx bxs-joystick icon' ></i>
+                            <span class="text nav-text">Games</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="trending">
+                            <i class='bx bxs-hot icon'></i>
+                            <span class="text nav-text">Trending</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="new">
+                            <i class='bx bxs-zap icon' ></i>
+                            <span class="text nav-text">Recently added</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-library icon' ></i>
+                        <span class="text nav-text">Games A-Z</span>
+                    </a>
+                </li>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+<!----------------MAIN SECTION---------------------->
+    <section class="atoz">
+        <div class="text">Games A-Z</div>
+
+<div class="gameslist">
+        <div class="letter">A</div>
+    <div class="home-gamename">
+        <a href="../all-games/age-of-war">Age Of War</a>
+        <a href="../all-games/age-of-war-2">Age Of War 2</a>
+        <a href="../all-games/among-us">Among Us</a>
+        <a href="../all-games/a-small-world-cup">A Small World Cup</a>
+    </div>
+        <div class="letter">B</div>
+    <div class="home-gamename">
+        <a href="../all-games/baldis-basics">Baldi's Basics</a>
+        <a href="../all-games/ball-blast">Ball Blast</a>
+        <a href="../all-games/8-ball-pool">8 Ball Pool</a>
+        <a href="../all-games/basket-and-ball">Basket & Ball</a>
+        <a href="../all-games/basket-bros">Basket Bros.</a>
+        <a href="../all-games/basket-random">Basket Random</a>
+        <a href="../all-games/basketball-stars">Basketball Stars</a>
+        <a href="../all-games/bitlife">BitLife</a>
+        <a href="../all-games/bloons-td">Bloons Tower Defence</a>
+        <a href="../all-games/bloons-td-2">Bloons Tower Defence 2</a>
+        <a href="../all-games/bloons-td-3">Bloons Tower Defence 3</a>
+        <a href="../all-games/bloons-td-4">Bloons Tower Defence 4</a>
+        <a href="../all-games/bouncer">Bouncer</a>
+        <a href="../all-games/boxing-random">Boxing Random</a>
+    </div>
+    <div class="letter">C</div>
+    <div class="home-gamename">
+        <a href="../all-games/candy-crush">Candy Crush</a>
+        <a href="../all-games/chess">Chess</a>
+        <a href="../all-games/chippy-clicker">Chippy Clicker</a>
+        <a href="../all-games/chrome-dino">Chrome Dino</a>
+        <a href="../all-games/4-colours">4 Colours</a>
+        <a href="../all-games/cookie-clicker">Cookie Clicker</a>
+        <a href="../all-games/core-ball">Core Ball</a>
+        <a href="../all-games/crash-bandicoot">Crash Bandicoot</a>
+        <a href="../all-games/crossy-road">Crossy Road</a>
+        <a href="../all-games/cut-the-rope">Cut The Rope</a>
+        <a href="../all-games/ctr-timetravel">Cut The Rope: Time Travel</a>
+        <a href="../all-games/ctr-xmas">Cut The Rope: Xmas Present</a>
+    </div>
+    <div class="letter">D</div>
+    <div class="home-gamename">
+        <a href="../all-games/13-days-in-hell">13 Days In Hell</a>
+        <a href="../all-games/deal-or-no-deal">Deal or No Deal</a>
+        <a href="../all-games/death-run-3d">Death Run 3D</a>
+        <a href="../all-games/dominoes">Dominoes</a>
+        <a href="../all-games/doodle-jump">Doodle Jump</a>
+        <a href="../all-games/doomz-io">Doomz.io</a>
+        <a href="../all-games/draw-io">Draw.io</a>
+        <a href="../all-games/drive-mad">Drive Mad</a>
+        <a href="../all-games/drive-mad-2">Drive Mad 2</a>
+        <a href="../all-games/duck-life">Duck Life</a>
+        <a href="../all-games/duck-life-2">Duck Life 2</a>
+        <a href="../all-games/duck-life-3">Duck Life 3</a>
+        <a href="../all-games/duck-life-4">Duck Life 4</a>
+    </div>
+    <div class="letter">E</div>
+    <div class="home-gamename">
+        <a href="../all-games/easidraw">EasiDraw</a>
+        <a href="../all-games/eggy-car">Eggy Car</a>
+        <a href="../all-games/elastic-man">Elastic Man</a>
+        <a href="../all-games/emojimatchi">EmojiMatchi</a>
+        <a href="../all-games/emulator">Emulator</a>
+        <a href="../all-games/explore-clv">Explore CLV</a>
+        <a href="../all-games/extreme-car-driving">Extreme Car Driving</a>
+        <a href="../all-games/extreme-drift">Extreme Car Driving: Drift</a>
+    </div>
+    <div class="letter">F</div>
+    <div class="home-gamename">
+        <a href="../all-games/fc24-packopener">FC24 Pack Opening Simulator</a>
+        <a href="../all-games/fire-balls-3d">Fire Balls 3D</a>
+        <a href="../all-games/fireboy-and-watergirl">Fireboy & Watergirl</a>
+        <a href="../all-games/fnaf">Five Nights At Freddy's</a>
+        <a href="../all-games/fnaf-2">Five Nights At Freddy's 2</a>
+        <a href="../all-games/fnaf-3">Five Nights At Freddy's 3</a>
+        <a href="../all-games/fnaf-4">Five Nights At Freddy's 4</a>
+        <a href="../all-games/flappy-basket">Flappy Basket</a>
+        <a href="../all-games/fly-seagull">Fly Seagull</a>
+        <a href="../all-games/fortnite-z">Fortnite Z</a>
+        <a href="../all-games/3d-free-kick">3D Free Kick</a>
+        <a href="../all-games/frogger">Frogger</a>
+    </div>
+    <div class="letter">G</div>
+    <div class="home-gamename">
+        <a href="../all-games/geometry-dash">Geometry Dash</a>
+        <a href="../all-games/getaway-shootout">Getaway Shootout</a>
+        <a href="../all-games/getting-over-it">Getting Over It</a>
+        <a href="../all-games/glass-city">Glass City</a>
+        <a href="../all-games/going-balls">Going Balls</a>
+        <a href="../all-games/google-pacman">Google Pac-Man</a>
+        <a href="../all-games/grand-shift-auto">Grand Shift Auto</a>
+        <a href="../all-games/gta-2">Grand Theft Auto II</a>
+        <a href="../all-games/gunspin">Gunspin</a>
+    </div>
+    <div class="letter">H</div>
+    <div class="home-gamename">
+        <a href="../all-games/hangman">Hangman</a>
+        <a href="../all-games/happy-wheels">Happy Wheels</a>
+        <a href="../all-games/happy-wheels-2">Happy Wheels 2</a>
+        <a href="../all-games/helix-jump">Helix Jump</a>
+    </div>
+    <div class="letter">I</div>
+    <div class="home-gamename">
+        <a href="../all-games/idle-breakout">Idle Breakout</a>
+        <a href="../all-games/infinite-craft">Infinite Craft</a>
+    </div>
+    <div class="letter">J</div>
+    <div class="home-gamename">
+        <a href="../all-games/johnny-upgrade">Johnny Upgrade</a>
+        <a href="../all-games/justfall-lol">JustFall.LOL</a>
+    </div>
+    <div class="letter">L</div>
+    <div class="home-gamename">
+        <a href="../all-games/1v1-lol">1v1.LOL</a>
+    </div>
+    <div class="letter">M</div>
+    <div class="home-gamename">
+        <a href="../all-games/msc-2">Madalin Stunt Cars 2</a>
+        <a href="../all-games/msc-3">Madalin Stunt Cars 3</a>
+        <a href="../all-games/maths-trainer">Maths Trainer</a>
+        <a href="../all-games/minecraft">Minecraft</a>
+        <a href="../all-games/mini-putt">Mini Putt</a>
+        <a href="../all-games/monkey-mart">Monkey Mart</a>
+        <a href="../all-games/moto-x3m">Moto X3M</a>
+    </div>
+    <div class="letter">N</div>
+    <div class="home-gamename">
+        <a href="../all-games/neal-fun">NEAL.fun Games</a>
+        <a href="../all-games/nyan-cat">Nyan Cat</a>
+    </div>
+    <div class="letter">O</div>
+    <div class="home-gamename">
+        <a href="../all-games/ovo">OvO</a>
+    </div>
+    <div class="letter">P</div>
+    <div class="home-gamename">
+        <a href="../all-games/papas-bakeria">Papa's Bakeria</a>
+        <a href="../all-games/papas-burgeria">Papa's Burgeria</a>
+        <a href="../all-games/papas-cheeseria">Papa's Cheeseria</a>
+        <a href="../all-games/papas-cupcakeria">Papa's Cupcakeria</a>
+        <a href="../all-games/papas-donuteria">Papa's Donuteria</a>
+        <a href="../all-games/papas-freezeria">Papa's Freezeria</a>
+        <a href="../all-games/papas-hot-doggeria">Papa's Hot Doggeria</a>
+        <a href="../all-games/papas-pastaria">Papa's Pastaria</a>
+        <a href="../all-games/papas-pizzeria">Papa's Pizzeria</a>
+        <a href="../all-games/papas-scooperia">Papa's Scooperia</a>
+        <a href="../all-games/papas-sushiria">Papa's Sushiria</a>
+        <a href="../all-games/papas-tacomia">Papa's Taco Mia</a>
+        <a href="../all-games/papas-wingeria">Papa's Wingeria</a>
+        <a href="../all-games/paper-io">Paper.io</a>
+        <a href="../all-games/paper-io-2">Paper.io 2</a>
+        <a href="../all-games/penalty-kicks">Penalty Kicks</a>
+        <a href="../all-games/pixel-speedrun">Pixel Speedrun</a>
+        <a href="../all-games/pokemon-emerald">Pokémon Emerald</a>
+        <a href="../all-games/pokemon-firered">Pokémon FireRed</a>
+        <a href="../all-games/pokemon-ruby">Pokémon Ruby</a>
+        <a href="../all-games/pokemon-sapphire">Pokémon Sapphire</a>
+    </div>
+    <div class="letter">Q</div>
+    <div class="home-gamename">
+        <a href="../all-games/quick-draw">Quick, Draw!</a>
+    </div>
+    <div class="letter">R</div>
+    <div class="home-gamename">
+        <a href="../all-games/retro-bowl">Retro Bowl</a>
+        <a href="../all-games/roblox">Roblox</a>
+        <a href="../all-games/rooftop-snipers">Rooftop Snipers</a>
+        <a href="../all-games/run">Run</a>
+        <a href="../all-games/run-2">Run 2</a>
+        <a href="../all-games/run-3">Run 3</a>
+    </div>
+    <div class="letter">S</div>
+    <div class="home-gamename">
+        <a href="../all-games/shell-shockers">Shell Shockers</a>
+        <a href="../all-games/skibidi-toilet">Skibidi Toilet: The Game</a>
+        <a href="../all-games/slice-master">Slice Master</a>
+        <a href="../all-games/slither-io">Slither.io</a>
+        <a href="../all-games/slope">Slope</a>
+        <a href="../all-games/slope-2">Slope 2</a>
+        <a href="../all-games/slope-3">Slope 3</a>
+        <a href="../all-games/slowroads-io">SlowRoads.io</a>
+        <a href="../all-games/snowball-io">Snowball.io</a>
+        <a href="../all-games/snow-rider-3d">Snow Rider 3D</a>
+        <a href="../all-games/soccer-random">Soccer Random</a>
+        <a href="../all-games/soundboard">Soundboard</a>
+        <a href="../all-games/spacebar-clicker">Spacebar Clicker</a>
+        <a href="../all-games/stickman-boost">Stickman Boost</a>
+        <a href="../all-games/stickman-hook">Stickman Hook</a>
+        <a href="../all-games/stumble-guys">Stumble Guys</a>
+        <a href="../all-games/subway-surfers">Subway Surfers</a>
+        <a href="../all-games/subway-surf-bali">Subway Surfers Bali</a>
+        <a href="../all-games/subway-surf-venice">Subway Surfers Venice</a>
+        <a href="../all-games/subway-surf-winter">Subway Surfers Winter</a>
+        <a href="../all-games/sumo-wrestling-tycoon">Sumo Wrestling Tycoon</a>
+        <a href="../all-games/super-mario-bros">Super Mario Bros.</a>
+    </div>
+    <div class="letter">T</div>
+    <div class="home-gamename">
+        <a href="../all-games/temple-run-2">Temple Run 2</a>
+        <a href="../all-games/tetris">Tetris</a>
+        <a href="../all-games/the-impossible-quiz">The Impossible Quiz</a>
+        <a href="../all-games/the-impossible-quiz-2">The Impossible Quiz 2</a>
+        <a href="../all-games/time-shooter-2">Time Shooter 2</a>
+        <a href="../all-games/tiny-fishing">Tiny Fishing</a>
+        <a href="../all-games/tomb-of-the-mask">Tomb of the Mask</a>
+        <a href="../all-games/toss-the-turtle">Toss The Turtle</a>
+        <a href="../all-games/tunnel-rush">Tunnel Rush</a>
+    </div>
+    <div class="letter">V</div>
+    <div class="home-gamename">
+        <a href="../all-games/vex-3">Vex 3</a>
+        <a href="../all-games/vex-4">Vex 4</a>
+        <a href="../all-games/vex-5">Vex 5</a>
+        <a href="../all-games/vex-6">Vex 6</a>
+        <a href="../all-games/vex-7">Vex 7</a>
+        <a href="../all-games/vex-8">Vex 8</a>
+        <a href="../all-games/volley-random">Volley Random</a>
+    </div>
+    <div class="letter">W</div>
+    <div class="home-gamename">
+        <a href="../all-games/windows-11">Windows 11</a>
+        <a href="../all-games/wordle">Wordle</a>
+        <a href="../all-games/worlds-hardest-game">World's Hardest Game</a>
+        <a href="../all-games/worlds-hardest-game-2">World's Hardest Game 2.0</a>
+    </div>
+    <div class="letter">Y</div>
+    <div class="home-gamename">
+        <a href="../all-games/you-vs-100-skibidi-toilets">You vs 100 Skibidi Toilets</a>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
