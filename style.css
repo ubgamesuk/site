@@ -1,4 +1,4 @@
-/* Font Import - Satoshi */
+/* Google Font Import - Poppins */
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet');
 *{
     margin: 0;
@@ -352,6 +352,41 @@ body.dark .home .text{
     font-size: 35px;
     font-weight: 400;
     color: #ffffff;
+}
+.homepage .banner{
+    background-image: url(images/gradient.jpg);
+    margin-left: 90px;
+    margin-top: 15px;
+    border-radius: 15px;
+    transition: .5s ease;
+    mask-repeat: no-repeat;
+    width: 610px;
+    height: 57px;
+}
+.homepage .banner h2{
+    padding: 10px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #fff;
+}
+.homepage .banner button{
+    position: relative;
+    transform: translateX(405px) translateY(-42px);
+    color: #000000;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 190px;
+}
+.homepage .banner:hover{
+    outline: #e4e4e4 solid 3.5px;
+    cursor: default;
+    transform: scale(1.01);
+    transition: 0.5s ease;
+}
+.homepage .banner button:hover{
+    cursor: pointer;
 }
 .home-school{
     font-size: 23px;
