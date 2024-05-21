@@ -1,4 +1,4 @@
-/* Google Font Import - Poppins */
+/* Font Import - Satoshi */
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet');
 *{
     margin: 0;
@@ -271,6 +271,9 @@ body.dark .mode .sun-moon i.moon{
 body.dark .switch::before{
     left: 20px;
 }
+.atoz{
+    margin-left: 75px;
+}
 
 .home{
     position: fixed;
@@ -295,11 +298,36 @@ body.dark .switch::before{
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
-.home .text{
-    font-size: 50px;
-    font-weight: 300;
+.atoz .text{
+    font-size: 60px;
+    z-index: 999;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: 500;
+    background-image: url(images/gradient.jpg);
     color: #e0e0e0;
-    padding: 12px 60px;
+    height: 90px;
+}
+.atoz h1{
+    display: inline;
+    margin-left: 90px;
+    letter-spacing: -1px;
+    font-size: 30px;
+    color: #fff;
+}
+.atoz a{
+    font-size: 25px;
+    color: #fff;
+}
+.gameslist .letter{
+    display: absolute;
+    text-align: center;
+    transform: translateY(20px);
+    border-radius: 15px;
+    margin-bottom: -50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
 }
 
 .sidebar.close ~ .home{
@@ -314,15 +342,16 @@ body.dark .home .text{
     color: #fff;
     padding: 5px 60px;
 }
-.home-gamename{    
-    font-size: 30px;
-    font-weight: 400;
-    color: #ffffff;
-    padding: 60px;
-}
 .home-gamename a{
     text-decoration: solid;
+    display: block;
+    text-align: center;
+    margin-left: -2px;
     color: #fff;
+    transform: translateY(20px);
+    font-size: 35px;
+    font-weight: 400;
+    color: #ffffff;
 }
 .home-school{
     font-size: 23px;
@@ -335,10 +364,6 @@ body.dark .home .text{
     font-weight: 400;
     color: #ffffff;
     padding: 60px;
-}
-.home-gamename a{
-    text-decoration: solid;
-    color: #fff;
 }
 .scroll-container{
     margin-left: 80px;
