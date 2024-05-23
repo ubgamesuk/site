@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95MX2CCB14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95MX2CCB14');
+</script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  
+    <title>Doomz.io</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../images/uborange.png">
+
+                </span>
+                <div class="text logo-text">
+                    <img src="../images/ubgtextsvg.svg"
+                    height="52px">
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Find a game">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../all-games">
+                            <i class='bx bxs-joystick icon' ></i>
+                            <span class="text nav-text">Games</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../trending">
+                            <i class='bx bxs-hot icon'></i>
+                            <span class="text nav-text">Trending</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../new">
+                            <i class='bx bxs-zap icon' ></i>
+                            <span class="text nav-text">Recently added</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../games-a-z">
+                        <i class='bx bx-library icon' ></i>
+                        <span class="text nav-text">Games A-Z</span>
+                    </a>
+                </li>
+
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+<!----------------MAIN SECTION---------------------->
+    <section class="home">
+        <iframe src="https://images-opensocial.googleusercontent.com/gadgets/ifr?container=ig&url=https://cdn.jsdelivr.net/gh/gertdoro/learning-Python-3@b347df1dc6fafeff39add38f4ad330fd0a11d668/notebooks/beginner/data/doomz.xml" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="100%" width="100%" allowfullscreen></iframe>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
