@@ -343,7 +343,7 @@ body.dark .home .text{
     padding: 5px 60px;
 }
 .home-gamename a{
-    text-decoration: solid;
+    text-decoration: none;
     display: block;
     text-align: center;
     margin-left: -2px;
