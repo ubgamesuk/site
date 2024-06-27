@@ -318,11 +318,21 @@ body.dark .switch::before{
 }
 .gameframe .ad-box{
     margin-top: 200px;
-    transform: translateX(-237px);
     background-color: #ffffff21;
     border-radius: 10px;
+    transform: translateX(-235px);
+    overflow: hidden;
     width: 270px;
     height: 216px;
+}
+.gameframe .ad-box #ad{
+    transform: translateX(-80px);
+}
+.gameframe .ad-box h1{
+    text-align: center;
+    font-size: 10px;
+    color: #8c8c8c;
+    transform: translateY(4px);
 }
 .game-controls .age-rating{
     color: #fff;
@@ -430,8 +440,7 @@ body.dark .switch::before{
     margin-top: 70px;
     top: 0;
     left: 40px;
-    height: 100vh;
-    width: calc(100% - 250px);
+    width: 100%;
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -547,9 +556,10 @@ body.dark .home .text{
     padding: 60px;
 }
 .scroll-container{
-    margin-left: 80px;
+    transform: translateX(80px);
     white-space: nowrap;
-  }
+    width: 1050px;
+}
 .scroll-container h1{
     color: #fff;
     font-size: 30px;
@@ -572,18 +582,17 @@ body.dark .home .text{
 .scroll-container img {
     position: relative;
     object-fit: cover;
-    margin-left: 11px;
+    margin-left: 8px;
     border-radius: 21px;
-    height: 150px;
-    width: 250px;
-    transition: .5s ease;
+    height: 130px;
+    width: 220px;
+    transition: .3s ease;
   }
 .scroll-container img:hover{
     cursor: pointer;
     opacity: 0.9;
-    outline: #e4e4e4 solid 3.5px;
     transform: scale(1.05);
-    transition: 0.5s ease;
+    outline: #e4e4e4 solid 3.2px;
 }
 .scroll-container button{
     display: inline;
@@ -601,6 +610,23 @@ body.dark .home .text{
     background-color: #c9c9c9;
     transition: 0.5s ease;
     transform: translateY(-3px);
+}
+.thumbleft{
+    background-color: #71717124;
+    height: 60px;
+
+}
+.thumbleft i{
+    color: #fff;
+    font-size: 25px;
+}
+.thumbright{
+    background-color: #71717124;
+    height: 60px;
+}
+.thumbright i{
+    color: #fff;
+    font-size: 25px;
 }
 body {
     background: #000000;
@@ -631,8 +657,10 @@ body {
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #7e7e7e; 
-
+    background: #7e7e7e;
+  }
+  ::-webkit-scrollbar-corner{
+    background-color: transparent;
   }
   .videoembed {
     position: absolute;
