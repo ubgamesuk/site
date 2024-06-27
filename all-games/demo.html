@@ -45,15 +45,23 @@
     <section class="homepage">
         <section class="game-wrapper">
             <div class="gameframe">
-                <iframe id="game" src="https://gamesite.cdnpog.com/73c8ec5a-f3eb-47c3-85ab-fe0857216df6/index.html?noads=true" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="410px" width="780px" allowfullscreen></iframe>
+                <iframe src="https://gamesite.cdnpog.com/73c8ec5a-f3eb-47c3-85ab-fe0857216df6/index.html?noads=true" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="410px" width="780px" allowfullscreen></iframe>
 
                 <div class="game-controls">
                     <h1>3D Free Kick</h1>
                     <div class="control-buttons">
-                        <a>
                         <button class="fullscreen"><i class='bx bx-fullscreen icon'></i> Fullscreen</button>
-                        </a>
-                        <button class="share"><i class='bx bxs-share-alt icon'></i> Share</button>
+                        <div class="tooltip">
+                        <button onclick="myFunction()" class="share"><i class='bx bxs-share-alt icon'></i> Share</button>
+                        <script>
+                            function myFunction() {
+                                
+                              navigator.clipboard.writeText("https://www.ubgames.uk/all-games/3d-free-kick");
+
+                              alert("Game link copied to clipboard");
+                            }
+                            </script>
+                            </div>
                     </div>
 
                     <div class="tags">
@@ -61,16 +69,17 @@
                         <h2 class="category">SPORTS</h2>
                     </div>
                 </div>
-                <div class="advert">
+                <div class="ad-box">
+                    <h1>Advertisement</h1>
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
-                         crossorigin="anonymous"></script>
-                    <!-- Game ad -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:250px;height:170px"
-                         data-ad-client="ca-pub-7319072504670835"
-                         data-ad-slot="1170568018"></ins>
+                        crossorigin="anonymous"></script>
+
+                        <ins class="adsbygoogle"
+                        style="display:inline-block;width:257px;height:182px"
+                        data-ad-client="ca-pub-7319072504670835"
+                        data-ad-slot="4023283442"></ins>
                     <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
+                        (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
                 </div>
             </div>
@@ -78,18 +87,18 @@
             <br>
             <h3>Related games</h3>
             <a href="../all-games/drive-mad">
-                <img src="images/penaltykicks-thumb.jpg"></a>
+                <img src="../images/penaltykicks-thumb.jpg"></a>
             <a href="../all-games/soccer-random">
-                <img src="images/asmallworldcup.jpg"></a>
+                <img src="../images/asmallworldcup.jpg"></a>
             <a href="../all-games/volley-random">
-                <img src="images/soccerrandom.jpg"></a>
+                <img src="../images/soccerrandom.jpg"></a>
             <a href="../all-games/volley-random">
-                <img src="images/retrobowl.jpg"></a>
+                <img src="../images/retrobowl.jpg"></a>
             <a href="../all-games/volley-random">
-                <img src="images/azthumb.jpg"></a>
+                <img src="../images/azthumb.jpg"></a>
         </div>
         <br>
-        
+
         <div id="footer">
         </div>
         <script>
