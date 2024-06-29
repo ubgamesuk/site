@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-95MX2CCB14"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,8 +11,8 @@
   gtag('config', 'G-95MX2CCB14');
 </script>
     
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
-crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+    crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,78 +20,109 @@ crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
     <title>Fireboy & Watergirl</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta name="description" content="Fire and water don't mix - or do they? Play as both Fireboy and Watergirl in this classic Flash game. Play this and many more free games on ubgames." />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="../images/uborange.png">
+    <div class="loading">
+        <div class="center-body">
+            <div class="loader-circle-20">
+              <svg class="spinner" viewbox="0 0 50 50">
+              <circle class="path" cx="25" cy="25" r="20" fill="none"></circle>
+            </svg>
+            </div>
+            </div>
+        <script>
+            $(window).on("load",function(){
+                $(".loading").fadeOut("slow");
+            });
+        </script>
+        </div>
+    <div id="topbar">
+    </div>
+    <script>
+        $(function(){
+          $("#topbar").load("../nav/topbar.html");
+        });
+    </script>
 
-                </span>
-                <div class="text logo-text">
-                    <img src="../images/ubgtextsvg.svg"
-                    height="52px">
+    <div id="sidebar">
+    </div>
+    <script>
+        $(function(){
+          $("#sidebar").load("../nav/sidebar.html");
+        });
+        </script>
+    <section class="homepage">
+        <section class="game-wrapper">
+            <div class="gameframe">
+                <iframe class="game" src="https://gamesite.cdnpog.com/e834e9f7-7033-4aa4-9a5c-22d26d4dd2f1/index.html?noads=true" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="410px" width="780px" allowfullscreen></iframe>
+
+                <div class="game-controls">
+                    <h1>Fireboy & Watergirl</h1>
+                    <div class="control-buttons">
+                        <button class="fullscreen"><i class='bx bx-fullscreen icon'></i> Fullscreen</button>
+                        <script src="../fullscreen.js">
+                        </script>
+                        <div class="tooltip">
+                        <button onclick="myFunction()" class="share"><i class='bx bxs-share-alt icon'></i> Share</button>
+                        <script>
+                            function myFunction() {
+                                
+                              navigator.clipboard.writeText("https://www.ubgames.uk/all-games/fireboy-and-watergirl");
+
+                              alert("Game link copied to clipboard");
+                            }
+                            </script>
+                            </div>
+                    </div>
+
+                    <div class="tags">
+                        <h2 class="age-rating">6+</h2>
+                        <h2 class="category">STRATEGY</h2>
+                    </div>
+                </div>
+                <div class="ad-box">
+                    <h1>Advertisement</h1>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+                        crossorigin="anonymous"></script>
+
+                        <ins class="adsbygoogle"
+                        style="display:inline-block;width:257px;height:182px"
+                        data-ad-client="ca-pub-7319072504670835"
+                        data-ad-slot="4023283442"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             </div>
-
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Find a game">
-                </li>
-
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="../all-games">
-                            <i class='bx bxs-joystick icon' ></i>
-                            <span class="text nav-text">Games</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="../trending">
-                            <i class='bx bxs-hot icon'></i>
-                            <span class="text nav-text">Trending</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="../new">
-                            <i class='bx bxs-zap icon' ></i>
-                            <span class="text nav-text">Recently added</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-                <li class="">
-                    <a href="../games-a-z">
-                        <i class='bx bx-library icon' ></i>
-                        <span class="text nav-text">Games A-Z</span>
-                    </a>
-                </li>
-
-                    </div>
-                </li>
-                
-            </div>
+        <div class="related-games">
+            <br>
+            <h3>Related games</h3>
+            <a href="../all-games/penalty-kicks">
+                <img src="../images/penaltykicks-thumb.jpg"></a>
+            <a href="../all-games/a-small-world-cup.html">
+                <img src="../images/asmallworldcup.jpg"></a>
+            <a href="../all-games/soccer-random">
+                <img src="../images/soccerrandom.jpg"></a>
+            <a href="../all-games/retro-bowl">
+                <img src="../images/retrobowl.jpg"></a>
+            <a href="../games-a-z">
+                <img src="../images/azthumb.jpg"></a>
         </div>
+        <br>
 
-    </nav>
-<!----------------MAIN SECTION---------------------->
-    <section class="home">
-        <iframe src="https://gamesite.cdnpog.com/e834e9f7-7033-4aa4-9a5c-22d26d4dd2f1/index.html?noads=true" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="100%" width="100%" allowfullscreen></iframe>
+        <div id="footer">
+        </div>
+        <script>
+            $(function(){
+              $("#footer").load("../nav/footer.html");
+            });
+            </script>
+    
     </section>
 
     <script>
@@ -103,7 +134,7 @@ crossorigin="anonymous"></script>
       modeText = body.querySelector(".mode-text");
 
 
-toggle.addEventListener("click" , () =>{
+sidebar.addEventListener("onmouseover" , () =>{
     sidebar.classList.toggle("close");
 })
 
