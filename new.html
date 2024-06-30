@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95MX2CCB14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95MX2CCB14');
+</script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+    crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <title>New to ubgames</title>
+    <meta name="description" content="Play all your favourite games for free on ubgames - the website with over 200 online games to play with no interruptions!" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="loading">
+        <div class="center-body">
+            <div class="loader-circle-20">
+              <svg class="spinner" viewbox="0 0 50 50">
+              <circle class="path" cx="25" cy="25" r="20" fill="none"></circle>
+            </svg>
+            </div>
+            </div>
+        <script>
+            $(window).on("load",function(){
+                $(".loading").fadeOut("slow");
+            });
+        </script>
+        </div>
+    <div id="topbar">
+    </div>
+    <script>
+        $(function(){
+          $("#topbar").load("../nav/topbar.html");
+        });
+    </script>
+
+    <div id="sidebar">
+    </div>
+    <script>
+        $(function(){
+          $("#sidebar").load("../nav/sidebar.html");
+        });
+        </script>
+    <section class="homepage">
+        <div class="game-wrapper">
+        <div class="scroll-container">
+        <br>
+        <h1>Recently added</h1>
+        </div>
+        <div class="scroll-container">
+            <div class="game-icons">
+                <a href="../all-games/fruit-ninja">
+                    <img src="images/fruitninja.png"></a>
+                <a href="../all-games/spacebar-clicker">
+                    <img src="images/spacebarclicker.jpg"></a>
+                <a href="../all-games/age-of-war">
+                    <img src="images/ageofwar.png"></a>
+                <a href="../all-games/retro-bowl">
+                    <img src="images/retrobowl.jpg"></a>
+            </div>
+        </div>
+            <div class="scroll-container">
+                <div class="game-icons">
+                    <a href="../all-games/baldis-basics">
+                        <img src="images/baldisbasics.jpg"></a>
+                    <a href="../all-games/deal-or-no-deal">
+                        <img src="images/dealornodeal.jpeg"></a>
+                    <a href="../all-games/8-ball-pool">
+                        <img src="images/8ballpool.jpg"></a>
+                    <a href="../all-games/wordle">
+                        <img src="images/wordle.jpg"></a>
+                </div>
+            </div>
+                <div class="scroll-container">
+                    <div class="game-icons">
+                        <a href="../all-games/duck-life-4">
+                            <img src="images/ducklife4.jpg"></a>
+                        <a href="../all-games/candy-crush">
+                            <img src="images/candycrush.png"></a>
+                        <a href="../all-games/basket-random">
+                            <img src="images/basketrandom.jpg"></a>
+                        <a href="../all-games/glass-city">
+                            <img src="images/glasscity.jpg"></a>
+                    </div>
+                </div>
+                    <div class="scroll-container">
+                        <div class="game-icons">
+                            <a href="../all-games/penalty-kicks">
+                                <img src="images/penaltykicks.jpg"></a>
+                            <a href="../all-games/vex-7">
+                                <img src="images/vex7.jpg"></a>
+                            <a href="../all-games/fireboy-and-watergirl">
+                                <img src="images/fireboyandwatergirl.jpg"></a>
+                            <a href="../all-games/among-us">
+                                <img src="images/amongus.jpg"></a>
+                        </div>
+                    </div>
+                        <div class="scroll-container">
+                            <br>
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+                                 crossorigin="anonymous"></script>
+                            <!-- Banner -->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:728px;height:90px"
+                                 data-ad-client="ca-pub-7319072504670835"
+                                 data-ad-slot="3718895649"></ins>
+                            <script>
+                                 (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        </div>
+                            <br>
+                            <br>
+                            <div id="footer">
+                            </div>
+                            <script>
+                                $(function(){
+                                  $("#footer").load("../nav/footer.html");
+                                });
+                                </script>
+                        </div>
+     </div>
+
+    
+          
+
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+sidebar.addEventListener("onmouseover" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
