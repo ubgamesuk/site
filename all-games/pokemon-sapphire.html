@@ -18,15 +18,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../style-demo.css">
+    <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
-    <title>3D Free Kick</title>
-    <meta name="description" content="Play all your favourite games for free on ubgames - the website with over 200 unblocked games to play ad free!" />
+    <title>Pokémon Sapphire</title>
+
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
+    <div class="loading">
+        <div class="center-body">
+            <div class="loader-circle-20">
+              <svg class="spinner" viewbox="0 0 50 50">
+              <circle class="path" cx="25" cy="25" r="20" fill="none"></circle>
+            </svg>
+            </div>
+            </div>
+        <script>
+            $(window).on("load",function(){
+                $(".loading").fadeOut("slow");
+            });
+        </script>
+        </div>
     <div id="topbar">
     </div>
     <script>
@@ -45,18 +59,20 @@
     <section class="homepage">
         <section class="game-wrapper">
             <div class="gameframe">
-                <iframe src="https://gamesite.cdnpog.com/73c8ec5a-f3eb-47c3-85ab-fe0857216df6/index.html?noads=true" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="410px" width="780px" allowfullscreen></iframe>
+                <iframe class="game" src="https://138.pr.blueedge.me/" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="410px" width="780px" allowfullscreen></iframe>
 
                 <div class="game-controls">
-                    <h1>3D Free Kick</h1>
+                    <h1>Pokémon Sapphire</h1>
                     <div class="control-buttons">
                         <button class="fullscreen"><i class='bx bx-fullscreen icon'></i> Fullscreen</button>
+                        <script src="../fullscreen.js">
+                        </script>
                         <div class="tooltip">
                         <button onclick="myFunction()" class="share"><i class='bx bxs-share-alt icon'></i> Share</button>
                         <script>
                             function myFunction() {
                                 
-                              navigator.clipboard.writeText("https://www.ubgames.uk/all-games/3d-free-kick");
+                              navigator.clipboard.writeText("https://www.ubgames.uk/all-games/");
 
                               alert("Game link copied to clipboard");
                             }
@@ -66,7 +82,7 @@
 
                     <div class="tags">
                         <h2 class="age-rating">4+</h2>
-                        <h2 class="category">SPORTS</h2>
+                        <h2 class="category">CASUAL</h2>
                     </div>
                 </div>
                 <div class="ad-box">
@@ -86,30 +102,18 @@
         <div class="related-games">
             <br>
             <h3>Related games</h3>
-            <a href="../all-games/drive-mad">
+            <a href="../all-games/penalty-kicks">
                 <img src="../images/penaltykicks-thumb.jpg"></a>
-            <a href="../all-games/soccer-random">
+            <a href="../all-games/a-small-world-cup.html">
                 <img src="../images/asmallworldcup.jpg"></a>
-            <a href="../all-games/volley-random">
+            <a href="../all-games/soccer-random">
                 <img src="../images/soccerrandom.jpg"></a>
-            <a href="../all-games/volley-random">
+            <a href="../all-games/retro-bowl">
                 <img src="../images/retrobowl.jpg"></a>
-            <a href="../all-games/volley-random">
+            <a href="../games-a-z">
                 <img src="../images/azthumb.jpg"></a>
         </div>
         <br>
-        <div class="scroll-container">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
-                crossorigin="anonymous"></script>
-            <!-- Banner -->
-            <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
-                data-ad-client="ca-pub-7319072504670835"
-                data-ad-slot="3718895649"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
 
         <div id="footer">
         </div>
