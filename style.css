@@ -617,36 +617,17 @@ body {
     background: #000000;
     padding: 0;
     margin-left: 15px;
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.loading{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    transform: translateY(-65px) translateX(-14px);
-    background-color: #000000a3;
-    z-index: 999999;
-    overflow: hidden;
-}
-.center-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
-}
-.loader-circle-20 {
-	animation: rotate 2s linear infinite;
-	width: 60px;
-	height: 60px;
-}
-.loader-circle-20 .path {
-	stroke: #ffffffa7;
-	stroke-linecap: round;
-    stroke-width: 3.5px;
-	animation: dash 1.5s ease-in-out infinite;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @keyframes rotate {
 	100% {
