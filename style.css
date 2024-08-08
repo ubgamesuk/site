@@ -568,9 +568,10 @@ body.dark .home .text{
     margin-left: 15px;
 }
 .scroll-container h2{
-    color: #fff;
+    color: #b5b5b5;
     font-size: 19px;
     font-weight: 700;
+    letter-spacing: 1.1px;
     transform: translateX(145px) translateY(-29.5px);
 }
 .scroll-container h3{
