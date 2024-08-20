@@ -426,6 +426,9 @@ body.dark .switch::before{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
 }
+.gameframe .game{
+    background-color: #101010c8;
+}
 .home{
     position: fixed;
     top: 0;
