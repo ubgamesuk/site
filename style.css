@@ -148,6 +148,14 @@ hr.rounded {
     color: #fff;
     transition: var(--tran-03);
 }
+.pagenotfound{
+    height: 350px;
+    margin-left: 50px;
+}
+.pagenotfoundhelp{
+    height: 80px;
+    margin-left: 70px;
+}
 .nav-link .tooltip{
     visibility: hidden;
     width: 120px;
