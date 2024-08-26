@@ -128,80 +128,81 @@
                     </div>
                 </div>
                     </div>
-                        <div class="scroll-container">
-                            <br>
-                            <h3>Two Player</h3>
-                            </div>
-                        <div class="scroll-container">
-                            <div class="game-icons">
-                                <a href="../all-games/basket-random">
-                                    <img src="images/basketrandom.jpg"></a>
-                                <a href="../all-games/soccer-random">
-                                    <img src="images/soccerrandom.jpg"></a>
-                                <a href="../all-games/volley-random">
-                                    <img src="images/volleyrandom.jpg"></a>
-                                <a href="../all-games/boxing-random">
-                                    <img src="images/boxingrandom.jpg"></a>
-                            </div>
-                        <div class="scroll-container">
-                            <br>
-                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
-                                 crossorigin="anonymous"></script>
-                            <!-- Banner -->
-                            <ins class="adsbygoogle"
-                                 style="display:inline-block;width:728px;height:90px"
-                                 data-ad-client="ca-pub-7319072504670835"
-                                 data-ad-slot="3718895649"></ins>
-                            <script>
-                                 (adsbygoogle = window.adsbygoogle || []).push({});
+                    <div class="scroll-container">
+                        <br>
+                        <h3>Two Player Sports</h3>
+                        </div>
+                    <div class="scroll-container">
+                        <div class="game-icons">
+                            <a href="../all-games/basket-random">
+                                <img src="images/basketrandom.jpg"></a>
+                            <a href="../all-games/soccer-random">
+                                <img src="images/soccerrandom.jpg"></a>
+                            <a href="../all-games/volley-random">
+                                <img src="images/volleyrandom.jpg"></a>
+                            <a href="../all-games/boxing-random">
+                                <img src="images/boxingrandom.jpg"></a>
+                        </div>
+                    <div class="scroll-container">
+                        <br>
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+                             crossorigin="anonymous"></script>
+                        <!-- Banner -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="ca-pub-7319072504670835"
+                             data-ad-slot="3718895649"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    </div>
+                        <br>
+                        <br>
+                        <div id="footer">
+                        </div>
+                        <script>
+                            $(function(){
+                              $("#footer").load("../nav/footer.html");
+                            });
                             </script>
-                        </div>
-                        </div>
-                            <br>
-                            <br>
-                            <div id="footer">
-                            </div>
-                            <script>
-                                $(function(){
-                                  $("#footer").load("../nav/footer.html");
-                                });
-                                </script>
-                        </div>
-     </div>
+                    </div>
+ </div>
 
-    
-          
 
-    </section>
+      
 
-    <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
+</section>
+
+<script>
+    const body = document.querySelector('body'),
+  sidebar = body.querySelector('nav'),
+  toggle = body.querySelector(".toggle"),
+  searchBtn = body.querySelector(".search-box"),
+  modeSwitch = body.querySelector(".toggle-switch"),
+  modeText = body.querySelector(".mode-text");
 
 
 sidebar.addEventListener("onmouseover" , () =>{
-    sidebar.classList.toggle("close");
+sidebar.classList.toggle("close");
 })
 
 searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
+sidebar.classList.remove("close");
 })
 
 modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
+body.classList.toggle("dark");
+
+if(body.classList.contains("dark")){
+    modeText.innerText = "Light mode";
+}else{
+    modeText.innerText = "Dark mode";
     
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
+}
 });
-    </script>
+</script>
 
 </body>
 </html>
+

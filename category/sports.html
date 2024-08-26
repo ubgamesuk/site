@@ -24,7 +24,7 @@
     
     <title>Sports on ubgames</title>
     <meta name="description" content="Play a range of sports games on ubgames - the website with over 200 free games" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
 
@@ -52,7 +52,7 @@
         <br>
         <div class="scroll-container">
             <div class="game-icons">
-                <a href=".">
+                <a href="../all-games">
                     <img src="../images/categoryback.jpg"></a>
                 <a href="../all-games/basket-random">
                     <img src="../images/basketrandom.jpg"></a>
@@ -99,68 +99,67 @@
                                 <img src="../images/smashkarts.jpg"></a>
                             <a href="../all-games/penalty-kicks">
                                 <img src="../images/penaltykicks.jpg"></a>
-                        </div>
-                    </div>
-                    <br>
-                        <div class="scroll-container">
-                            <br>
-                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
-                                 crossorigin="anonymous"></script>
-                            <!-- Banner -->
-                            <ins class="adsbygoogle"
-                                 style="display:inline-block;width:728px;height:90px"
-                                 data-ad-client="ca-pub-7319072504670835"
-                                 data-ad-slot="3718895649"></ins>
-                            <script>
-                                 (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
-                        </div>
-                        </div>
-                            <br>
-                            <br>
-                            <div id="footer">
                             </div>
-                            <script>
-                                $(function(){
-                                  $("#footer").load("../nav/footer.html");
-                                });
-                                </script>
-                        </div>
-     </div>
-
-    
-          
-
-    </section>
-
-    <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
-
-
-sidebar.addEventListener("onmouseover" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
+                            <br>
+                                <div class="scroll-container">
+                                    <br>
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+                                         crossorigin="anonymous"></script>
+                                    <!-- Banner -->
+                                    <ins class="adsbygoogle"
+                                         style="display:inline-block;width:728px;height:90px"
+                                         data-ad-client="ca-pub-7319072504670835"
+                                         data-ad-slot="3718895649"></ins>
+                                    <script>
+                                         (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+                                </div>
+                                    <br>
+                                    <br>
+                                    <div id="footer">
+                                    </div>
+                                    <script>
+                                        $(function(){
+                                          $("#footer").load("../nav/footer.html");
+                                        });
+                                        </script>
+                                </div>
+             </div>
         
-    }
-});
-    </script>
-
-</body>
-</html>
+            
+                  
+        
+            </section>
+        
+            <script>
+                const body = document.querySelector('body'),
+              sidebar = body.querySelector('nav'),
+              toggle = body.querySelector(".toggle"),
+              searchBtn = body.querySelector(".search-box"),
+              modeSwitch = body.querySelector(".toggle-switch"),
+              modeText = body.querySelector(".mode-text");
+        
+        
+        sidebar.addEventListener("onmouseover" , () =>{
+            sidebar.classList.toggle("close");
+        })
+        
+        searchBtn.addEventListener("click" , () =>{
+            sidebar.classList.remove("close");
+        })
+        
+        modeSwitch.addEventListener("click" , () =>{
+            body.classList.toggle("dark");
+            
+            if(body.classList.contains("dark")){
+                modeText.innerText = "Light mode";
+            }else{
+                modeText.innerText = "Dark mode";
+                
+            }
+        });
+            </script>
+        
+        </body>
+        </html>
