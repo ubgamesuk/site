@@ -153,7 +153,7 @@ hr.rounded {
 
 .sidebar .text,
 .sidebar .icon{
-    color: #fff;
+    color: #ffffffec;
     transition: var(--tran-03);
 }
 body.dark .sidebar header .toggle{
@@ -189,7 +189,7 @@ body.dark .sidebar header .toggle{
     transform: translateY(-50%) rotate(0deg);
 }
 .sidebar .menu{
-    margin-top: 90px;
+    margin-top: 120px;
 }
 .sidebar li a{
     list-style: none;
@@ -204,7 +204,7 @@ body.dark .sidebar header .toggle{
     transition: var(--tran-03);
 }
 .nav-link .label{
-    color: white;
+    color: rgba(255, 255, 255, 0.849);
     position: absolute;
     transform: translateY(25px);
     font-size: 15px;
@@ -242,56 +242,6 @@ body.dark .sidebar li a:hover .text{
 .menu-bar .mode .sun-moon{
     height: 50px;
     width: 60px;
-}
-
-.mode .sun-moon i{
-    position: absolute;
-}
-.mode .sun-moon i.sun{
-    opacity: 0;
-}
-body.dark .mode .sun-moon i.sun{
-    opacity: 1;
-}
-body.dark .mode .sun-moon i.moon{
-    opacity: 0;
-}
-
-.menu-bar .bottom-content .toggle-switch{
-    position: absolute;
-    right: 0;
-    height: 100%;
-    min-width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.toggle-switch .switch{
-    position: relative;
-    height: 22px;
-    width: 40px;
-    border-radius: 25px;
-    background-color: var(--toggle-color);
-    transition: var(--tran-05);
-}
-
-.switch::before{
-    content: '';
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    background-color: var(--sidebar-color);
-    transition: var(--tran-04);
-}
-
-body.dark .switch::before{
-    left: 20px;
 }
 .atoz{
     margin-left: 62px;
