@@ -44,7 +44,7 @@ body{
     z-index: 100;  
 }
 .sidebar.close{
-    width: 75px;
+    width: 77px;
 }
 hr.rounded {
     border-top: 1px solid #ffffff79;
@@ -53,6 +53,14 @@ hr.rounded {
     margin-top: 8px;
     margin-bottom: 8px;
   }
+.pagenotfound{
+    height: 350px;
+    margin-left: 50px;
+}
+.pagenotfoundhelp{
+    height: 80px;
+    margin-left: 70px;
+}
 .topbar{
     position: fixed;
     transform: translateY(-70px);
@@ -124,7 +132,7 @@ hr.rounded {
     height: 45px;
     display: flex;
     align-items: center;
-    margin-top: 2px;
+    margin-bottom: 30px;
 }
 
 .sidebar header .image,
@@ -140,34 +148,13 @@ hr.rounded {
     transform: translateX(-6px);
     align-items: center;
     justify-content: center;
-    font-size: 23px;
+    font-size: 27px;
 }
 
 .sidebar .text,
 .sidebar .icon{
     color: #fff;
     transition: var(--tran-03);
-}
-.pagenotfound{
-    height: 350px;
-    margin-left: 50px;
-}
-.pagenotfoundhelp{
-    height: 80px;
-    margin-left: 70px;
-}
-.nav-link .tooltip{
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    z-index: 9999999;
-}
-.nav-link:hover .tooltip{
-    visibility: visible;
 }
 body.dark .sidebar header .toggle{
     color: var(--text-color);
@@ -201,9 +188,8 @@ body.dark .sidebar header .toggle{
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
 }
-
 .sidebar .menu{
-    margin-top: 80px;
+    margin-top: 90px;
 }
 .sidebar li a{
     list-style: none;
@@ -213,9 +199,15 @@ body.dark .sidebar header .toggle{
     align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 10px;
     text-decoration: none;
     transition: var(--tran-03);
+}
+.nav-link .label{
+    color: white;
+    position: absolute;
+    transform: translateY(25px);
+    font-size: 15px;
 }
 
 .sidebar li a:hover{
@@ -316,6 +308,9 @@ body.dark .switch::before{
     border: none;
     outline: none;
     border-radius: 15px;
+}
+.gameframe .game{
+    background-color: #101010c8;
 }
 .gameframe h1{
     margin-left: 20px;
@@ -433,9 +428,6 @@ body.dark .switch::before{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-}
-.gameframe .game{
-    background-color: #101010c8;
 }
 .home{
     position: fixed;
@@ -601,7 +593,7 @@ body.dark .home .text{
     width: 250px;
     transition: .5s ease;
 }
-  .scroll-container #longimg {
+.scroll-container #longimg {
     position: relative;
     object-fit: cover;
     margin-left: 11px;
@@ -627,6 +619,7 @@ body.dark .home .text{
 .scroll-container button{
     display: inline;
     cursor: pointer;
+    color: #000000;
     width: 100px;
     height: 30px;
     border: none;
