@@ -746,7 +746,7 @@ body {
         color: #ffffff;
     }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1500px) {
     .gameframe .game{
         height: 500px;
         width: 900px;
