@@ -114,18 +114,19 @@ hr.rounded {
 .right-icons img:hover{
     transform: scale(1.06);
 }
-.right-icons .friends{
-    transform: translateX(75px);
-}
-.right-icons .friends:hover{
-    transform: translateX(75px) scale(1.06);
-}
 .right-icons .gamesbutton{
     border-radius: 90px;
     transform: translateX(-75px);
 }
 .right-icons .gamesbutton:hover{
     transform: translateX(-75px) scale(1.06);
+}
+.right-icons .extrabutton{
+    border-radius: 90px;
+    transform: translateX(5px);
+}
+.right-icons .extrabutton:hover{
+    transform: translateX(5px) scale(1.06);
 }
 /* ===== Reusable code - Here ===== */
 .sidebar li{
