@@ -108,7 +108,7 @@ hr.rounded {
 }
 .right-icons img{
     height: 33px;
-    border-radius: 50%;
+    border-radius: 90px;
     transition: ease 0.5s;
 }
 .right-icons img:hover{
