@@ -407,7 +407,6 @@ body.dark .sidebar li a:hover .text{
     margin-top: 69px;
     left: 40px;
     width: 100%;
-    background-color: #5b3420;
 }
 .atoz .text{
     font-size: 60px;
@@ -647,10 +646,10 @@ body.dark .home .text{
     transform: translateY(-3px);
 }
 body {
-    background: #000000;
+    background: #864d0c;
     padding: 0;
     margin-left: 15px;
-    animation: fadeInAnimation ease 1.5s;
+    animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
