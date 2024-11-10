@@ -599,9 +599,6 @@ body {
     background: #000000;
     padding: 0;
     margin-left: 15px;
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 @keyframes fadeInAnimation {
     0% {
