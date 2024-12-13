@@ -7,33 +7,24 @@
 }
 
 :root{
-    /* ===== Colors ===== */
     --body-color: #000000;
     --sidebar-color: #0f0f0f;
     --primary-color: #171717;
     --primary-color-light: #3e3e3e;
     --toggle-color: #fff;
     --text-color: #ffffff;
-
-    /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
 }
-
-body{
-    min-height: 100vh;
-    background-color: var(--body-color);
-    transition: var(--tran-05);
+body {
+    background: #000000;
+    padding: 0;
+    margin-left: 15px;
+    animation: fadeInAnimation ease 0.8s;
+    animation-fill-mode: forwards;
 }
-
-::selection{
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-/* ===== Sidebar ===== */
  .sidebar{
     position: fixed;
     top: 0;
@@ -53,14 +44,6 @@ hr.rounded {
     margin-top: 8px;
     margin-bottom: 8px;
   }
-.pagenotfound{
-    height: 350px;
-    margin-left: 50px;
-}
-.pagenotfoundhelp{
-    height: 80px;
-    margin-left: 70px;
-}
 .topbar{
     position: fixed;
     transform: translateY(-70px);
@@ -128,7 +111,6 @@ hr.rounded {
 .right-icons .extrabutton:hover{
     transform: translateX(5px) scale(1.06);
 }
-/* ===== Reusable code - Here ===== */
 .sidebar li{
     height: 45px;
     display: flex;
@@ -156,9 +138,6 @@ hr.rounded {
 .sidebar .icon{
     color: #ffffffec;
     transition: var(--tran-03);
-}
-body.dark .sidebar header .toggle{
-    color: var(--text-color);
 }
 .footer{
     background-color: #ffffff1a;
@@ -196,9 +175,6 @@ body.dark .sidebar header .toggle{
     font-weight: 500;
     color: #ffffffd4;
 }
-.sidebar.close .toggle{
-    transform: translateY(-50%) rotate(0deg);
-}
 .sidebar .menu{
     margin-top: 125px;
 }
@@ -207,7 +183,7 @@ body.dark .sidebar header .toggle{
     background-color: transparent;
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 40px;
     width: 100%;
     border-radius: 10px;
     text-decoration: none;
@@ -223,22 +199,6 @@ body.dark .sidebar header .toggle{
 .sidebar li a:hover{
     background-color: var(--primary-color);
 }
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text{
-    color: #ffffff;
-}
-body.dark .sidebar li a:hover .icon,
-body.dark .sidebar li a:hover .text{
-    color: #fff;
-}
-
-.sidebar .menu-bar{
-    height: calc(100% - 55px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: scroll;
-}
 .menu-bar::-webkit-scrollbar{
     display: none;
 }
@@ -247,11 +207,6 @@ body.dark .sidebar li a:hover .text{
     background-color: var(--primary-color-light);
     position: relative;
     transition: var(--tran-05);
-}
-
-.menu-bar .mode .sun-moon{
-    height: 50px;
-    width: 60px;
 }
 .atoz{
     margin-left: 62px;
@@ -390,26 +345,15 @@ body.dark .sidebar li a:hover .text{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
 }
-.home{
-    position: fixed;
-    top: 0;
-    z-index: -999;
-    left: 220px;
-    height: 100vh;
-    width: calc(100% - 250px);
-    background-color: var(--body-color);
-    transition: var(--tran-05);
-}
 .message{
     display: none;
 }
 .homepage{
     position: relative;
-    margin-top: 70px;
+    margin-top: 69px;
     top: 0;
     left: 40px;
-    height: 100vh;
-    width: calc(100% - 250px);
+    width: calc(100% - 40px);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -443,19 +387,6 @@ body.dark .sidebar li a:hover .text{
     font-size: 35px;
     font-weight: 600;
     color: #fff;
-}
-
-.sidebar.close ~ .home{
-    left: 78px;
-    height: 100%;
-    width: calc(100% - 78px);
-}
-body.dark .home .text{
-    color: var(--text-color);
-}
-.home-caption{
-    color: #fff;
-    padding: 5px 60px;
 }
 .home-gamename a{
     text-decoration: none;
@@ -505,15 +436,6 @@ body.dark .home .text{
     cursor: default;
     transform: scale(1.01);
     transition: 0.5s ease;
-}
-.homepage .banner button:hover{
-    cursor: pointer;
-}
-.home-school{
-    font-size: 23px;
-    font-weight: 400;
-    padding: 0px 60px;
-    color: #fff;
 }
 .home-gamename{    
     font-size: 30px;
@@ -588,19 +510,11 @@ body.dark .home .text{
     border-radius: 7px;
     font-size: 20px;
     transition: 0.5s ease;
-
 }
 .scroll-container button:hover{
     background-color: #c9c9c9;
     transition: 0.5s ease;
     transform: translateY(-3px);
-}
-body {
-    background: #000000;
-    padding: 0;
-    margin-left: 15px;
-    animation: fadeInAnimation ease 0.8s;
-    animation-fill-mode: forwards;
 }
 @keyframes fadeInAnimation {
     0% {
@@ -645,36 +559,7 @@ body {
     background: #7e7e7e; 
 
   }
-  .videoembed {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    min-height: 100%;
-  }
-  .home .content{
-    position: absolute;
-    bottom: 0;
-    color: #f1f1f1;
-    width: 100%;
-    transform: translateY(20px);
-    padding: 65px;
-    font-size: 30px;
-    background: linear-gradient(transparent, rgb(0, 0, 0));
-  }
-  .home .content img{
-    transform: translateY(6px);
-  }
-  .home .content button{
-    padding: 7px;
-    transform: translateX(5px) translateY(-3px);
-    width: 160px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 10px;
-    border: #ffffff00;
-    cursor: pointer;
-  }
+
 @media screen and (max-width: 600px) {
     body{
         display: none;
