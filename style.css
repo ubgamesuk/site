@@ -18,13 +18,18 @@
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
 }
-body {
-    background: #000000;
-    padding: 0;
-    margin-left: 15px;
-    animation: fadeInAnimation ease 0.8s;
-    animation-fill-mode: forwards;
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
 }
+
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* ===== Sidebar ===== */
  .sidebar{
     position: fixed;
     top: 0;
@@ -345,6 +350,16 @@ hr.rounded {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
 }
+.home{
+    position: fixed;
+    top: 0;
+    z-index: -999;
+    left: 220px;
+    height: 100vh;
+    width: calc(100% - 70px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
 .message{
     display: none;
 }
@@ -353,7 +368,7 @@ hr.rounded {
     margin-top: 69px;
     top: 0;
     left: 40px;
-    width: calc(100% - 40px);
+    width: calc(100% - 70px);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -388,6 +403,11 @@ hr.rounded {
     font-weight: 600;
     color: #fff;
 }
+.sidebar.close ~ .home{
+    left: 78px;
+    height: 100%;
+    width: calc(100% - 78px);
+}
 .home-gamename a{
     text-decoration: none;
     display: block;
@@ -404,38 +424,6 @@ hr.rounded {
     color: #c4c4c4;
     font-size: 44px;
     z-index: 99999;
-}
-.homepage .banner{
-    background-image: url(images/gradient.jpg);
-    margin-left: 90px;
-    margin-top: 15px;
-    border-radius: 15px;
-    transition: .5s ease;
-    mask-repeat: no-repeat;
-    width: 610px;
-    height: 57px;
-}
-.homepage .banner h2{
-    padding: 10px;
-    font-weight: 500;
-    margin-left: 10px;
-    color: #fff;
-}
-.homepage .banner button{
-    position: relative;
-    transform: translateX(405px) translateY(-42px);
-    color: #000000;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    height: 35px;
-    width: 190px;
-}
-.homepage .banner:hover{
-    outline: #e4e4e4 solid 3.5px;
-    cursor: default;
-    transform: scale(1.01);
-    transition: 0.5s ease;
 }
 .home-gamename{    
     font-size: 30px;
@@ -516,6 +504,13 @@ hr.rounded {
     transition: 0.5s ease;
     transform: translateY(-3px);
 }
+body {
+    background: #000000;
+    padding: 0;
+    margin-left: 15px;
+    animation: fadeInAnimation ease 0.8s;
+    animation-fill-mode: forwards;
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -543,7 +538,6 @@ hr.rounded {
 		stroke-dashoffset: -124;
 	}
 }
-  /* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -559,7 +553,6 @@ hr.rounded {
     background: #7e7e7e; 
 
   }
-
 @media screen and (max-width: 600px) {
     body{
         display: none;
