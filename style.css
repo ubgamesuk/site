@@ -459,10 +459,6 @@ hr.rounded {
     width: 900px;
     height: 100px;
 }
-.gameslist iframe{
-    border-radius: 15px;
-    outline: none;
-}
 .azadbanner{
     background-color: #52525247;
     margin-left: 80px;
