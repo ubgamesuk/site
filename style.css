@@ -807,7 +807,7 @@ body {
     .topbar img{
         height: 46px;
         vertical-align: middle;
-        margin-top: 8px;
+        margin-top: 1px;
         margin-left: 35px;
     }
     .topbar .search{
@@ -1313,6 +1313,9 @@ body {
         padding: 0;
         animation: fadeInAnimation ease 0.8s;
         animation-fill-mode: forwards;
+    }
+    .topbar .form-search{
+        display: none;
     }
 }
 @media screen and (min-width: 1500px) {
