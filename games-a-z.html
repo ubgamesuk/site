@@ -17,6 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../search.js"></script>
     
     <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -31,9 +32,10 @@
 
     <nav class="topbar">
         <i onclick="document.location='.'" id="menuicon" class='bx bxs-grid-alt icon'></i>
-        <img id="#toplogo" src="../images/newlogo.png">
-         
-        <button onclick="document.location='../games-a-z'" class="search"><i class='bx bx-search icon'></i> Find a game</button>
+        <img onclick="document.location='..'" id="#toplogo" src="../images/newlogo.png">
+        <div class="form-search">
+            <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
+            <input type="text" id="searchbar" class="search-bar" placeholder="Search 262 games"></div>
     
         <div class="right-icons">
             <a href="https://uk.trustpilot.com/review/ubgames.uk">
@@ -202,32 +204,13 @@
     </section>
 
     <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
-
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
-});
+        document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    if(key===13){
+            if(!document.fullscreen){
+        doSearch()};}
+            }
     </script>
 
 </body>

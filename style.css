@@ -81,6 +81,12 @@ body{
 .gameazbanner img{
     width: 900px;
 }
+#searchError{
+    margin-left: 90px;
+    color: #fff;
+    font-size: 24px;
+    width: 600px;
+}
 hr.rounded {
     border-top: 1px solid #ffffff79;
     border-bottom: 1px solid #ffffff79;
@@ -104,26 +110,32 @@ hr.rounded {
 }
 .topbar img{
     height: 46px;
+    margin-left: 85px;
+    transform: translateY(8px);
     vertical-align: middle;
-    margin-top: 8px;
-    margin-left: 90px;
     cursor: pointer;
 }
-.topbar .search{
-    outline: 0.5px solid #ffffff2a;
-    color: #c4c4c4;
-    border: none;
-    text-align: left;
-    padding-left: 20px;
-    margin-left: 50px;
-    transform: translateY(8px);
-    border-radius: 15px;
-    background-color: #f1f1f117;
-    font-size: 22px;
+.topbar .form-search{
+    transform: translateX(290px) translateY(-35px);
+}
+.topbar .form-search .icon{
+    color: #fff;
+    font-size: 20px;
+    transform: translateX(40px) translateY(2px);
+}
+.topbar .form-search input{
     height: 40px;
-    width: 280px;
-    transition: 0.3s ease;
-    cursor: pointer;
+    width: 270px;
+    background-color: #252525;
+    border: none;
+    outline: 1px solid #464646;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 19px;
+    padding-left: 45px;
+}
+.topbar .form-search input::placeholder{
+    color: #a4a4a4;
 }
 .topbar .search .icon{
     transform: translateY(2px);
@@ -134,7 +146,7 @@ hr.rounded {
 .right-icons{
     float: right;
     margin-right: 30px;
-    transform: translateY(6px);
+    transform: translateY(-70px);
 }
 .right-icons img{
     height: 33px;
@@ -169,7 +181,17 @@ hr.rounded {
 .sidebar .icon{
     min-width: 60px;
 }
-
+@keyframes slideInFromLeft {
+    0% {
+      transform: translatey(-30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.searchresults{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
 .sidebar .icon{
     min-width: 60px;
     border-radius: 6px;
