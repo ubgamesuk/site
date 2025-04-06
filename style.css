@@ -83,6 +83,7 @@ body{
 }
 #searchError{
     margin-left: 90px;
+    margin-bottom: 30px;
     color: #fff;
     font-size: 24px;
     width: 600px;
