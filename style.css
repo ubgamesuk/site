@@ -146,30 +146,37 @@ hr.rounded {
 }
 .right-icons{
     float: right;
-    margin-right: 30px;
     transform: translateY(-70px);
+    margin-right: 95px;
 }
-.right-icons img{
+.right-icons button{
     height: 33px;
-    border-radius: 90px;
-    transition: ease 0.5s;
+    border: none;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 5px;
+    font-size: 18px;
+    background-color: #212121;
+    color: #fff;
+    outline: 1px solid #414141;
+    transition: 0.5s ease;
+    cursor: pointer;
 }
-.right-icons img:hover{
-    transform: scale(1.06);
+.right-icons .leftbutton{
+    background-color: #161616;
+    color: #fff;
+    outline: 1px solid #303030;
 }
-.right-icons .gamesbutton{
-    border-radius: 90px;
-    transform: translateX(-75px);
+.right-icons .azbutton:hover{
+    background-color: #121212;
 }
-.right-icons .gamesbutton:hover{
-    transform: translateX(-75px) scale(1.06);
+.right-icons .leftbutton:hover{
+    background-color: #232323;
 }
-.right-icons .extrabutton{
-    border-radius: 90px;
-    transform: translateX(5px);
-}
-.right-icons .extrabutton:hover{
-    transform: translateX(5px) scale(1.06);
+.right-icons button i{
+    color: #e2bd26;
+    transform: translateY(1px);
 }
 .sidebar li{
     height: 45px;
