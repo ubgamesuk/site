@@ -127,7 +127,7 @@ hr.rounded {
 .topbar .form-search input{
     height: 40px;
     width: 270px;
-    background-color: #252525;
+    background-color: #292929;
     border: none;
     outline: 1px solid #464646;
     border-radius: 14px;
@@ -136,7 +136,7 @@ hr.rounded {
     padding-left: 45px;
 }
 .topbar .form-search input::placeholder{
-    color: #a4a4a4;
+    color: #bebebe;
 }
 .topbar .search .icon{
     transform: translateY(2px);
@@ -147,16 +147,16 @@ hr.rounded {
 .right-icons{
     float: right;
     transform: translateY(-70px);
-    margin-right: 95px;
+    margin-right: 110px;
 }
 .right-icons button{
-    height: 33px;
+    height: 30px;
     border: none;
     border-radius: 10px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-left: 5px;
-    font-size: 18px;
+    margin-left: 7px;
+    font-size: 16px;
     background-color: #212121;
     color: #fff;
     outline: 1px solid #414141;
@@ -164,9 +164,9 @@ hr.rounded {
     cursor: pointer;
 }
 .right-icons .leftbutton{
-    background-color: #161616;
+    background-color: #16161600;
     color: #fff;
-    outline: 1px solid #303030;
+    outline: 1px solid #262626;
 }
 .right-icons .azbutton:hover{
     background-color: #121212;
@@ -175,8 +175,10 @@ hr.rounded {
     background-color: #232323;
 }
 .right-icons button i{
-    color: #e2bd26;
     transform: translateY(1px);
+}
+.right-icons .leftbutton i{
+    color: #e2bd26;
 }
 .sidebar li{
     height: 45px;
