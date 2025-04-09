@@ -171,6 +171,12 @@ hr.rounded {
 .right-icons .azbutton:hover{
     background-color: #121212;
 }
+.right-icons .login{
+    background-color: #264764;
+}
+.right-icons .login:hover{
+    background-color: #516785;
+}
 .right-icons .leftbutton:hover{
     background-color: #232323;
 }
