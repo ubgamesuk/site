@@ -224,35 +224,79 @@ hr.rounded {
     color: #ffffffec;
     transition: var(--tran-03);
 }
+.contactbuttons{
+    margin-left: 90px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.standardbtn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 3px;
+    font-size: 21px;
+    border: none;
+    background-color: #303030;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.standardbtn:hover{
+    background-color: #4e4e4e;
+}
 .footer{
     background-color: #ffffff1a;
-    width: 1150px;
-    margin-left: 50px;
-    height: 170px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: calc(100% - 10px);
+    margin-left: 30px;
+    height: 115px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    outline: 1px solid #434343;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.footer .leftelems{
+    position: absolute;
+    margin-left: 70px;
+    left: 0;
+}
+.footer .rightelems{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+}
+.footer .rightelems button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 4px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #303030;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.footer .rightelems button:hover{
+    background-color: #4e4e4e;
 }
 .footer img{
     height: 37px;
-    margin-left: 37px;
-    margin-top: 20px;
 }
 .footer h1{
     color: #fff;
-    margin-left: 45px;
-    transform: translateY(-10px);
+    transform: translateY(-11px) translateX(7px);
     font-weight: 500;
     font-size: 21px;
-}
-.footer h2{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    margin-left: 45px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.5px;
 }
 .footer h3{
-    margin-left: 45px;
+    transform: translateX(7px) translateY(-5px);
     color: #ffffffba;
     font-weight: 300;
 }
@@ -689,6 +733,32 @@ hr.rounded {
     font-weight: 400;
     margin-left: 15px;
     margin-bottom: 22px;
+}
+.headline{
+    color: #fff;
+    font-size: 32px;
+    margin-left: 90px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.subheading{
+    margin-left: 90px;
+    color: #cbcbcb;
+    margin-bottom: 10px;
+}
+.bodytext{
+    color: #cbcbcb;
+    font-size: 22px;
+    margin-left: 90px;
+    width: calc(100% - 90px);
+    margin-bottom: 15px;
+}
+.footnote{
+    color: #fff;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .scroll-container img {
     position: relative;
