@@ -342,6 +342,10 @@ hr.rounded {
     margin-top: 70px;
     transform: translateY(-5px);
 }
+.game-wrapper{
+    display: block;
+    margin-right: 160px;
+}
 .game-wrapper .game{
     margin-left: 80px;
     margin-top: 14px;
