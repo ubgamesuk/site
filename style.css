@@ -48,7 +48,7 @@ body{
     margin-top: 30px;
     padding-top: 7px;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 80px;
     height: 170px;
     border-radius: 20px;
 }
@@ -65,7 +65,7 @@ body{
 }
 .gameazbanner{
     width: 1080px;
-    margin-left: 90px;
+    margin-left: 80px;
     border-radius: 20px;
     border: 1px solid #474747;
     text-align: center;
@@ -342,21 +342,20 @@ hr.rounded {
     margin-top: 70px;
     transform: translateY(-5px);
 }
-.game-wrapper{
-    display: block;
-    margin-right: 160px;
-}
-.game-wrapper iframe{
-    margin-left: 90px;
-    margin-top: 20px;
+.game-wrapper .game{
+    margin-left: 80px;
+    margin-top: 14px;
     border: none;
     outline: none;
-    border-radius: 15px;
-}
-.gameframe .game{
+    height: 495px;
+    width: 800px;
+    border-radius: 13px;
     background-color: #101010c8;
 }
-.gameframe h1{
+.game-wrapper ins{
+    border-radius: 13px;
+}
+.game-controls h1{
     margin-left: 20px;
     transform: translateY(30px);
     width: 230px;
@@ -365,12 +364,12 @@ hr.rounded {
     font-weight: 500;
 }
 .gameframe .ad-box{
-    margin-top: 240px;
+    margin-top: 250px;
     transform: translateX(-237px);
     background-color: #1a1a1a;
     border-radius: 15px;
     width: 270px;
-    height: 216px;
+    height: 236px;
 }
 .gameframe .ad-box h1{
     text-transform: uppercase;
@@ -381,8 +380,8 @@ hr.rounded {
     font-size: 11px;
 }
 .ad-box .adsbygoogle{
-    transform: translateX(-83px) translateY(-8px);
-    height: 182px;
+    transform: translateX(6px) translateY(10px);
+    height: 202px;
     width: 257px;
 }
 .game-controls .age-rating{
@@ -423,11 +422,12 @@ hr.rounded {
     transform: translateX(20px);
     width: 140px;
     height: 35px;
-    border-radius: 15px;
+    border-radius: 12px;
     font-size: 18px;
     border: none;
     color: #fff;
-    background-color: #f1f1f129;
+    outline: 1px solid #363636;
+    background-color: #1a1a1a;
     cursor: pointer;
     transition: ease 0.3s;
 }
@@ -463,7 +463,7 @@ hr.rounded {
     transform: scale(1.05);
 }
 .game-controls button:hover{
-    background-color: #1e1e1e;
+    background-color: #272727;
 }
 .game-controls i{
     color: #fff;
@@ -909,20 +909,6 @@ body {
         margin-left: 62px;
         margin-top: 70px;
         transform: translateY(-5px);
-    }
-    .game-wrapper{
-        display: block;
-        margin-right: 160px;
-    }
-    .game-wrapper iframe{
-        margin-left: 90px;
-        margin-top: 20px;
-        border: none;
-        outline: none;
-        border-radius: 15px;
-    }
-    .gameframe .game{
-        background-color: #101010c8;
     }
     .gameframe h1{
         margin-left: 20px;
@@ -1404,9 +1390,9 @@ body {
         display: none;
     }
 }
-@media screen and (min-width: 1500px) {
-    .gameframe .game{
-        height: 500px;
-        width: 900px;
+@media screen and (min-width: 1440px) {
+    .game-wrapper .game{
+        height: 600px;
+        width: 1000px;
     }
 }
