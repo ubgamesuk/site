@@ -53,7 +53,6 @@ body{
     border-radius: 20px;
 }
 .gameadbox iframe{
-    transform: translateX(-90px) translateY(-15px);
     width: 1000px;
     height: 135px;
 }
