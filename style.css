@@ -346,12 +346,12 @@ hr.rounded {
     margin-right: 160px;
 }
 .game-wrapper .game{
-    margin-left: 80px;
-    margin-top: 14px;
+    margin-left: 79px;
+    margin-top: 13px;
     border: none;
     outline: none;
-    height: 495px;
-    width: 800px;
+    height: 485px;
+    width: 780px;
     border-radius: 13px;
     background-color: #101010c8;
 }
