@@ -7,7 +7,6 @@
 }
 
 :root{
-    --body-color: #000000;
     --sidebar-color: #0f0f0f;
     --primary-color: #171717;
     --primary-color-light: #3e3e3e;
@@ -20,8 +19,11 @@
 }
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
-    transition: var(--tran-05);
+    background-color: #000;
+    padding: 0;
+    margin-left: 15px;
+    animation: fadeInAnimation ease 0.7s;
+    animation-fill-mode: forwards;
 }
 
 ::selection{
@@ -484,8 +486,6 @@ hr.rounded {
     left: 220px;
     height: 100vh;
     width: calc(100% - 70px);
-    background-color: var(--body-color);
-    transition: var(--tran-05);
 }
 .message{
     display: none;
@@ -496,8 +496,6 @@ hr.rounded {
     top: 0;
     left: 40px;
     width: calc(100% - 70px);
-    background-color: var(--body-color);
-    transition: var(--tran-05);
 }
 .atoz .text{
     font-size: 60px;
@@ -812,13 +810,6 @@ hr.rounded {
     transition: 0.5s ease;
     transform: translateY(-3px);
 }
-body {
-    background: #000000;
-    padding: 0;
-    margin-left: 15px;
-    animation: fadeInAnimation ease 0.8s;
-    animation-fill-mode: forwards;
-}
 .mobiledisplay{
     display: none;
 }
@@ -1118,8 +1109,6 @@ body {
         position: relative;
         margin-top: 69px;
         top: 0;
-        background-color: var(--body-color);
-        transition: var(--tran-05);
     }
     .atoz .text{
         font-size: 60px;
@@ -1382,12 +1371,6 @@ body {
         background-color: #c9c9c9;
         transition: 0.5s ease;
         transform: translateY(-3px);
-    }
-    body {
-        background: #000000;
-        padding: 0;
-        animation: fadeInAnimation ease 0.8s;
-        animation-fill-mode: forwards;
     }
     .topbar .form-search{
         display: none;
