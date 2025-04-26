@@ -38,8 +38,9 @@ body{
     left: 0;
     height: 100%;
     padding: 5px 14px;
-    background: var(--sidebar-color);
-    z-index: 100;  
+    background: #000;
+    z-index: 100;
+    border-right: #5b5b5b solid 1px;
 }
 .sidebar.close{
     width: 77px;
@@ -98,27 +99,28 @@ hr.rounded {
   }
   .topbar{
     position: fixed;
-    transform: translateY(-70px);
+    transform: translateY(-70px) translateX(-15px);
     height: 63px;
     z-index: 999;
     width: 100%;
-    background-color: var(--sidebar-color);
+    background-color: #000;
+    border-bottom: #5b5b5b 1px solid;
 }
 .topbar #menuicon{
     color: #dedede;
-    transform: translateY(16px) translateX(8px);
+    transform: translateY(16px) translateX(23px);
     font-size: 30px;
     z-index: 9999;
 }
 .topbar img{
-    height: 46px;
-    margin-left: 85px;
+    height: 42px;
+    margin-left: 105px;
     transform: translateY(8px);
     vertical-align: middle;
     cursor: pointer;
 }
 .topbar .form-search{
-    transform: translateX(290px) translateY(-35px);
+    transform: translateX(300px) translateY(-35px);
 }
 .topbar .form-search .icon{
     color: #fff;
@@ -128,7 +130,7 @@ hr.rounded {
 .topbar .form-search input{
     height: 40px;
     width: 270px;
-    background-color: #292929;
+    background-color: #181818;
     border: none;
     outline: 1px solid #464646;
     border-radius: 14px;
@@ -287,7 +289,8 @@ hr.rounded {
     background-color: #4e4e4e;
 }
 .footer img{
-    height: 37px;
+    height: 33px;
+    margin-bottom: 5px;
 }
 .footer h1{
     color: #fff;
@@ -767,6 +770,7 @@ hr.rounded {
     margin-left: 11px;
     border-radius: 21px;
     height: 150px;
+    outline: 1px solid #505050;
     width: 250px;
     transition: .5s ease;
 }
