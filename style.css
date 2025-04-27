@@ -120,7 +120,7 @@ hr.rounded {
     cursor: pointer;
 }
 .topbar .form-search{
-    transform: translateX(300px) translateY(-35px);
+    transform: translateX(320px) translateY(-34px);
 }
 .topbar .form-search .icon{
     color: #fff;
@@ -129,7 +129,7 @@ hr.rounded {
 }
 .topbar .form-search input{
     height: 40px;
-    width: 270px;
+    width: 280px;
     background-color: #181818;
     border: none;
     outline: 1px solid #464646;
