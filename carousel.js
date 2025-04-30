@@ -21,27 +21,6 @@ sliderContainers.forEach(container => {
     setTimeout(updateArrows, 400);
   });
 
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    cancelMomentumScroll();
-  });
-
-  slider.addEventListener('mouseleave', () => {
-    if (isDown) {
-      isDown = false;
-      beginMomentumScroll();
-    }
-  });
-
-  slider.addEventListener('mouseup', () => {
-    if (isDown) {
-      isDown = false;
-      beginMomentumScroll();
-    }
-  });
-
   slider.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
@@ -58,13 +37,6 @@ sliderContainers.forEach(container => {
     cancelMomentumScroll();
   });
 
-  slider.addEventListener('touchend', () => {
-    if (isDown) {
-      isDown = false;
-      beginMomentumScroll();
-    }
-  });
-
   slider.addEventListener('touchmove', (e) => {
     if (!isDown) return;
     const x = e.touches[0].pageX - slider.offsetLeft;
@@ -76,26 +48,6 @@ sliderContainers.forEach(container => {
   slider.addEventListener('scroll', () => {
     updateArrows();
   });
-
-  function beginMomentumScroll() {
-    cancelMomentumScroll();
-    momentumID = requestAnimationFrame(momentumLoop);
-  }
-
-  function cancelMomentumScroll() {
-    cancelAnimationFrame(momentumID);
-  }
-
-  function momentumLoop() {
-    slider.scrollLeft -= velocity;
-    velocity *= 0.95;
-
-    if (Math.abs(velocity) > 0.5) {
-      momentumID = requestAnimationFrame(momentumLoop);
-    } else {
-      snapToClosest();
-    }
-  }
 
   function snapToClosest() {
     const slides = container.querySelectorAll('.slide');
