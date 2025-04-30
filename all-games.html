@@ -46,172 +46,198 @@
         });
         </script>
     <section class="homepage">
-        <div class="game-wrapper">
-        <div class="scroll-container">
+        <div class="carousels">
         <br>
-        <h1>Featured</h1>
-        <h2>APRIL 2025</h2>
+        <div class="hometext">
+            <h1 class="featuredtitle">Featured</h1>
+            <h2 class="featuredmonth"><b class="divider">|</b>May 2025</h2>
         </div>
-        <div class="scroll-container">
-            <div class="game-icons">
-                <a href="https://ubgames.app">
-                    <img id="longimg" src="../images/newublong.jpg"></a>
-
-                <img onclick="document.location='../all-games/monkey-mart'" src="../images/monkeymart.jpg">
-                <img onclick="document.location='../all-games/retro-bowl'" src="../images/retrobowl.jpg">
+        <div class="slider-container">
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+            <div class="slider">
+                <div onclick="document.location='../trending'" id="longslide" class="slide"><img id="longslide" src="../images/hotthismonth.jpg"></div>
+                <div onclick="document.location='../all-games/a-a-small-world-cup'" class="slide"><img src="../images/asmallworldcup.jpg"></div>
+                <div onclick="document.location='../all-games/subwaysurfers'" class="slide"><img src="../images/subwaysurfers.jpg"></div>
+                <div onclick="document.location='../all-games/moto-x3m'" class="slide"><img src="../images/motox3m.jpg"></div>
+                <div onclick="document.location='../all-games/basketball-stars'" class="slide"><img src="../images/basketballstars.jpg"></div>
+                <div onclick="document.location='../all-games/papas-sushiria'" class="slide"><img src="../images/papassushiria.jpg"></div>
+                <div onclick="document.location='../all-games/stickman-boost'" class="slide"><img src="../images/stickmanboost.jpg"></div>
+                <div onclick="document.location='../all-games/shell-shockers'" class="slide"><img src="../images/shellshockers.jpg"></div>
             </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
         </div>
-            <div class="scroll-container">
-                <br>
-                <h3>Recently added</h3>
-                </div>
-            <div class="scroll-container">
-                <div class="game-icons">
-                    <img onclick="document.location='../all-games/block-blast'" src="../images/blockblast.jpg">
-                    <img onclick="document.location='../all-games/blumgi-soccer'" src="../images/blumgisoccer.jpg">
-                    <img onclick="document.location='../all-games/smash-karts'" src="../images/smashkarts.jpg">
-                    <img onclick="document.location='../all-games/edge-surf'" src="../images/edgesurf.jpg">
-                </div>
+        <div class="hometext">
+            <h1 class="category">Recently added</h1>
+        </div>
+        <div class="slider-container">
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+            <div class="slider">
+                <div onclick="document.location='../all-games/monster-tracks'" class="slide"><img src="../images/monstertrackstext.jpg"></div>
+                <div onclick="document.location='../all-games/3d-free-kick'" class="slide"><img src="../images/3dfreekick.jpg"></div>
+                <div onclick="document.location='../all-games/block-blast'" class="slide"><img src="../images/blockblast.jpg"></div>
+                <div onclick="document.location='../all-games/blumgi-soccer'" class="slide"><img src="../images/blumgisoccer.jpg"></div>
+                <div onclick="document.location='../all-games/smash-karts'" class="slide"><img src="../images/smashkarts.jpg"></div>
+                <div onclick="document.location='../all-games/bad-ice-cream'" class="slide"><img src="../images/badicecream.jpg"></div>
+                <div onclick="document.location='../all-games/riddle-school'" class="slide"><img src="../images/riddleschool.jpg"></div>
+                <div onclick="document.location='../all-games/fruit-ninja'" class="slide"><img src="../images/fruitninja.png"></div>
+                <div onclick="document.location='../all-games/vex-7'" class="slide"><img src="../images/vex7.jpg"></div>
             </div>
-            <div class="scroll-container">
-                <br>
-                <h3>Strategy &nbsp;<button onclick="document.location='../category/strategy'">View all</button></h3>
-                </div>
-            <div class="scroll-container">
-                <div class="game-icons">
-                    <img onclick="document.location='../all-games/worlds-hardest-game'" src="../images/worldshardestgame.jpg">
-                    <img onclick="document.location='../all-games/cut-the-rope'" src="../images/cuttherope.jpg">
-                    <img onclick="document.location='../all-games/bitlife'" src="../images/bitlife.jpg">
-                    <img onclick="document.location='../all-games/papas-pizzeria'" src="../images/papaspizzeria.jpg">
-                </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+        <div class="hometext">
+            <h1 class="category">Strategy</h1>
+            <button onclick="document.location='../category/strategy'" class="viewallbtn">View all</button>
+        </div>
+        <div class="slider-container">
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+            <div class="slider">
+                <div onclick="document.location='../all-games/drive-mad'" class="slide"><img src="../images/drivemad.jpg"></div>
+                <div onclick="document.location='../all-games/basket-bros'" class="slide"><img src="../images/basketbros.jpg"></div>
+                <div onclick="document.location='../all-games/retro-bowl'" class="slide"><img src="../images/retrobowl.jpg"></div>
+                <div onclick="document.location='../all-games/edge-surf'" class="slide"><img src="../images/edgesurf.jpg"></div>
+                <div onclick="document.location='../all-games/eggy-car'" class="slide"><img src="../images/eggycar.jpg"></div>
+                <div onclick="document.location='../all-games/worlds-hardest-game'" class="slide"><img src="../images/worldshardestgame.jpg"></div>
+                <div onclick="document.location='../all-games/wordle'" class="slide"><img src="../images/wordle.jpg"></div>
+                <div onclick="document.location='../all-games/idle-breakout'" class="slide"><img src="../images/idlebreakout.jpeg"></div>
+                <div onclick="document.location='../all-games/ragdoll-battle-2'" class="slide"><img src="../images/ragdollbattle.jpg"></div>
             </div>
-                <div class="scroll-container">
-                    <br>
-                    <h3>Sports &nbsp;<button onclick="document.location='../category/sports'">View all</button></h3>
-                    </div>
-                <div class="scroll-container">
-                    <div class="game-icons">
-                        <a href="../all-games/penalty-kicks">
-                            <img src="../images/penaltykicks.jpg"></a>
-                        <a href="../all-games/basket-random">
-                            <img src="../images/basketrandom.jpg"></a>
-                        <a href="../all-games/a-small-world-cup">
-                            <img src="../images/asmallworldcup.jpg"></a>
-                        <a href="../all-games/volley-random">
-                            <img src="../images/volleyrandom.jpg"></a>
-                    </div>
-                </div>
-                <div class="scroll-container">
-                    <br>
-                    <h3>Papa Louie Arcade &nbsp;<button onclick="document.location='../category/papalouiearcade'">View all</button></h3>
-                    </div>
-                <div class="scroll-container">
-                    <div class="game-icons">
-                        <a href="../all-games/papas-pizzeria">
-                            <img src="../images/papaspizzeria.jpg"></a>
-                        <a href="../all-games/papas-scooperia">
-                            <img src="../images/papasscooperia.jpg"></a>
-                        <a href="../all-games/papas-burgeria">
-                            <img src="../images/papasburgeria.jpg"></a>
-                        <a href="../all-games/papas-bakeria">
-                            <img src="../images/papasbakeria.jpg"></a>
-                    </div>
-                </div>
-                    </div>
-                    <div class="scroll-container">
-                        <br>
-                        <h3>Two Player Sports</h3>
-                        </div>
-                    <div class="scroll-container">
-                        <div class="game-icons">
-                            <a href="../all-games/basket-random">
-                                <img src="../images/basketrandom.jpg"></a>
-                            <a href="../all-games/soccer-random">
-                                <img src="../images/soccerrandom.jpg"></a>
-                            <a href="../all-games/volley-random">
-                                <img src="../images/volleyrandom.jpg"></a>
-                            <a href="../all-games/boxing-random">
-                                <img src="../images/boxingrandom.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="scroll-container">
-                            <br>
-                            <h3>Emulated &nbsp;<button onclick="document.location='../category/emulated'">View all</button></h3>
-                            </div>
-                        <div class="scroll-container">
-                            <div class="game-icons">
-                                <img onclick="document.location='../all-games/super-mario-64'" src="../images/supermario64.jpg">
-                                <img onclick="document.location='../all-games/pokemon-emerald'" src="../images/pokemonemerald.jpg">
-                                <img onclick="document.location='../all-games/pokemon-sapphire'" src="../images/pokemonsapphire.jpg">
-                                <img onclick="document.location='../all-games/mario-kart-64'" src="../images/mariokart64.jpg">
-                            </div>
-                            <br>
-                                         <div class="scroll-container">
-                                             <br>
-                                             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
-                                                  crossorigin="anonymous"></script>
-                                             <!-- Banner -->
-                                             <ins class="adsbygoogle"
-                                                  style="display:inline-block;width:728px;height:90px"
-                                                  data-ad-client="ca-pub-7319072504670835"
-                                                  data-ad-slot="3718895649"></ins>
-                                             <script>
-                                                  (adsbygoogle = window.adsbygoogle || []).push({});
-                                             </script>
-                                         </div>
-                                         </div>
-                                             <br>
-                                             <br>
-                                             <div id="footer">
-                                             </div>
-                                             <script>
-                                                 $(function(){
-                                                   $("#footer").load("../nav/footer.html");
-                                                 });
-                                                 </script>
-                                         </div>
-                      </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+        <div class="hometext">
+            <h1 class="category">Sports</h1>
+            <button onclick="document.location='../category/sports'" class="viewallbtn">View all</button>
+        </div>
+        <div class="slider-container">
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+            <div class="slider">
+                <div onclick="document.location='../all-games/penalty-kicks'" class="slide"><img src="../images/penaltykicks.jpg"></div>
+                <div onclick="document.location='../all-games/mini-putt'" class="slide"><img src="../images/miniputt.jpg"></div>
+                <div onclick="document.location='../all-games/basketball-stars'" class="slide"><img src="../images/basketballstars.jpg"></div>
+                <div onclick="document.location='../all-games/8-8-ball-pool'" class="slide"><img src="../images/8ballpool.jpg"></div>
+                <div onclick="document.location='../all-games/edge-surf'" class="slide"><img src="../images/edgesurf.jpg"></div>
+                <div onclick="document.location='../all-games/formula1-racer'" class="slide"><img src="../images/f1racer.jpg"></div>
+                <div onclick="document.location='../all-games/a-small-world-cup'" class="slide"><img src="../images/asmallworldcup.jpg"></div>
+                <div onclick="document.location='../all-games/getting-over-it'" class="slide"><img src="../images/gettingoverit.jpg"></div>
+                <div onclick="document.location='../all-games/1v1-lol'" class="slide"><img src="../images/1v1lol.jpg"></div>
+            </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+        <div class="hometext">
+            <h1 class="category">Papa Louie Arcade</h1>
+            <button onclick="document.location='../category/papalouiearcade'" class="viewallbtn">View all</button>
+        </div>
+        <div class="slider-container">
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+            <div class="slider">
+                <div onclick="document.location='../all-games/papas-pizzeria'" class="slide"><img src="../images/papaspizzeria.jpg"></div>
+                <div onclick="document.location='../all-games/papas-freezeria'" class="slide"><img src="../images/papasfreezeria.webp"></div>
+                <div onclick="document.location='../all-games/papas-cheeseria'" class="slide"><img src="../images/papascheeseria.webp"></div>
+                <div onclick="document.location='../all-games/papas-burgeria'" class="slide"><img src="../images/papasburgeria.jpg"></div>
+                <div onclick="document.location='../all-games/papas-sushiria'" class="slide"><img src="../images/papassushiria.jpg"></div>
+                <div onclick="document.location='../all-games/papas-cupcakeria'" class="slide"><img src="../images/papascupcakeria.webp"></div>
+                <div onclick="document.location='../all-games/papas-tacomia'" class="slide"><img src="../images/papastacomia.webp"></div>
+                <div onclick="document.location='../all-games/papas-hot-doggeria'" class="slide"><img src="../images/papashotdoggeria.webp"></div>
+                <div onclick="document.location='../all-games/papas-pastaria'" class="slide"><img src="../images/papaspastaria.webp"></div>
+            </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+        <div class="hometext">
+            <h1 class="category">Emulated</h1>
+            <button onclick="document.location='../category/emulated'" class="viewallbtn">View all</button>
+        </div>
+        <div class="slider-container">
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+            <div class="slider">
+                <div onclick="document.location='../all-games/mario-kart-64'" class="slide"><img src="../images/mariokart64.jpg"></div>
+                <div onclick="document.location='../all-games/donkey-kong-country'" class="slide"><img src="../images/donkeykongcountry.jpg"></div>
+                <div onclick="document.location='../all-games/super-mario-64'" class="slide"><img src="../images/supermario64.jpg"></div>
+                <div onclick="document.location='../all-games/pokemon-emerald'" class="slide"><img src="../images/pokemonemerald.jpg"></div>
+                <div onclick="document.location='../all-games/pokemon-firered'" class="slide"><img src="../images/pokemonfirered.jpg"></div>
+                <div onclick="document.location='../all-games/pokemon-ruby'" class="slide"><img src="../images/pokemonruby.jpg"></div>
+                <div onclick="document.location='../all-games/pokemon-sapphire'" class="slide"><img src="../images/pokemonsapphire.jpg"></div>
+                <div onclick="document.location='../all-games/mario-kart-ds'" class="slide"><img src="../images/mariokartds.jpg"></div>
+                <div onclick="document.location='../all-games/new-super-mario-bros'" class="slide"><img src="../images/newsupermariobros.jpg"></div>
+            </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+        <div class="hometext">
+            <h1 class="category">Two-Player Sports</h1>
+        </div>
+        <div class="slider-container">
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+            <div class="slider">
+                <div onclick="document.location='../all-games/basket-random'" class="slide"><img src="../images/basketrandom.jpg"></div>
+                <div onclick="document.location='../all-games/soccer-random'" class="slide"><img src="../images/soccerrandom.jpg"></div>
+                <div onclick="document.location='../all-games/volley-random'" class="slide"><img src="../images/volleyrandom.jpg"></div>
+                <div onclick="document.location='../all-games/boxing-random'" class="slide"><img src="../images/boxingrandom.jpg"></div>
+            </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+        <script src="carousel.js"></script>
+        </div>
+        </div>
+        </div>
+        <div class="azadbanner">
+            <h4>ADVERTISEMENT</h4>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+                crossorigin="anonymous"></script>
+            <!-- A-Z Banner -->
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:900px;height:100px"
+                data-ad-client="ca-pub-7319072504670835"
+                data-ad-slot="5439057769"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div id="footer">
+        </div>
+        <script>
+            $(function(){
+              $("#footer").load("../nav/footer.html");
+            });
+            </script>
                       <section class="mobiledisplay">
 
                         <div class="mobiletitletext">
                             <h1 class="mobhometitle">Featured</h1>
-                            <h2 class="mobhomesubtitle">April 2025</h2>
+                            <h2 class="mobhomesubtitle">May 2025</h2>
                         </div>
 
                         <div class="gamerowlong">
-                            <img onclick="document.location='../mobile/monkey-mart'" class="gameimg" src="images/monkmartmoblong.jpg">
+                            <img onclick="document.location='../mobile/monkey-mart'" class="gameimg" src="../images/monkmartmoblong.jpg">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/drive-mad'" class="gameimg" src="images/drivemad.jpg">
-                            <img onclick="document.location='../mobile/block-blast'" class="gameimg" src="images/blockblast.jpg">
+                            <img onclick="document.location='../mobile/drive-mad'" class="gameimg" src="../images/drivemad.jpg">
+                            <img onclick="document.location='../mobile/block-blast'" class="gameimg" src="../images/blockblast.jpg">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/subway-surf-bali'" class="gameimg" src="images/subwaysurfers.jpg">
-                            <img onclick="document.location='../mobile/fruit-ninja'" class="gameimg" src="images/fruitninja.png">
+                            <img onclick="document.location='../mobile/subway-surf-bali'" class="gameimg" src="../images/subwaysurfers.jpg">
+                            <img onclick="document.location='../mobile/fruit-ninja'" class="gameimg" src="../images/fruitninja.png">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/among-us'" class="gameimg" src="images/amongus.jpg">
-                            <img onclick="document.location='../mobile/bitlife'" class="gameimg" src="images/bitlife.jpg">
+                            <img onclick="document.location='../mobile/among-us'" class="gameimg" src="../images/amongus.jpg">
+                            <img onclick="document.location='../mobile/bitlife'" class="gameimg" src="../images/bitlife.jpg">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/a-small-world-cup'" class="gameimg" src="images/asmallworldcup.jpg">
-                            <img onclick="document.location='../mobile/candy-crush'" class="gameimg" src="images/candycrush.png">
+                            <img onclick="document.location='../mobile/a-small-world-cup'" class="gameimg" src="../images/asmallworldcup.jpg">
+                            <img onclick="document.location='../mobile/candy-crush'" class="gameimg" src="../images/candycrush.png">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/core-ball'" class="gameimg" src="images/coreball.jpg">
-                            <img onclick="document.location='../mobile/basket-and-ball'" class="gameimg" src="images/basketandball.jpg">
+                            <img onclick="document.location='../mobile/core-ball'" class="gameimg" src="../images/coreball.jpg">
+                            <img onclick="document.location='../mobile/basket-and-ball'" class="gameimg" src="../images/basketandball.jpg">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/eggy-car'" class="gameimg" src="images/eggycar.jpg">
-                            <img onclick="document.location='../mobile/cut-the-rope'" class="gameimg" src="images/cuttherope.jpg">
+                            <img onclick="document.location='../mobile/eggy-car'" class="gameimg" src="../images/eggycar.jpg">
+                            <img onclick="document.location='../mobile/cut-the-rope'" class="gameimg" src="../images/cuttherope.jpg">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/tiny-fishing'" class="gameimg" src="images/tinyfishing.jpg">
-                            <img onclick="document.location='../mobile/getting-over-it'" class="gameimg" src="images/gettingoverit.jpg">
+                            <img onclick="document.location='../mobile/tiny-fishing'" class="gameimg" src="../images/tinyfishing.jpg">
+                            <img onclick="document.location='../mobile/getting-over-it'" class="gameimg" src="../images/gettingoverit.jpg">
                         </div>
                         <div class="gamerow">
-                            <img onclick="document.location='../mobile/fireboy-and-watergirl'" class="gameimg" src="images/fireboyandwatergirl.jpg">
-                            <img onclick="document.location='../mobile/4-colours'" class="gameimg" src="images/fourcolours.jpg">
+                            <img onclick="document.location='../mobile/fireboy-and-watergirl'" class="gameimg" src="../images/fireboyandwatergirl.jpg">
+                            <img onclick="document.location='../mobile/4-colours'" class="gameimg" src="../images/fourcolours.jpg">
                         </div>
                     </section>
                  
