@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 pos= newPos+ 1;
             }
         }
-        if (match && cnt< 50) {
+        if (match && cnt< 10) {
             cnt++;
             found= true;
             console.log("match", title);
