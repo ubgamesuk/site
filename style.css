@@ -531,6 +531,43 @@ hr.rounded {
     font-weight: 600;
     color: #fff;
 }
+.scroll-container{
+    margin-left: 80px;
+    white-space: nowrap;
+  }
+  .scroll-container img {
+    position: relative;
+    object-fit: cover;
+    margin-left: 11px;
+    border-radius: 21px;
+    height: 150px;
+    outline: 1px solid #505050;
+    width: 250px;
+    transition: .5s ease;
+}
+.scroll-container #longimg {
+    position: relative;
+    object-fit: cover;
+    margin-left: 11px;
+    border-radius: 23px;
+    height: 150px;
+    width: 515px;
+    transition: .5s ease;
+}
+.scroll-container img:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    outline: #e4e4e4 solid 3.5px;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+.scroll-container #longimg:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    outline: #e4e4e4 solid 3.5px;
+    transform: scale(1.025);
+    transition: 0.5s ease;
+}
 .sidebar.close ~ .home{
     left: 78px;
     height: 100%;
