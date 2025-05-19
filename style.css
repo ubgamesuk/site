@@ -1448,6 +1448,33 @@ hr.rounded {
     .topbar .form-search{
         display: none;
     }
+    .game-wrapper .game{
+        margin: 0px;
+        border: none;
+        height: calc(100vh - 85px);
+        width: 100%;
+        border-radius: 13px;
+        background-color: #101010c8;
+    }
+    .game-controls{
+        display: none;
+    }
+    .ad-box{
+        display: none;
+    }
+    .gameadbox{
+        display: none;
+    }
+    .gameazbanner{
+        display: none;
+    }
+    .game-wrapper{
+        display: flex;
+        margin: 0px;
+    }
+    .gameframe{
+        display: flex;
+    }
 }
 @media screen and (min-width: 1440px) {
     .game-wrapper .game{
