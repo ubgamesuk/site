@@ -29,6 +29,21 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
+        <div id="loader">
+        <img class="loadingimg" src="images/loaderimg.png">
+        <div class="spinnertext">
+            <div class="spinner"></div>
+            <h1>Getting things ready</h1>
+        </div>
+        <img class="creatorbadge" src="images/creatorbadge.png">
+          <script>
+        window.addEventListener("load", () => {
+        setTimeout(() => {
+        document.body.classList.add("loaded");
+      }, 1500);
+    });
+  </script>
+    </div>
 
     <div id="topbar">
     </div>
