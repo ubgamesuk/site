@@ -151,10 +151,10 @@ hr.rounded {
     position: fixed;
     transform: translateY(-70px) translateX(-15px);
     height: 63px;
-    z-index: 99999;
+    z-index: 9999;
     width: 100%;
-    background: rgba(0, 0, 0, 0.77);
-    backdrop-filter: blur(12px);
+    background-color: rgba(0, 0, 0, 0.898);
+    backdrop-filter: blur(10px);
     border-bottom: #3f3f3f 1px solid;
 }
 .topbar #menuicon{
