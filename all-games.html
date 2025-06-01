@@ -29,6 +29,21 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
+        <div id="loader">
+        <img class="loadingimg" src="images/loaderimg.png">
+        <div class="spinnertext">
+            <div class="spinner"></div>
+            <h1>Getting things ready</h1>
+        </div>
+        <img class="creatorbadge" src="images/creatorbadge.png">
+          <script>
+        window.addEventListener("load", () => {
+        setTimeout(() => {
+        document.body.classList.add("loaded");
+      }, 1700);
+    });
+  </script>
+    </div>
 
     <div id="topbar">
     </div>
@@ -50,7 +65,7 @@
         <br>
         <div class="hometext">
             <h1 class="featuredtitle">Featured</h1>
-            <h2 class="featuredmonth"><b class="divider">|</b>May 2025</h2>
+            <h2 class="featuredmonth"><b class="divider">|</b>June 2025</h2>
         </div>
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
