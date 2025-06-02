@@ -47,12 +47,25 @@
         </script>
     <section class="homepage">
         <div class="appdownload">
+            <img class="mobileappconsent" src="images/appadport.jpg">
             <img class="ubappad" src="images/ubappad.jpg">
             <div class="qrcodebox">
-                <img onclick="document.location='../app/ubgames.mobileconfig'" class="appqrcode" src="images/appqr.png">
+                <img class="appqrcode" src="images/appqr.png">
                 <h2>Scan the QR code on your phone to download the app!</h2>
             </div>
         </div>
+        <hr class="qrdivider">
+        <div class="bottomtext">
+            <a href="../app/ubgames.mobileconfig" download="ubgames.mobileconfig">
+                <button id="downloadProfile">Download App</button>
+            </a>
+        </div>
+        <script>
+            const downloadButton = document.getElementById('downloadProfileButton');
+            downloadButton.addEventListener('click', () => {
+            window.location.href = "https://ubgames.uk/app/ubgames.mobileconfig";
+        });
+        </script>
                             <br>
                             <br>
                             <div id="footer">
