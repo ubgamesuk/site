@@ -955,6 +955,29 @@ hr.rounded {
     display: none;
     transform: translateY(40px);
 }
+.appdownload{
+    display: flex;
+}
+.ubappad{
+    width: 1000px;
+}
+.appqrcode{
+    height: 300px;
+}
+.qrcodebox{
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 50px;
+    width: 300px;
+    text-align: center;
+}
+.qrcodebox h2{
+    color: #fff;
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 30px;
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -1051,6 +1074,30 @@ hr.rounded {
         margin-left: 62px;
         margin-top: 70px;
         transform: translateY(-5px);
+    }
+    .appdownload{
+    display: block;
+    }
+    .ubappad{
+        width: 100%;
+        text-align: center;
+    }
+    .appqrcode{
+        width: 100%;
+        height: 100%;
+    }
+    .qrcodebox{
+        position: relative;
+        right: 0;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .qrcodebox h2{
+        color: #fff;
+        font-weight: 400;
+        line-height: 35px;
+        font-size: 30px;
     }
     .gameframe h1{
         margin-left: 20px;
