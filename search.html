@@ -30,21 +30,58 @@
 </head>
 <body>
 
-    <div id="topbar">
-    </div>
-    <script>
-        $(function(){
-          $("#topbar").load("../nav/topbar.html");
-        });
-    </script>
+    <nav class="topbar">
+        <i onclick="document.location='.'" id="menuicon" class='bx bxs-grid-alt icon'></i>
+        <img onclick="document.location='..'" id="#toplogo" src="../images/ubgames.png">
+        <div class="form-search">
+            <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
+            <input type="text" id="searchbar" class="search-bar" placeholder="Search 257 games"></div>
+    
+            <div class="right-icons">
+                <a href="https://uk.trustpilot.com/review/ubgames.uk">
+                    <button class="leftbutton"><i class='bx bxs-star'></i> Leave a review</button></a>
+        
+                    <button class="azbutton" onclick="document.location='../games-a-z'"><i class='bx bxs-joystick'></i> Games A-Z</button>
+            </div>
+    
+        </div>
+        </i>
+    </nav>
 
-    <div id="sidebar">
+    <nav class="sidebar close">
+    <div class="menu-bar">
+        <div class="menu">
+            <ul class="menu-links">
+
+                <li class="nav-link">
+                    <a href="../all-games">
+                        <i class='bx bxs-home icon' ><span class="label">Home</span></i>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="../trending">
+                        <i class='bx bxs-hot icon'><span class="label">Popular</span></i>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="../new">
+                        <i class='bx bxs-zap icon' ><span class="label">New</span></i>
+                    </a>
+                </li>
+
+            <hr class="rounded">
+
+            <li class="nav-link">
+                <a href="../games-a-z">
+                    <i class='bx bxs-joystick icon' ><span class="label">A-Z</span></i>
+                </a>
+            </li>
+            
+        </div>
     </div>
-    <script>
-        $(function(){
-          $("#sidebar").load("../nav/sidebar.html");
-        });
-        </script>
+</nav>
     <section class="homepage">
         <div class="gameslist">
             <h1 class="aztitle">Search</h1>
