@@ -935,6 +935,159 @@ hr.rounded {
     opacity: 0;
     pointer-events: none;
   }
+ .slideshow-container {
+      position: relative;
+      margin-top: 20px;
+      margin-left: 18px;
+      border-radius: 25px;
+      margin-bottom: 23px;
+      width: calc(100% - 70px);
+      height: 230px;
+      outline: 1px solid #575757;
+      overflow: hidden;
+      transition: ease 0.5s;
+    }
+.slideshow-container:hover{
+    outline: 1px solid #c1c1c1;
+}
+    .slidewrapper {
+      display: flex;
+      transition: transform 0.7s ease-in-out;
+      width: 100%; /* 100% per slide × number of slides */
+      height: 100%;
+    }
+    .bannerslide {
+      flex: 0 0 100%;
+      position: relative;
+    }
+
+    .bannerslide .bannerimage {
+      width: 100%;
+      height: 100%;
+      opacity: 70%;
+      object-fit: cover;
+    }
+    .bannerslide .logothumb{
+        height: 80px;
+    }
+
+    .slide-text {
+      position: absolute;
+      bottom: 30px;
+      left: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .bangradient{
+        background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 192, 203, 0));
+        z-index: 9999;
+    }
+    .slide-text.fade-in {
+      animation: textFadeIn 0.8s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    .slide-text.fade-out {
+      animation: textFadeOut 0.5s ease-in forwards;
+    }
+
+    @keyframes textFadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes textFadeOut {
+      from { opacity: 1; transform: translateY(0); }
+      to   { opacity: 0; transform: translateY(0); }
+    }
+    .slide-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 60%;
+    }
+    .bannerslide .prev, .bannerslide .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-size: 2rem;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 2;
+      user-select: none;
+    }
+
+    .bannerslide .prev:hover,.bannerslide .next:hover {
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .previous {
+      left: 20px;
+    }
+
+    .nextslide {
+      right: 20px;
+    }
+
+    .fadebanner {
+      animation: fade 1s ease-in-out;
+    }
+    .banneraction{
+        background: #1e1e1eb1;
+        border: none;
+        font-size: 20px;
+        margin-top: 10px;
+        color: #ffffff;
+        border-radius: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+        outline: 2px solid #c6c6c675;
+        transition: ease 0.3s;
+        cursor: pointer;
+    }
+    .banneraction i{
+        transform: scale(1.4) translateY(1px);
+        margin-right: 5px;
+    }
+    .banneraction:hover{
+        background: #fff;
+        color: #000000;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+      background-color: white;
+    }
 .mobiledisplay{
     display: none;
     transform: translateY(40px);

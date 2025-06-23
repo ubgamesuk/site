@@ -52,10 +52,54 @@
             <h1 class="featuredtitle">Featured</h1>
             <h2 class="featuredmonth"><b class="divider">|</b>June 2025</h2>
         </div>
+        <div class="slideshow-container">
+            <div class="slidewrapper" id="slidesWrapper">
+
+            <div class="bannerslide">
+                <video class="slide-video" poster="../images/tanukibgbanner.jpg" autoplay muted loop playsinline>
+                    <source src="../images/tanukigameplay.mov" type="video/mp4" />
+                </video>
+                <div class="bangradient">
+                <div class="slide-text">
+                    <img class="logothumb" src="../images/tanukilogo.png">
+                    <h1>Game of the Month</h1>
+                    <button onclick="document.location='../all-games/tanuki-sunset'" class="banneraction"><i class='bx bx-play icon'> </i>Play Now</button>
+                </div>
+                </div>
+            </div>
+            <div class="bannerslide">
+                <img class="bannerimage" src="../images/allgames250ban.jpg" alt="Slide 2">
+                <div class="slide-text">
+                    <h1>Over 250 high quality games</h1>
+                    <button onclick="document.location='../games-a-z'" class="banneraction"><i class='bx bx-menu icon'> </i> View all games</button>
+                </div>
+            </div>
+            <div class="bannerslide">
+                <img class="bannerimage" src="../images/monkeymartlong.jpg" alt="Slide 3">
+                <div class="slide-text">
+                    <h1>The games you love,</h1>
+                    <h2 style="font-weight: 400; font-size: 27px;">all in one place.</h2>
+                    <button onclick="document.location='../trending'" class="banneraction"><i class='bx bxs-hot icon'> </i> View our popular games</button>
+                </div>
+            </div>
+
+            <a class="previous">&#10094;</a>
+            <a class="nextslide">&#10095;</a>
+            </div>
+            <div class="dots" id="dotsContainer">
+                <span class="dot" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+            <script src="banner.js"></script>
+</div>
+        <div class="hometext">
+            <h1 class="category">Trending</h1>
+            <button onclick="document.location='../trending'" class="viewallbtn">View all</button>
+        </div>
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../trending'" id="longslide" class="slide"><img id="longslide" src="../images/hotthismonth.jpg"></div>
                 <div onclick="document.location='../all-games/a-small-world-cup'" class="slide"><img src="../images/asmallworldcup.jpg"></div>
                 <div onclick="document.location='../all-games/subway-surfers'" class="slide"><img src="../images/subwaysurfers.jpg"></div>
                 <div onclick="document.location='../all-games/moto-x3m'" class="slide"><img src="../images/motox3m.jpg"></div>
