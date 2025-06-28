@@ -1092,6 +1092,22 @@ hr.rounded {
     display: none;
     transform: translateY(40px);
 }
+.mobilegamenote{
+    background-color: #0d0d0d;
+    color: #c9c9c9;
+    text-align: center;
+    outline: 1px solid #4e4e4e;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 300;
+    transform: translateX(-10px) translateY(-15px);
+}
+.mobilegamenote h1{
+    font-weight: 300;
+}
+.mobilegamenote b{
+    font-weight: 500;
+}
 .appdownload{
     display: flex;
 }
@@ -1400,8 +1416,9 @@ hr.rounded {
         text-decoration: none;
         height: 55px;
         padding-top: 9px;
-        border-radius: 20px;
+        border-radius: 10px;
         display: block;
+        outline: 1px solid #525252;
         background-color: #171717;
         margin-top: 10px;
     }
@@ -1757,4 +1774,69 @@ hr.rounded {
         height: 600px;
         width: 1000px;
     }
+    .gameframe .ad-box{
+        margin-top: 350px;
+        transform: translateX(-280px);
+        width: 300px;
+        height: 236px;
+    }
+    .game-controls .age-rating{
+    color: #fff;
+    margin-left: 20px;
+    padding: 4px;
+    cursor: default;
+    border-radius: 10px;
+    padding-inline: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #1e1e1e;
+}
+.game-controls .tags{
+    display: flex;
+    position: inline-block;
+}
+.game-controls .category{
+    color: #fff;
+    margin-left: 10px;
+    padding: 4px;
+    cursor: default;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-inline: 12px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #1e1e1e;
+}
+.control-buttons{
+    display: flex;
+    position: inline-block;
+}
+.game-controls button{
+    margin-top: 40px;
+    transform: translateX(20px);
+    width: 170px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 24px;
+    border: none;
+    color: #fff;
+    outline: 1px solid #363636;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.game-controls .share{
+    margin-left: 8px;
+    width: 120px;
+}
+.game-controls h1{
+    margin-left: 20px;
+    transform: translateY(30px);
+    width: 230px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+}
 }
