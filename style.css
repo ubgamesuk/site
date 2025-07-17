@@ -222,7 +222,8 @@ hr.rounded {
     transform: translateY(1px);
 }
 .right-icons .leftbutton i{
-    color: #e2bd26;
+    transform: translateY(2px);
+    color: #90b2ff;
 }
 .sidebar li{
     height: 45px;
