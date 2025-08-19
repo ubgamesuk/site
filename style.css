@@ -53,17 +53,43 @@ body{
     text-align: center;
     margin-left: 80px;
     height: 170px;
+    padding-top: 20px;
     border-radius: 20px;
 }
-.gameadbox iframe{
-    width: 1000px;
-    height: 135px;
-}
-.gameadbox .gameadboxcaption{
-    color: #a3a3a3;
-    font-size: 15px;
-    letter-spacing: 1.1px;
+.gameadbox h2 b{
     font-weight: 400;
+}
+.gameadbox h2{
+    color: #c7c7c7;
+}
+.gameadbox h3{
+    color: #ededed;
+    font-weight: 500;
+    font-size: 24px;
+}
+.gameadbox h3 b{
+    margin-right: 3px;
+}
+.gameadbox .gamefeedbuttons{
+    padding: 9px;
+}
+.gameadbox .gamefeedbuttons i{
+    transform: translateY(3px);
+}
+.gameadbox .gamefeedbuttons button{
+    border: none;
+    border-radius: 12px;
+    margin: 3px;
+    font-size: 19px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+.gameadbox .gamefeedbuttons button:hover{
+    transform: scale(1.05);
 }
 #loader {
     position: fixed;
@@ -222,8 +248,7 @@ hr.rounded {
     transform: translateY(1px);
 }
 .right-icons .leftbutton i{
-    transform: translateY(2px);
-    color: #90b2ff;
+    color: #e3cc00;
 }
 .sidebar li{
     height: 45px;
