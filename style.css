@@ -87,6 +87,10 @@ body{
     padding-right: 13px;
     transition: ease 0.3s;
     cursor: pointer;
+    color: #000000;
+}
+.gameadbox a{
+    text-decoration: none;
 }
 .gameadbox .gamefeedbuttons button:hover{
     transform: scale(1.05);
