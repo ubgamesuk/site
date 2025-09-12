@@ -772,6 +772,8 @@ hr.rounded {
 }
 .letterselector .lettericon{
     width: 30px;
+    height: 35px;
+    font-size: 26px;
     margin-right: 7px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -798,6 +800,8 @@ hr.rounded {
 }
 .letterselector .lettericonactive{
     width: 30px;
+    height: 35px;
+    font-size: 26px;
     margin-right: 7px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -1000,6 +1004,9 @@ hr.rounded {
     }
     .bannerslide .logothumb{
         height: 80px;
+    }
+    .slide-text h1{
+        font-size: 29px;
     }
 
     .slide-text {
