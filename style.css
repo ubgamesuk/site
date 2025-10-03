@@ -140,9 +140,8 @@ body{
     transition: 0.3s ease;
 }
 .gameazbanner:hover{
-    filter: brightness(1.3);
+    transform: scale(0.98);
     cursor: pointer;
-    border: 1px solid #656565;
 }
 .gameazbanner img{
     width: 900px;
@@ -176,12 +175,19 @@ hr.rounded {
     transform: translateY(16px) translateX(23px);
     font-size: 30px;
     z-index: 9999;
+    transition: ease 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .topbar img{
     height: 42px;
     margin-left: 105px;
     transform: translateY(8px);
     vertical-align: middle;
+    transition: ease 0.4s;
+}
+.topbar img:hover{
+    transform: translateY(8px) scale(0.95);
     cursor: pointer;
 }
 .topbar .form-search{
@@ -202,6 +208,10 @@ hr.rounded {
     color: #fff;
     font-size: 19px;
     padding-left: 45px;
+    transition: ease 0.5s;
+}
+.topbar .form-search input:hover{
+    background-color: #424242;
 }
 .topbar .form-search input::placeholder{
     color: #bebebe;
@@ -536,7 +546,8 @@ hr.rounded {
     transform: scale(1.05);
 }
 .game-controls button:hover{
-    background-color: #272727;
+    background-color: #363636;
+    transform: translateX(20px) scale(0.95);
 }
 .game-controls i{
     color: #fff;
@@ -754,17 +765,6 @@ hr.rounded {
     padding: 5px;
     border-radius: 9px;
     margin-right: 2px;
-}
-.atoz h1{
-    display: inline;
-    margin-left: 90px;
-    letter-spacing: -1px;
-    font-size: 30px;
-    color: #fff;
-}
-.atoz a{
-    font-size: 25px;
-    color: #fff;
 }
 .letterselector{
     margin-left: 90px;
@@ -1827,7 +1827,7 @@ hr.rounded {
     }
     .gameframe .ad-box{
         margin-top: 350px;
-        transform: translateX(-280px);
+        transform: translateX(-265px);
         width: 300px;
         height: 236px;
     }
@@ -1840,7 +1840,7 @@ hr.rounded {
     padding-inline: 10px;
     margin-top: 20px;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #1e1e1e;
 }
 .game-controls .tags{
@@ -1857,7 +1857,7 @@ hr.rounded {
     padding-inline: 12px;
     margin-top: 20px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #1e1e1e;
 }
 .control-buttons{
@@ -1867,10 +1867,10 @@ hr.rounded {
 .game-controls button{
     margin-top: 40px;
     transform: translateX(20px);
-    width: 170px;
+    width: 160px;
     height: 45px;
-    border-radius: 12px;
-    font-size: 24px;
+    border-radius: 15px;
+    font-size: 22px;
     border: none;
     color: #fff;
     outline: 1px solid #363636;
@@ -1880,13 +1880,13 @@ hr.rounded {
 }
 .game-controls .share{
     margin-left: 8px;
-    width: 120px;
+    width: 110px;
 }
 .game-controls h1{
     margin-left: 20px;
     transform: translateY(30px);
     width: 230px;
-    font-size: 36px;
+    font-size: 35px;
     color: #fff;
     font-weight: 500;
 }
