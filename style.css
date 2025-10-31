@@ -826,6 +826,11 @@ hr.rounded {
     margin-bottom: 4px;
     margin-left: 8px;
 }
+.hometext .dateseletile{
+    font-weight: 500;
+    color: #a8a8a8;
+    border-radius: 10px;
+}
 .featuredtitle{
     color: #fff;
     font-size: 30px;
@@ -850,6 +855,9 @@ hr.rounded {
     font-weight: 400;
     margin-left: 15px;
 }
+.hometext .category i{
+    transform: translateY(3px);
+}
 .hometext .viewallbtn{
     margin-left: 15px;
     padding-left: 15px;
@@ -861,7 +869,7 @@ hr.rounded {
     transition: 0.5s ease;
 }
 .hometext .viewallbtn:hover{
-    transform: translateY(-3px);
+    transform: scale(0.95);
     background-color: #bebebe;
     cursor: pointer;
 }
@@ -913,27 +921,56 @@ hr.rounded {
   .slide {
     min-width: 200px;
     flex: 0 0 auto;
+    height: 150px;
+    width: 250px;
     margin-right: 15px;
     position: relative;
     text-align: center;
     cursor: pointer;
+    border-radius: 20px;
+    outline: 1px solid #6b6a6a;
+    transition: ease 0.4s;
   }
   #longslide{
     width: 515px;
   }
-  
+  #trendslide{
+    margin-right: 18px;
+    height: 120px;
+    width: 200px;
+  }
+  #trendslide:hover{
+    transform: scale(1.08);
+    outline: 4px solid #ffffff52;
+  }
+  #trendslide img{
+    opacity: 90%;
+  }
+  .slide .trendingrank{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-150%) translateX(-20px);
+    z-index: 1;
+    color: #ffffffc5;
+    height: 40px;
+    font-weight: 600;
+    font-size: 60px;
+    text-shadow: 0 0 40px #000000;
+    border-radius: 10px;
+    width: 50px;
+  }
   .slide img {
-    width: 250px;
-    height: 150px;
-    outline: 1px solid #6b6a6a;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
     transition: ease 0.5s;
   }
   
-  .slide img:hover {
+  .slide:hover {
     transform: scale(1.05);
-    outline: 3.5px solid #fff;
+    outline: 4px solid #ffffffa7;
   }
   
   .nav-btn {
