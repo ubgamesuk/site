@@ -426,13 +426,13 @@ hr.rounded {
     margin-right: 160px;
 }
 .game-wrapper .game{
-    margin-left: 79px;
+    margin-left: 71px;
     margin-top: 13px;
     border: none;
     outline: none;
-    height: 485px;
-    width: 780px;
-    border-radius: 13px;
+    height: 502px;
+    width: 791px;
+    border-radius: 11px;
     background-color: #101010c8;
 }
 .game-wrapper ins{
@@ -447,7 +447,7 @@ hr.rounded {
     font-weight: 500;
 }
 .gameframe .ad-box{
-    margin-top: 250px;
+    margin-top: 260px;
     transform: translateX(-237px);
     background-color: #1a1a1a;
     border-radius: 15px;
@@ -1029,6 +1029,38 @@ hr.rounded {
     }
 .slideshow-container:hover{
     outline: 1px solid #c1c1c1;
+}
+.sagtitle{
+    padding-top: 60px;
+    padding-left: 80px;
+    color: #ffffff;
+    font-size: 30px;
+}
+.sagsubtitle{
+    padding-left: 80px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+.gamesubform{
+    padding-left: 80px;
+}
+.gamesugginput{
+    background: #1c1c1c;
+    color: #fff;
+    padding: 20px;
+    margin-right: 10px;
+    font-size: 26px;
+    border: none;
+    width: 390px;
+    outline: 1px solid #5f5f5f;
+    border-radius: 12px;
+}
+.gamesuggsubmit{
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 22px;
 }
     .slidewrapper {
       display: flex;
@@ -1865,15 +1897,17 @@ hr.rounded {
     height: 50px;
 }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1420px) {
     .game-wrapper .game{
-        height: 600px;
-        width: 1000px;
+        height: 560px;
+        width: 900px;
     }
     .gameframe .ad-box{
-        margin-top: 350px;
-        transform: translateX(-265px);
-        width: 300px;
+        margin-top: 320px;
+        transform: translateX(-254px);
+        background-color: #1a1a1a;
+        border-radius: 15px;
+        width: 270px;
         height: 236px;
     }
     .game-controls .age-rating{
@@ -1912,10 +1946,10 @@ hr.rounded {
 .game-controls button{
     margin-top: 40px;
     transform: translateX(20px);
-    width: 160px;
-    height: 45px;
+    width: 150px;
+    height: 40px;
     border-radius: 15px;
-    font-size: 22px;
+    font-size: 20px;
     border: none;
     color: #fff;
     outline: 1px solid #363636;
@@ -1931,7 +1965,7 @@ hr.rounded {
     margin-left: 20px;
     transform: translateY(30px);
     width: 230px;
-    font-size: 35px;
+    font-size: 33px;
     color: #fff;
     font-weight: 500;
 }
