@@ -824,7 +824,6 @@ hr.rounded {
 }
 .hometext{
     display: flex;
-    margin-bottom: 4px;
     margin-left: 8px;
 }
 .hometext .dateseletile{
@@ -857,7 +856,7 @@ hr.rounded {
     margin-left: 15px;
 }
 .hometext .category i{
-    transform: translateY(3px);
+    transform: translateY(2px);
 }
 .hometext .viewallbtn{
     margin-left: 15px;
@@ -923,8 +922,8 @@ hr.rounded {
   }
    .recentslide {
     flex: 0 0 auto;
-    height: 90px;
-    width: 150px;
+    height: 100px;
+    width: 170px;
     margin-right: 11px;
     position: relative;
     text-align: center;
@@ -979,6 +978,18 @@ hr.rounded {
     background: linear-gradient(to right, rgb(255, 149, 0), rgba(255,0,0,1));
     font-weight: 600;
     font-size: 16px;
+    border-radius: 10px;
+  }
+  .captionnew{
+    position: absolute;
+    color: #ffffff;
+    padding: 5px;
+    background: linear-gradient(to right, rgb(8, 26, 94), rgb(240, 0, 224));
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    outline: 1px solid #737373;
+    transform: translateX(10px) translateY(3px);
+    font-size: 14px;
     border-radius: 10px;
   }
 .slide .newrank{
