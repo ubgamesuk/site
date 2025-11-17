@@ -1,5 +1,5 @@
 doSearch= function() {
-    const val= $("#searchbar").val().trim().replace(/ /g, "-");
+    const val= $("#searchbar").val().toLowerCase().trim().replace(/ /g, "-");
     if (val!= "") {
         window.location= "/search.html?q="+ val;
     }
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let cnt= 0;
     console.log("q", q);
     for (const gameitem of document.querySelectorAll(".azgame")) {
-        const title= $(gameitem).find("h1").text();
+        const title= $(gameitem).find(".keywords").text();
         let match= true;
         let pos= 0;
         console.log("title", title);

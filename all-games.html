@@ -94,6 +94,38 @@
             </div>
             <script src="banner.js"></script>
 </div>
+        <div id="recentslidertitle" class="hometext">
+            <h1 class="category"> Continue playing</h1>
+        </div>
+        <div id="recentslider" class="slider-container">
+            <script type="module">
+                import { loadRecentlyPlayed } from "../recentlyplayed.js";
+                loadRecentlyPlayed();
+            </script>
+            <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
+
+            <div class="slider" id="recentlyPlayedSlider">
+                <script>
+                    function loadRecentlyPlayed() {
+                    const slider = document.getElementById("recentlyPlayedSlider");
+                    const recent = JSON.parse(localStorage.getItem("recentlyPlayed")) || [];
+
+                    slider.innerHTML = "";
+
+                    recent.forEach(game => {
+                        const card = document.createElement("div");
+                        card.className = "recentslide";
+                        card.innerHTML = `<img src="${game.img}">`;
+                        card.onclick = () => window.location.href = game.url;
+
+                        slider.appendChild(card);
+                    });
+                }
+                loadRecentlyPlayed();
+                </script>
+            </div>
+            <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
         <div class="hometext">
             <h1 class="category"><i class='bx bxs-bar-chart-alt-2' ></i> Trending <b class="dateseletile">this month</b></h1>
         </div>

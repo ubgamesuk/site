@@ -17,12 +17,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module">
+        import { addRecentlyPlayed, games } from "../recentlyplayed.js";
+
+        addRecentlyPlayed(games.ageofwar);
+    </script>
     
     <link rel="stylesheet" href="../style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="canonical" href="https://ubgames.uk/all-games/age-of-war" />
-    
+
     <title>Age Of War</title>
     <meta name="description" content="An epic strategy game where you have to defend your base and destroy the enemy's base through five different ages." />
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
