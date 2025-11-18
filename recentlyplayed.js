@@ -1132,7 +1132,7 @@ export function loadRecentlyPlayed() {
 
     // If there are games → show section
     if (subtitle) subtitle.style.display = "block";
-    if (slider) slider.style.display = "block";
+    if (slider) slider.style.display = "flex";
 
     slider.innerHTML = "";
 
