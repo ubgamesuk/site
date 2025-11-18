@@ -982,15 +982,14 @@ hr.rounded {
   }
   .captionnew{
     position: absolute;
-    color: #ffffff;
-    padding: 5px;
-    background: linear-gradient(to right, rgb(8, 26, 94), rgb(240, 0, 224));
+    color: #000000;
+    padding: 3px;
+    background: linear-gradient(to right, rgb(194, 207, 255), rgb(233, 179, 255));
     font-weight: 700;
-    letter-spacing: 1.2px;
     outline: 1px solid #737373;
-    transform: translateX(10px) translateY(3px);
-    font-size: 14px;
-    border-radius: 10px;
+    transform: translateX(9px) translateY(9px);
+    font-size: 10px;
+    border-radius: 11px;
   }
 .slide .newrank{
     position: absolute;
