@@ -955,6 +955,7 @@ hr.rounded {
   .recentslide:hover {
     transform: scale(1.05);
     outline: 4px solid #ffffffa7;
+    opacity: 90%;
   }
   .slide {
     min-width: 200px;
@@ -1026,6 +1027,7 @@ hr.rounded {
   
   .slide:hover {
     transform: scale(1.05);
+    opacity: 90%;
     outline: 4px solid #ffffffa7;
   }
   
