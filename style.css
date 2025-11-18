@@ -903,6 +903,18 @@ hr.rounded {
     font-size: 18px;
     font-weight: 500;
 }
+.importanthomemessage{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 17px;
+    width: calc(100% - 90px);
+    background-color: #280046;
+    padding: 20px;
+    outline: 1px solid #494949;
+    border-radius: 14px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 .slider-container {
     position: relative;
     width: calc(100% - 50px);
