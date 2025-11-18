@@ -582,7 +582,7 @@ export const games = {
     },
     monstertracks: {
         id: "monstertracks",
-            img: "../images/monstertracks.jpg",
+            img: "../images/monstertrackstext.jpg",
             url: "../all-games/monster-tracks"
     },
     motox3mhween: {
@@ -717,7 +717,7 @@ export const games = {
     },
     pokemonplatinum: {
         id: "pokemonplatinum",
-            img: "../images/pokemonplatium.jpg",
+            img: "../images/pokemonplatinum.jpg",
             url: "../all-games/pokemon-platinum"
     },
     pokemonruby: {
