@@ -1158,3 +1158,77 @@ export function loadRecentlyPlayed() {
         slider.appendChild(card);
     });
 }
+/* ===========================================
+   FAVOURITES MANAGER
+   =========================================== */
+
+// Add a game to favourites
+export function addFavourite(game) {
+    if (!game || !game.id || !game.img || !game.url) {
+        console.error("addFavourite: missing fields", game);
+        return;
+    }
+
+    let favs = JSON.parse(localStorage.getItem("favourites")) || [];
+
+    // Avoid duplicates
+    if (!favs.some(f => f.id === game.id)) {
+        favs.push(game);
+    }
+
+    localStorage.setItem("favourites", JSON.stringify(favs));
+}
+
+
+// Remove a game from favourites
+export function removeFavourite(id) {
+    let favs = JSON.parse(localStorage.getItem("favourites")) || [];
+    favs = favs.filter(f => f.id !== id);
+    localStorage.setItem("favourites", JSON.stringify(favs));
+}
+
+
+// Check if a game is already favourited
+export function isFavourite(id) {
+    let favs = JSON.parse(localStorage.getItem("favourites")) || [];
+    return favs.some(f => f.id === id);
+}
+
+
+// Load favourites into a slider/grid on favourites page
+export function loadFavourites() {
+    const container = document.getElementById("favouritesContainer");
+    if (!container) return;
+
+    const favs = JSON.parse(localStorage.getItem("favourites")) || [];
+    container.innerHTML = "";
+
+    if (favs.length === 0) {
+        container.innerHTML = '<img style="height: 300px; margin-left: 4px;" src="../images/favnogamesyet.jpg"></img>';
+        return;
+    }
+
+    favs.forEach(game => {
+        const card = document.createElement("div");
+        card.className = "slide";
+
+        card.innerHTML = `
+            <img src="${game.img}">
+        `;
+
+        card.onclick = () => window.location.href = game.url;
+
+        container.appendChild(card);
+    });
+}
+export function showFavouritePopup() {
+    const overlay = document.getElementById("favOverlay");
+    if (!overlay) return;
+
+    overlay.classList.add("show");
+
+    // remove animation after 1.5 seconds
+    setTimeout(() => {
+        overlay.classList.remove("show");
+    }, 1500);
+}

@@ -67,16 +67,32 @@
                         <script src="../fullscreen.js">
                         </script>
                         <div class="tooltip">
-                        <button onclick="myFunction()" class="share"><i class='bx bxs-share-alt icon'></i> Share</button>
-                        <script>
-                            function myFunction() {
-                                
-                              navigator.clipboard.writeText("https://www.ubgames.uk/all-games/papas-sushiria");
+                            <button id="favButton" class="fav-btn"></i></button>
+                        </div>
+                        <script type="module">
+                            import { games, addFavourite, removeFavourite, isFavourite, showFavouritePopup } from "../recentlyplayed.js";
+                            const game = games.papasushiria;
+                            const favButton = document.getElementById("favButton");
 
-                              alert("Game link copied to clipboard");
+                                function updateButton() {
+                            if (isFavourite(game.id)) {
+                                favButton.innerHTML = "<i class='bx bxs-star icon'></i>";
+                                favButton.classList.add("active");
+                            } else {
+                                favButton.innerHTML = "<i class='bx bx-star icon'></i>";
+                                favButton.classList.remove("active");
+                            }}
+                        favButton.addEventListener("click", () => {
+                            if (isFavourite(game.id)) {
+                                removeFavourite(game.id);
+                            } else {
+                                addFavourite(game);
+                                showFavouritePopup();
                             }
-                            </script>
-                            </div>
+                            updateButton();
+                        });
+                        updateButton();
+                </script>
                     </div>
 
                     <div class="tags">
@@ -125,6 +141,12 @@
             </script>
     
     </section>
+    <div id="favOverlay" class="fav-overlay">
+    <div class="fav-message">
+        <div class="fav-icon"><i class='bx bx-check'></i></div>
+        <p>Added to Saved Games</p>
+    </div>
+</div>
 
     <script>
         document.onkeydown = function(e){

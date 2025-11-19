@@ -67,12 +67,12 @@
 
   function resetInterval() {
     clearInterval(slideInterval);
-    slideInterval = setInterval(autoSlide, 7000);
+    slideInterval = setInterval(autoSlide, 12000);
   }
 
   // Init
 showSlide(slideIndex);
-slideInterval = setInterval(autoSlide, 7000);
+slideInterval = setInterval(autoSlide, 12000);
 
 // Pause on hover
 const slideshowContainer = document.querySelector(".slideshow-container");
@@ -82,5 +82,5 @@ slideshowContainer.addEventListener("mouseenter", () => {
 });
 
 slideshowContainer.addEventListener("mouseleave", () => {
-  slideInterval = setInterval(autoSlide, 7000);
+  slideInterval = setInterval(autoSlide, 12000);
 });

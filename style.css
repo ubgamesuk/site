@@ -242,7 +242,7 @@ hr.rounded {
     cursor: pointer;
 }
 .right-icons .leftbutton{
-    background-color: #16161600;
+    background-color: #0b0b0b;
     color: #fff;
     outline: 1px solid #262626;
 }
@@ -262,7 +262,7 @@ hr.rounded {
     transform: translateY(1px);
 }
 .right-icons .leftbutton i{
-    color: #e3cc00;
+    color: #ff0048;
 }
 .sidebar li{
     height: 45px;
@@ -503,10 +503,12 @@ hr.rounded {
 .game-controls button{
     margin-top: 40px;
     transform: translateX(20px);
-    width: 140px;
-    height: 35px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 19px;
     border: none;
     color: #fff;
     outline: 1px solid #363636;
@@ -514,10 +516,12 @@ hr.rounded {
     cursor: pointer;
     transition: ease 0.3s;
 }
-.game-controls .share{
+.game-controls .fav-btn{
     margin-left: 8px;
-    width: 100px;
-
+}
+.fav-btn .active{
+    background-color: #dbd6a9;
+    color: #000000;
 }
 .related-games{
     margin-left: 80px;
@@ -545,18 +549,74 @@ hr.rounded {
     outline: #97bcc5 solid 3.5px;
     transform: scale(1.05);
 }
-.game-controls button:hover{
-    background-color: #363636;
+.game-controls .fullscreen:hover{
+    background-color: #3c3c3c;
     transform: translateX(20px) scale(0.95);
+}
+.game-controls .fav-btn:hover{
+    background-color: #2d2e25;
+    transform: translateX(20px) scale(0.95);
+}
+.game-controls .fav-btn i{
+    font-size: 24px;
+    transform: translateY(1.5px);
 }
 .game-controls i{
     color: #fff;
-    transform: translateY(1px) translateX(-2px);
+    transform: translateY(1px);
 }
 .gameframe{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
+}
+.fav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease-out;
+    z-index: 9999;
+}
+
+/* Popup box */
+.fav-message {
+    background: #111;
+    padding: 30px 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    letter-spacing: 0.5px;
+
+    /* start slightly down and smaller */
+    transform: translateY(20px) scale(0.85);
+    opacity: 0;
+    transition:
+        transform 0.35s cubic-bezier(0.25, 1.3, 0.35, 1),
+        opacity 0.35s ease-out;
+}
+
+/* Green tick icon */
+.fav-icon {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #4cff4c;
+}
+
+/* When activated */
+.fav-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fav-overlay.show .fav-message {
+    transform: translateY(0) scale(1);
+    opacity: 1;
 }
 .home{
     position: fixed;
@@ -822,6 +882,16 @@ hr.rounded {
     font-weight: 600;
     color: #fff;
 }
+#favouritesContainer{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 20px;
+}
+#favouritesContainer p{
+    color: #f8f8f8;
+    font-size: 28px;
+}
 .hometext{
     display: flex;
     margin-left: 8px;
@@ -836,6 +906,15 @@ hr.rounded {
     font-size: 30px;
     font-weight: 500;
     margin-left: 15px;
+}
+.favpagetitle{
+    color: #fff;
+    font-size: 36px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+#favouritesContainer{
+    margin-left: 22px;
 }
 .featuredmonth .divider{
     margin-right: 10px;
@@ -919,7 +998,9 @@ hr.rounded {
     position: relative;
     width: calc(100% - 50px);
     overflow: hidden;
+    display: flex;
   }
+
   .slider::-webkit-scrollbar {
     display: none;
   }
@@ -1030,7 +1111,9 @@ hr.rounded {
     opacity: 90%;
     outline: 4px solid #ffffffa7;
   }
-  
+  .favouriteslist{
+    margin-left: 50px;
+  }
   .nav-btn {
     position: absolute;
     top: 50%;
@@ -1534,7 +1617,7 @@ hr.rounded {
         cursor: pointer;
         transition: ease 0.3s;
     }
-    .game-controls .share{
+    .game-controls .fav-btn{
         margin-left: 8px;
         width: 100px;
     
@@ -2008,7 +2091,7 @@ hr.rounded {
     cursor: pointer;
     transition: ease 0.3s;
 }
-.game-controls .share{
+.game-controls .fav-btn{
     margin-left: 8px;
     width: 110px;
 }
