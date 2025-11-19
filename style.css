@@ -2080,20 +2080,18 @@ hr.rounded {
 .game-controls button{
     margin-top: 40px;
     transform: translateX(20px);
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
-    font-size: 20px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 12px;
+    font-size: 21px;
     border: none;
     color: #fff;
     outline: 1px solid #363636;
     background-color: #1a1a1a;
     cursor: pointer;
     transition: ease 0.3s;
-}
-.game-controls .fav-btn{
-    margin-left: 8px;
-    width: 110px;
 }
 .game-controls h1{
     margin-left: 20px;

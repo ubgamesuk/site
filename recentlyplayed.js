@@ -8,7 +8,7 @@ export const games = {
     onev1lol: {
         id: "1v1lol",
         img: "../images/1v1lol.jpg",
-        url: "../all-games/1v1-lol"
+        url: "../all-games/1v1lol"
     },
     threedfreekick: {
         id: "3dfreekick",
