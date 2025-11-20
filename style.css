@@ -668,8 +668,11 @@ hr.rounded {
     color: #fff;
 }
 .scroll-container{
-    margin-left: 80px;
-    white-space: nowrap;
+    margin-left: 8px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 18px;
   }
   .scroll-container img {
     position: relative;
@@ -679,23 +682,14 @@ hr.rounded {
     height: 150px;
     outline: 1px solid #505050;
     width: 250px;
-    transition: .5s ease;
-}
-.scroll-container #longimg {
-    position: relative;
-    object-fit: cover;
-    margin-left: 11px;
-    border-radius: 23px;
-    height: 150px;
-    width: 515px;
-    transition: .5s ease;
+    transition: .4s ease;
 }
 .scroll-container img:hover{
     cursor: pointer;
     opacity: 0.9;
-    outline: #e4e4e4 solid 3.5px;
+    outline: #ababab solid 4px;
     transform: scale(1.05);
-    transition: 0.5s ease;
+    transition: 0.4s ease;
 }
 .scroll-container #longimg:hover{
     cursor: pointer;
@@ -885,8 +879,8 @@ hr.rounded {
 #favouritesContainer{
     padding: 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 194px);
+    gap: 18px;
 }
 #favouritesContainer p{
     color: #f8f8f8;
@@ -907,9 +901,10 @@ hr.rounded {
     font-weight: 500;
     margin-left: 15px;
 }
-.favpagetitle{
+.categorypagetitle{
     color: #fff;
     font-size: 36px;
+    transform: translateY(10px);
     margin-left: 40px;
     font-weight: 500;
 }
@@ -1111,7 +1106,7 @@ hr.rounded {
     opacity: 90%;
     outline: 4px solid #ffffffa7;
   }
-  .favouriteslist{
+  .categorylist{
     margin-left: 50px;
   }
   .nav-btn {

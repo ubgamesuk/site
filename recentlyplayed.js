@@ -352,7 +352,7 @@ export const games = {
     },
     emulator: {
         id: "emulator",
-            img: "../images/nogameimg.jpg",
+            img: "../images/emulator.jpg",
             url: "../all-games/emulator"
     },
     extremecardriving: {
