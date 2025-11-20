@@ -720,6 +720,11 @@ export const games = {
             img: "../images/pokemonfirered.jpg",
             url: "../all-games/pokemon-firered"
     },
+    pokemoncrystal: {
+        id: "pokemoncrystal",
+            img: "../images/pokemoncrystal.jpg",
+            url: "../all-games/pokemon-crystal"
+    },
     pokemonplatinum: {
         id: "pokemonplatinum",
             img: "../images/pokemonplatinum.jpg",
