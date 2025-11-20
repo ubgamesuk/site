@@ -583,37 +583,32 @@ hr.rounded {
     z-index: 9999;
 }
 
-/* Popup box */
 .fav-message {
     background: #111;
+    outline: 1px solid #414141;
     padding: 30px 50px;
     border-radius: 25px;
     text-align: center;
     color: white;
+    font-weight: 500;
     font-size: 1.6em;
     letter-spacing: 0.5px;
 
-    /* start slightly down and smaller */
     transform: translateY(20px) scale(0.85);
     opacity: 0;
     transition:
         transform 0.35s cubic-bezier(0.25, 1.3, 0.35, 1),
         opacity 0.35s ease-out;
 }
-
-/* Green tick icon */
 .fav-icon {
     font-size: 2.2em;
     margin-bottom: 10px;
-    color: #4cff4c;
+    color: #33ff81;
 }
-
-/* When activated */
 .fav-overlay.show {
     opacity: 1;
     pointer-events: auto;
 }
-
 .fav-overlay.show .fav-message {
     transform: translateY(0) scale(1);
     opacity: 1;
@@ -2033,7 +2028,7 @@ hr.rounded {
     }
     .gameframe .ad-box{
         margin-top: 320px;
-        transform: translateX(-254px);
+        transform: translateX(-237px);
         background-color: #1a1a1a;
         border-radius: 15px;
         width: 270px;
