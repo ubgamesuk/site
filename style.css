@@ -666,7 +666,7 @@ hr.rounded {
     margin-left: 8px;
     padding: 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
+    grid-template-columns: repeat(auto-fit, 198px);
     gap: 18px;
   }
   .scroll-container img {
@@ -674,9 +674,9 @@ hr.rounded {
     object-fit: cover;
     margin-left: 11px;
     border-radius: 21px;
-    height: 150px;
     outline: 1px solid #505050;
-    width: 250px;
+    height: 120px;
+    width: 200px;
     transition: .4s ease;
 }
 .scroll-container img:hover{
