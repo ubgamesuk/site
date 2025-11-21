@@ -554,7 +554,7 @@ hr.rounded {
     transform: translateX(20px) scale(0.95);
 }
 .game-controls .fav-btn:hover{
-    background-color: #2d2e25;
+    background-color: #474820;
     transform: translateX(20px) scale(0.95);
 }
 .game-controls .fav-btn i{
