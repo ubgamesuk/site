@@ -293,7 +293,7 @@ export const games = {
     drivemad: {
         id: "drivemad",
             img: "../images/drivemad.jpg",
-            url: "../all-games/drive-mad"
+            url: "../all-games/drivemad"
     },
     ducklife2: {
         id: "ducklife2",
