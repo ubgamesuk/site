@@ -695,6 +695,11 @@ export const games = {
             img: "../images/penaltykicks.jpg",
             url: "../all-games/penalty-kicks"
     },
+    phantomdash: {
+        id: "phantomdash",
+            img: "../images/phantomdash.jpg",
+            url: "../all-games/phantom-dash"
+    },
     pixelspeedrun: {
         id: "pixelspeedrun",
             img: "../images/pixelspeedrun.jpg",
