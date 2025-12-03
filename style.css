@@ -613,6 +613,7 @@ hr.rounded {
     transform: translateY(0) scale(1);
     opacity: 1;
 }
+
 .home{
     position: fixed;
     top: 0;

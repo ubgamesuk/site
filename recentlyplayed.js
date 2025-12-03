@@ -285,6 +285,11 @@ export const games = {
             img: "../images/drawio.jpg",
             url: "../all-games/draw-io"
     },
+    driftboss: {
+        id: "driftboss",
+            img: "../images/driftboss.jpg",
+            url: "../all-games/drift-boss"
+    },
     drifthunters: {
         id: "drifthunters",
             img: "../images/drifthunters.jpg",
