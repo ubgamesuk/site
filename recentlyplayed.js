@@ -382,7 +382,7 @@ export const games = {
     },
     fireboyandwatergirl: {
         id: "fireboyandwatergirl",
-            img: "../images/fireboyandwatrgirl.jpg",
+            img: "../images/fireboyandwatergirl.jpg",
             url: "../all-games/fireboy-and-watergirl"
     },
     flappybasket: {
