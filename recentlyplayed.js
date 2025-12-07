@@ -10,6 +10,11 @@ export const games = {
         img: "../images/1v1lol.jpg",
         url: "../all-games/1v1lol"
     },
+    leveldevil: {
+        id: "leveldevil",
+        img: "../images/leveldevil.jpg",
+        url: "../all-games/level-devil"
+    },
     threedfreekick: {
         id: "3dfreekick",
         img: "../images/3dfreekick.jpg",

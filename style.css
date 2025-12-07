@@ -1150,10 +1150,11 @@ hr.rounded {
       height: 230px;
       outline: 1px solid #575757;
       overflow: hidden;
-      transition: ease 0.5s;
+      transition: ease 0.3s;
     }
 .slideshow-container:hover{
     outline: 1px solid #c1c1c1;
+    transform: scale(1.01px);
 }
 .sagtitle{
     padding-top: 60px;
