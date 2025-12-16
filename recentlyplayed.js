@@ -997,12 +997,12 @@ export const games = {
     },
     theimpossiblequiz2: {
         id: "theimpossiblequiz2",
-            img: "../images/theimpossiblequiz2",
+            img: "../images/theimpossiblequiz2.jpg",
             url: "../all-games/the-impossible-quiz-2"
     },
     theimpossiblequiz: {
         id: "theimpossiblequiz",
-            img: "../images/theimpossiblequiz",
+            img: "../images/theimpossiblequiz.jpg",
             url: "../all-games/the-impossible-quiz"
     },
     timeshooter2: {
