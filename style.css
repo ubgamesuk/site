@@ -1300,10 +1300,11 @@ hr.rounded {
       animation: fade 1s ease-in-out;
     }
     .banneraction{
-        background: #1e1e1eb1;
+        background: #202020a7;
         border: none;
         font-size: 20px;
-        margin-top: 10px;
+        font-weight: 500;
+        margin-top: 15px;
         color: #ffffff;
         border-radius: 10px;
         padding-top: 7px;
