@@ -30,20 +30,13 @@
 </head>
 <body>
 
-    <nav class="topbar">
-        <i onclick="document.location='.'" id="menuicon" class='bx bxs-grid-alt icon'></i>
-        <img onclick="document.location='..'" id="#toplogo" src="../images/ubgames.png">
-        <div class="form-search">
-            <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
-            <input type="text" id="searchbar" class="search-bar" placeholder="Search for a game or keyword"></div>
-    
-            <div class="right-icons">
-                <button class="azbutton" onclick="document.location='../games-a-z'"><i class='bx bxs-joystick'></i> Games A-Z</button>
+    <div id="topbar">
     </div>
-    
-        </div>
-        </i>
-    </nav>
+    <script>
+        $(function(){
+          $("#topbar").load("../nav/topbar.html");
+        });
+    </script>
 
     <nav class="sidebar close">
     <div class="menu-bar">
