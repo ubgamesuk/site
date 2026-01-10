@@ -12,12 +12,12 @@ sliderContainers.forEach(container => {
   let momentumID;
 
   nextBtn.addEventListener('click', () => {
-    slider.scrollBy({ left: 300, behavior: 'smooth' });
+    slider.scrollBy({ left: 400, behavior: 'smooth' });
     setTimeout(updateArrows, 400);
   });
 
   prevBtn.addEventListener('click', () => {
-    slider.scrollBy({ left: -300, behavior: 'smooth' });
+    slider.scrollBy({ left: -400, behavior: 'smooth' });
     setTimeout(updateArrows, 400);
   });
 
