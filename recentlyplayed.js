@@ -1246,6 +1246,48 @@ export function loadFavourites() {
         container.appendChild(card);
     });
 }
+export function loadFavouritesPreview() {
+    const box = document.getElementById("favouritesPreview");
+    const grid = document.getElementById("favouritesPreviewGrid");
+    const empty = document.getElementById("favouritesEmpty");
+    const viewAllBtn = document.getElementById("viewAllFavs");
+
+    if (!box || !grid || !empty) return;
+
+    const favs = JSON.parse(localStorage.getItem("favourites")) || [];
+
+    // EMPTY STATE
+    if (favs.length === 0) {
+        empty.style.display = "block";
+        grid.style.display = "none";
+        if (viewAllBtn) viewAllBtn.style.display = "none";
+        return;
+    }
+
+    // NORMAL STATE
+    empty.style.display = "none";
+    grid.style.display = "grid";
+    if (viewAllBtn) viewAllBtn.style.display = "inline-block";
+
+    grid.innerHTML = "";
+
+    favs.slice(-4).reverse().forEach(game => {
+        const card = document.createElement("div");
+        card.className = "fav-card";
+
+        card.innerHTML = `<img src="${game.img}" alt="">`;
+        card.onclick = () => window.location.href = game.url;
+
+        grid.appendChild(card);
+    });
+
+    if (viewAllBtn) {
+        viewAllBtn.onclick = () => {
+            window.location.href = "/saved";
+        };
+    }
+}
+
 export function showFavouritePopup() {
     const overlay = document.getElementById("favOverlay");
     if (!overlay) return;

@@ -53,6 +53,7 @@
             <h1 class="featuredtitle">Featured</h1>
             <h2 class="featuredmonth"><b class="divider">|</b>January 2026</h2>
         </div>
+        <div class="topbannersavedgames">
         <div class="slideshow-container">
             <div class="slidewrapper" id="slidesWrapper">
             <div onclick="document.location='../all-games/snow-rider-3d'" class="bannerslide">
@@ -81,9 +82,8 @@
                     <button onclick="document.location='../trending'" class="banneraction"><i class='bx bxs-hot icon'> </i> View our popular games</button>
                 </div>
             </div>
-
-            <a class="previous">&#10094;</a>
-            <a class="nextslide">&#10095;</a>
+            <a class="previous"><i class='bx bx-chevron-left'></i></a>
+            <a class="nextslide"><i class='bx bx-chevron-right'></i></a>
             </div>
             <div class="dots" id="dotsContainer">
                 <span class="dot" onclick="goToSlide(0)"></span>
@@ -91,7 +91,28 @@
                 <span class="dot" onclick="goToSlide(2)"></span>
             </div>
             <script src="banner.js"></script>
-</div>
+            <script src="recentlyplayed.js"></script>
+        </div>
+            <div class="myfavsbannerbox">
+                <div class="favboxtopitems">
+                    <h2 class="savedgboxcaption"><i class='bx bxs-star'></i> Saved</h2>
+                    <div class="savedviewallbtn" id="viewAllFavs">View all →</div>
+                </div>
+                <div id="favouritesPreview" class="favourites-box">
+                    
+                    <div id="favouritesEmpty" class="favourites-empty">
+                        <h2>Nothing here yet</h2>
+                        <a>Add to your Saved Games - just click the <b>☆</b> icon on the games you would like to add.</a>
+                    </div>
+
+        <div id="favouritesPreviewGrid" class="favourites-grid"></div></div>
+
+        <script type="module">
+            import { loadFavouritesPreview } from "../recentlyplayed.js";
+            loadFavouritesPreview();
+        </script>
+            </div>
+        </div>
         <div id="recentslidertitle" class="hometext">
             <h1 class="category"><i class='bx bx-time'></i> Continue playing</h1>
         </div>
