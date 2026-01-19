@@ -880,6 +880,11 @@ export const games = {
             img: "../images/snowrider3d.jpg",
             url: "../all-games/snow-rider-3d"
     },
+    snowrider2: {
+        id: "snowrider2",
+            img: "../images/snowrider2.jpg",
+            url: "../all-games/snow-rider-2"
+    },
     snowballio: {
         id: "snowballio",
             img: "../images/snowballio.jpg",
