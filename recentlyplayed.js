@@ -220,6 +220,11 @@ export const games = {
             img: "../images/coreball.jpg",
             url: "../all-games/core-ball"
     },
+    connectfour: {
+        id: "connectfour",
+            img: "../images/connect4.jpg",
+            url: "../all-games/connect-4"
+    },
     crossyroad: {
         id: "crossyroad",
             img: "../images/crossyroad.jpg",
