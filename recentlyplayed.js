@@ -665,6 +665,11 @@ export const games = {
             img: "../images/papashotdoggeria.webp",
             url: "../all-games/papas-hot-doggeria"
     },
+    papaspancakeria: {
+        id: "papaspancakeria",
+            img: "../images/papaspancakeria.jpg",
+            url: "../all-games/papas-pancakeria"
+    },
     papaspastaria: {
         id: "papaspastaria",
             img: "../images/papaspastaria.webp",
