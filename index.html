@@ -47,39 +47,41 @@
         });
         </script>
     <section class="homepage">
-        <div class="carousels">
-        <br>
-        <div class="hometext">
-            <h1 class="featuredtitle">Featured</h1>
-            <h2 class="featuredmonth"><b class="divider">|</b>April 2026</h2>
-        </div>
         <div class="topbannersavedgames">
         <div class="slideshow-container">
             <div class="slidewrapper" id="slidesWrapper">
-            <div onclick="document.location='../all-games/level-devil'" class="bannerslide">
-                <video class="slide-video" poster="../images/leveldevilfallback.png" autoplay muted loop playsinline>
-                    <source src="../images/leveldevilgameplay.mp4" type="video/mp4" />
+            <div onclick="document.location='../all-games/tanuki-sunset'" class="bannerslide">
+                <video class="slide-video" poster="../images/tanukibgbanner.jpg" autoplay muted loop playsinline>
+                    <source src="../images/tanukigameplay.mp4" type="video/mp4" />
                 </video>
-                <div class="bangradient">
-                <div style="margin-bottom: 10px;" class="slide-text">
-                    <img loading="lazy" style="height: 30px; margin-bottom: 7px;" class="logothumb" src="../images/leveldevillogo.png">
-                    <h1>Game of the Month</h1>
-                    <button class="banneraction"><i class='bx bx-play icon'> </i>Play Now</button>
-                </div>
-                </div>
-            </div>
-            <div class="bannerslide">
-                <img loading="lazy" class="bannerimage" src="../images/allgames250ban.jpg" alt="Slide 2">
-                <div class="slide-text">
-                    <h1>Over 250 high quality games</h1>
-                    <button onclick="document.location='../games-a-z'" class="banneraction"><i class='bx bx-menu icon'> </i> View all games</button>
+                <div class="bannerbggradient">
+                    <div class="slide-text">
+                        <div class="gotmtopdiv">
+                            <img height="30px" src="../images/gotmfulllogo.png">
+                        </div>
+                        <h1 style="margin-bottom: 10px;">Tanuki Sunset</h1>
+                        <a class="gotmdesc">The fast-paced downhill skateboarding game with a raccoon! Master the corners and perform tricks to collect points along the way.</a>
+                        <br>
+                        <button class="banneraction"><i class='bx bx-play icon'> </i>Play Now</button>
+                    </div>
                 </div>
             </div>
             <div class="bannerslide">
-                <img loading="lazy" class="bannerimage" src="../images/tanukibgbanner.jpg" alt="Slide 3">
-                <div class="slide-text">
-                    <h1>See what's popular right now</h1>
-                    <button onclick="document.location='../trending'" class="banneraction"><i class='bx bxs-hot icon'> </i> View our popular games</button>
+                <img loading="lazy" class="bannerimage" src="../images/allgames250ban.jpg" draggable="false" alt="Slide 2">
+                <div class="bannerbggradient">
+                    <div class="slide-text">
+                        <h1>A <b>massive</b> collection of <b>high-quality</b> games.</h1>
+                        <button onclick="document.location='../games-a-z'" class="banneraction"><i class='bx bx-menu icon'> </i> View all games</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bannerslide">
+                <img loading="lazy" class="bannerimage" src="../images/tanukibgbanner.jpg" draggable="false" alt="Slide 3">
+                <div class="bannerbggradient">
+                    <div class="slide-text">
+                        <h1>Discover our newly added games</h1>
+                        <button onclick="document.location='#newgames'" class="banneraction"><i class='bx bxs-zap icon'> </i> View recently added games</button>
+                    </div>
                 </div>
             </div>
             <a class="previous"><i class='bx bx-chevron-left'></i></a>
@@ -101,7 +103,7 @@
                 <div id="favouritesPreview" class="favourites-box">
                     
                     <div id="favouritesEmpty" class="favourites-empty">
-                        <h2>Nothing saved yet</h2>
+                        <h2>No games saved yet</h2>
                         <a>Add to your Saved Games - just click the <b>☆</b> icon on the games you would like to add.</a>
                     </div>
 
@@ -113,6 +115,7 @@
         </script>
             </div>
         </div>
+    <div class="carousels">
         <div id="recentslidertitle" class="hometext">
             <h1 class="category"><i class='bx bx-time'></i> Continue playing</h1>
         </div>
@@ -148,19 +151,19 @@
         <div class="hometext">
             <h1 class="category"><i class='bx bxs-bar-chart-alt-2' ></i> Trending <b class="dateseletile">this month</b></h1>
         </div>
-        <div class="slider-container">
+        <div id="newgames" class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../all-games/level-devil'" class="slide" id="trendslide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/leveldevil.jpg"></div>
-                <div onclick="document.location='../all-games/subway-surfers'" class="slide" id="trendslide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/subwaysurfers.jpg"></div>
-                <div onclick="document.location='../all-games/retro-bowl'" class="slide" id="trendslide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a> <img loading="lazy" src="../images/retrobowl.jpg"></div>
-                <div onclick="document.location='../all-games/drivemad'" class="slide" id="trendslide"><img loading="lazy" src="../images/drivemad.jpg"></div>
-                <div onclick="document.location='../all-games/snow-rider-3d'" class="slide" id="trendslide"><img loading="lazy" src="../images/snowrider3d.jpg"></div>
-                <div onclick="document.location='../all-games/a-small-world-cup'" class="slide" id="trendslide"><img loading="lazy" src="../images/asmallworldcup.jpg"></div>
-                <div onclick="document.location='../all-games/happy-glass'" class="slide" id="trendslide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/happyglass.jpg"></div>
-                <div onclick="document.location='../all-games/basket-random'" class="slide" id="trendslide"><img loading="lazy" src="../images/basketrandom.jpg"></div>
-                <div onclick="document.location='../all-games/penalty-kicks'" class="slide" id="trendslide"><img loading="lazy" src="../images/penaltykicks.jpg"></div>
-                <div onclick="document.location='../all-games/moto-x3m'" class="slide" id="trendslide"><img loading="lazy" src="../images/motox3m.jpg"></div>
+                <div onclick="document.location='../all-games/level-devil'" class="slide" id="trendslide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/leveldevil.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/subway-surfers'" class="slide" id="trendslide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/subwaysurfers.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/retro-bowl'" class="slide" id="trendslide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a> <img loading="lazy" src="../images/retrobowl.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/tanuki-sunset'" class="slide" id="trendslide"><img loading="lazy" src="../images/tanukisunset.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/drivemad'" class="slide" id="trendslide"><img loading="lazy" src="../images/drivemad.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/snow-rider-3d'" class="slide" id="trendslide"><img loading="lazy" src="../images/snowrider3d.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/a-small-world-cup'" class="slide" id="trendslide"><img loading="lazy" src="../images/asmallworldcup.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/happy-glass'" class="slide" id="trendslide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/happyglass.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/basket-random'" class="slide" id="trendslide"><img loading="lazy" src="../images/basketrandom.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/penalty-kicks'" class="slide" id="trendslide"><img loading="lazy" src="../images/penaltykicks.jpg" draggable="false"></div>
             </div>
             <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
         </div>
@@ -170,16 +173,16 @@
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../all-games/papas-pancakeria'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/papaspancakeria.jpg"></div>
-                <div onclick="document.location='../all-games/connect-4'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/connect4.jpg"></div>
-                <div onclick="document.location='../all-games/snow-rider-2'" class="slide"><img loading="lazy" src="../images/snowrider2.jpg"></div>
-                <div onclick="document.location='../all-games/moto-x3m'" class="slide"><img loading="lazy" src="../images/motox3m.jpg"></div>
-                <div onclick="document.location='../all-games/level-devil'" class="slide"><img loading="lazy" src="../images/leveldevil.jpg"></div>
-                <div onclick="document.location='../all-games/drift-boss'" class="slide"><img loading="lazy" src="../images/driftboss.jpg"></div>
-                <div onclick="document.location='../all-games/phantom-dash'" class="slide"><img loading="lazy" src="../images/phantomdash.jpg"></div>
-                <div onclick="document.location='../all-games/happy-glass'" class="slide"><img loading="lazy" src="../images/happyglass.jpg"></div>
-                <div onclick="document.location='../all-games/super-liquid-soccer'" class="slide"><img loading="lazy" src="../images/superliquidsoccer.jpg"></div>
-                <div onclick="document.location='../all-games/wordscapes'" class="slide"><img loading="lazy" src="../images/wordscapes.jpg"></div>
+                <div onclick="document.location='../all-games/space-waves'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/spacewaves.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/wrestle-bros'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/wrestlebros.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/power-badminton'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/powerbadminton.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/openfront'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/openfront.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/bloxorz'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/bloxorz.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/color-fill-3d'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/colorfill3d.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/papas-pancakeria'" class="slide"><img loading="lazy" src="../images/papaspancakeria.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/snow-rider-2'" class="slide"><img loading="lazy" src="../images/snowrider2.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/drift-boss'" class="slide"><img loading="lazy" src="../images/driftboss.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/level-devil'" class="slide"><img loading="lazy" src="../images/leveldevil.jpg" draggable="false"></div>
             </div>
             <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
         </div>
@@ -190,15 +193,15 @@
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../all-games/drivemad'" class="slide"><img loading="lazy" src="../images/drivemad.jpg"></div>
-                <div onclick="document.location='../all-games/basket-bros'" class="slide"><img loading="lazy" src="../images/basketbros.jpg"></div>
-                <div onclick="document.location='../all-games/edge-surf'" class="slide"><img loading="lazy" src="../images/edgesurf.jpg"></div>
-                <div onclick="document.location='../all-games/eggy-car'" class="slide"><img loading="lazy" src="../images/eggycar.jpg"></div>
-                <div onclick="document.location='../all-games/worlds-hardest-game'" class="slide"><img loading="lazy" src="../images/worldshardestgame.jpg"></div>
-                <div onclick="document.location='../all-games/wordle'" class="slide"><img loading="lazy" src="../images/wordle.jpg"></div>
-                <div onclick="document.location='../all-games/retro-bowl'" class="slide"><img loading="lazy" src="../images/retrobowl.jpg"></div>
+                <div onclick="document.location='../all-games/drivemad'" class="slide"><img loading="lazy" src="../images/drivemad.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/superhot'" class="slide"><img loading="lazy" src="../images/superhot.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/edge-surf'" class="slide"><img loading="lazy" src="../images/edgesurf.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/eggy-car'" class="slide"><img loading="lazy" src="../images/eggycar.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/worlds-hardest-game'" class="slide"><img loading="lazy" src="../images/worldshardestgame.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/wordle'" class="slide"><img loading="lazy" src="../images/wordle.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/deal-or-no-deal'" class="slide"><img loading="lazy" src="../images/dealornodeal.jpeg"></div>
                 <div onclick="document.location='../all-games/idle-breakout'" class="slide"><img loading="lazy" src="../images/idlebreakout.jpeg"></div>
-                <div onclick="document.location='../all-games/ragdoll-battle-2'" class="slide"><img loading="lazy" src="../images/ragdollbattle.jpg"></div>
+                <div onclick="document.location='../all-games/slice-master'" class="slide"><img loading="lazy" src="../images/slicemaster.jpg" draggable="false"></div>
             </div>
             <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
         </div>
@@ -209,15 +212,16 @@
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../all-games/penalty-kicks'" class="slide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/penaltykicks.jpg"></div>
-                <div onclick="document.location='../all-games/mini-putt'" class="slide"><img loading="lazy" src="../images/miniputt.jpg"></div>
-                <div onclick="document.location='../all-games/super-liquid-soccer'" class="slide"><img loading="lazy" src="../images/superliquidsoccer.jpg"></div>
-                <div onclick="document.location='../all-games/basketball-stars'" class="slide"><img loading="lazy" src="../images/basketballstars.jpg"></div>
-                <div onclick="document.location='../all-games/8-ball-pool'" class="slide"><img loading="lazy" src="../images/8ballpool.jpg"></div>
-                <div onclick="document.location='../all-games/edge-surf'" class="slide"><img loading="lazy" src="../images/edgesurf.jpg"></div>
-                <div onclick="document.location='../all-games/a-small-world-cup'" class="slide"><img loading="lazy" src="../images/asmallworldcup.jpg"></div>
-                <div onclick="document.location='../all-games/getting-over-it'" class="slide"><img loading="lazy" src="../images/gettingoverit.jpg"></div>
-                <div onclick="document.location='../all-games/1v1-lol'" class="slide"><img loading="lazy" src="../images/1v1lol.jpg"></div>
+                <div onclick="document.location='../all-games/wrestle-bros'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/wrestlebros.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/penalty-kicks'" class="slide"><img loading="lazy" src="../images/penaltykicks.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/mini-putt'" class="slide"><img loading="lazy" src="../images/miniputt.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/super-liquid-soccer'" class="slide"><img loading="lazy" src="../images/superliquidsoccer.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/power-badminton'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/powerbadminton.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/basketball-stars'" class="slide"><img loading="lazy" src="../images/basketballstars.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/8-ball-pool'" class="slide"><img loading="lazy" src="../images/8ballpool.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/basket-bros'" class="slide"><img loading="lazy" src="../images/basketbros.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/a-small-world-cup'" class="slide"><img loading="lazy" src="../images/asmallworldcup.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/blumgi-soccer'" class="slide"><img loading="lazy" src="../images/blumgisoccer.jpg" draggable="false"></div>
             </div>
             <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
         </div>
@@ -228,12 +232,12 @@
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../all-games/papas-pancakeria'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/papaspancakeria.jpg"></div>
-                <div onclick="document.location='../all-games/papas-pizzeria'" class="slide"><img loading="lazy" src="../images/papaspizzeria.jpg"></div>
                 <div onclick="document.location='../all-games/papas-freezeria'" class="slide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/papasfreezeria.webp"></div>
+                <div onclick="document.location='../all-games/papas-pizzeria'" class="slide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/papaspizzeria.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/papas-pancakeria'" class="slide"><img loading="lazy" src="../images/papaspancakeria.jpg" draggable="false"></div>
                 <div onclick="document.location='../all-games/papas-cheeseria'" class="slide"><img loading="lazy" src="../images/papascheeseria.webp"></div>
-                <div onclick="document.location='../all-games/papas-burgeria'" class="slide"><img loading="lazy" src="../images/papasburgeria.jpg"></div>
-                <div onclick="document.location='../all-games/papas-sushiria'" class="slide"><img loading="lazy" src="../images/papassushiria.jpg"></div>
+                <div onclick="document.location='../all-games/papas-burgeria'" class="slide"><img loading="lazy" src="../images/papasburgeria.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/papas-sushiria'" class="slide"><img loading="lazy" src="../images/papassushiria.jpg" draggable="false"></div>
                 <div onclick="document.location='../all-games/papas-cupcakeria'" class="slide"><img loading="lazy" src="../images/papascupcakeria.webp"></div>
                 <div onclick="document.location='../all-games/papas-tacomia'" class="slide"><img loading="lazy" src="../images/papastacomia.webp"></div>
                 <div onclick="document.location='../all-games/papas-hot-doggeria'" class="slide"><img loading="lazy" src="../images/papashotdoggeria.webp"></div>
@@ -247,17 +251,17 @@
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../all-games/emulator'" class="slide"><img loading="lazy" src="../images/uploadromicon.jpg"></div>
-                <div onclick="document.location='../all-games/mario-kart-64'" class="slide"><img loading="lazy" src="../images/mariokart64.jpg"></div>
-                <div onclick="document.location='../all-games/pokemon-leafgreen'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/pokemonleafgreen.jpg"></div>
-                <div onclick="document.location='../all-games/pokemon-black'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/pokemonblack.jpg"></div>
-                <div onclick="document.location='../all-games/pokemon-yellow'" class="slide"><a class="newrank"><i class='bx bxs-zap'></i>NEW</a><img loading="lazy" src="../images/pokemonyellow.jpg"></div>
-                <div onclick="document.location='../all-games/donkey-kong-country'" class="slide"><img loading="lazy" src="../images/donkeykongcountry.jpg"></div>
-                <div onclick="document.location='../all-games/super-mario-64'" class="slide"><img loading="lazy" src="../images/supermario64.jpg"></div>
-                <div onclick="document.location='../all-games/pokemon-emerald'" class="slide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/pokemonemerald.jpg"></div>
-                <div onclick="document.location='../all-games/pokemon-firered'" class="slide"><img loading="lazy" src="../images/pokemonfirered.jpg"></div>
-                <div onclick="document.location='../all-games/mario-kart-ds'" class="slide"><img loading="lazy" src="../images/mariokartds.jpg"></div>
-                <div onclick="document.location='../all-games/new-super-mario-bros'" class="slide"><img loading="lazy" src="../images/newsupermariobros.jpg"></div>
+                <div onclick="document.location='../all-games/emulator'" class="slide"><img loading="lazy" src="../images/uploadromicon.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/mario-kart-64'" class="slide"><img loading="lazy" src="../images/mariokart64.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/pokemon-leafgreen'" class="slide"><img loading="lazy" src="../images/pokemonleafgreen.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/pokemon-black'" class="slide"><img loading="lazy" src="../images/pokemonblack.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/pokemon-yellow'" class="slide"><img loading="lazy" src="../images/pokemonyellow.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/donkey-kong-country'" class="slide"><img loading="lazy" src="../images/donkeykongcountry.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/super-mario-64'" class="slide"><img loading="lazy" src="../images/supermario64.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/pokemon-emerald'" class="slide"><a class="hotrank"><i class='bx bxs-hot'></i>HOT</a><img loading="lazy" src="../images/pokemonemerald.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/pokemon-firered'" class="slide"><img loading="lazy" src="../images/pokemonfirered.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/mario-kart-ds'" class="slide"><img loading="lazy" src="../images/mariokartds.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/new-super-mario-bros'" class="slide"><img loading="lazy" src="../images/newsupermariobros.jpg" draggable="false"></div>
             </div>
             <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
         </div>
@@ -267,10 +271,10 @@
         <div class="slider-container">
             <button class="nav-btn prev hidden"><i class='bx bx-left-arrow-alt'></i></button>
             <div class="slider">
-                <div onclick="document.location='../all-games/basket-random'" class="slide"><img loading="lazy" src="../images/basketrandom.jpg"></div>
-                <div onclick="document.location='../all-games/soccer-random'" class="slide"><img loading="lazy" src="../images/soccerrandom.jpg"></div>
-                <div onclick="document.location='../all-games/volley-random'" class="slide"><img loading="lazy" src="../images/volleyrandom.jpg"></div>
-                <div onclick="document.location='../all-games/boxing-random'" class="slide"><img loading="lazy" src="../images/boxingrandom.jpg"></div>
+                <div onclick="document.location='../all-games/basket-random'" class="slide"><img loading="lazy" src="../images/basketrandom.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/soccer-random'" class="slide"><img loading="lazy" src="../images/soccerrandom.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/volley-random'" class="slide"><img loading="lazy" src="../images/volleyrandom.jpg" draggable="false"></div>
+                <div onclick="document.location='../all-games/boxing-random'" class="slide"><img loading="lazy" src="../images/boxingrandom.jpg" draggable="false"></div>
             </div>
             <button class="nav-btn next"><i class='bx bx-right-arrow-alt'></i></button>
         </div>
@@ -298,48 +302,6 @@
               $("#footer").load("../nav/footer.html");
             });
             </script>
-                      <section class="mobiledisplay">
-
-                        <div class="mobiletitletext">
-                            <h1 class="mobhometitle">Featured</h1>
-                            <h2 class="mobhomesubtitle">April 2026</h2>
-                        </div>
-
-                        <div class="gamerowlong">
-                            <img loading="lazy" onclick="document.location='../mobile/3d-free-kick'" class="gameimg" src="../images/freekickgotm.jpg">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/drivemad'" class="gameimg" src="../images/drivemad.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/block-blast'" class="gameimg" src="../images/blockblast.jpg">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/subway-surf-bali'" class="gameimg" src="../images/subwaysurfers.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/fruit-ninja'" class="gameimg" src="../images/fruitninja.png">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/among-us'" class="gameimg" src="../images/amongus.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/bitlife'" class="gameimg" src="../images/bitlife.jpg">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/a-small-world-cup'" class="gameimg" src="../images/asmallworldcup.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/candy-crush'" class="gameimg" src="../images/candycrush.png">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/core-ball'" class="gameimg" src="../images/coreball.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/basket-and-ball'" class="gameimg" src="../images/basketandball.jpg">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/eggy-car'" class="gameimg" src="../images/eggycar.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/cut-the-rope'" class="gameimg" src="../images/cuttherope.jpg">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/tiny-fishing'" class="gameimg" src="../images/tinyfishing.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/getting-over-it'" class="gameimg" src="../images/gettingoverit.jpg">
-                        </div>
-                        <div class="gamerow">
-                            <img loading="lazy" onclick="document.location='../mobile/fireboy-and-watergirl'" class="gameimg" src="../images/fireboyandwatergirl.jpg">
-                            <img loading="lazy" onclick="document.location='../mobile/4-colours'" class="gameimg" src="../images/fourcolours.jpg">
-                        </div>
                     </section>
                  
                      

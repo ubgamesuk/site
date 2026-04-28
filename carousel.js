@@ -5,11 +5,7 @@ sliderContainers.forEach(container => {
   const nextBtn = container.querySelector('.next');
   const prevBtn = container.querySelector('.prev');
 
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-  let velocity = 0;
-  let momentumID;
+  
 
   nextBtn.addEventListener('click', () => {
     slider.scrollBy({ left: 400, behavior: 'smooth' });
@@ -19,30 +15,6 @@ sliderContainers.forEach(container => {
   prevBtn.addEventListener('click', () => {
     slider.scrollBy({ left: -400, behavior: 'smooth' });
     setTimeout(updateArrows, 400);
-  });
-
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2;
-    slider.scrollLeft = scrollLeft - walk;
-    velocity = walk - (scrollLeft - slider.scrollLeft);
-  });
-
-  slider.addEventListener('touchstart', (e) => {
-    isDown = true;
-    startX = e.touches[0].pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    cancelMomentumScroll();
-  });
-
-  slider.addEventListener('touchmove', (e) => {
-    if (!isDown) return;
-    const x = e.touches[0].pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2;
-    slider.scrollLeft = scrollLeft - walk;
-    velocity = walk - (scrollLeft - slider.scrollLeft);
   });
 
   slider.addEventListener('scroll', () => {

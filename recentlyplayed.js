@@ -5,11 +5,6 @@ export const games = {
         img: "../images/1on1soccer.jpg",
         url: "../all-games/1on1-soccer"
     },
-    onev1lol: {
-        id: "1v1lol",
-        img: "../images/1v1lol.jpg",
-        url: "../all-games/1v1lol"
-    },
     leveldevil: {
         id: "leveldevil",
         img: "../images/leveldevil.jpg",
@@ -24,6 +19,11 @@ export const games = {
         id: "4colours",
             img: "../images/fourcolours.jpg",
             url: "../all-games/4-colours"
+    },
+    colorfill3d: {
+        id: "colorfill3d",
+            img: "../images/colorfill3d.jpg",
+            url: "../all-games/color-fill-3d"
     },
     eightballpool: {
         id: "8ballpool",
@@ -144,6 +144,11 @@ export const games = {
         id: "btd1",
             img: "../images/bloonstd1.jpg",
             url: "../all-games/bloons-td"
+    },
+    bloxorz: {
+        id: "bloxorz",
+            img: "../images/bloxorz.jpg",
+            url: "../all-games/bloxorz"
     },
     blumgiball: {
         id: "blumgiball",
@@ -557,8 +562,8 @@ export const games = {
     },
     msc3: {
         id: "msc3",
-            img: "../images/madalinstuntcars3.jpg",
-            url: "../all-games/madalin-stunt-cars-3"
+            img: "../images/madalinmultiplayer.jpg",
+            url: "../all-games/madalin-cars-multiplayer"
     },
     mariokart64: {
         id: "mariokart64",
@@ -624,6 +629,11 @@ export const games = {
         id: "newsupermario",
             img: "../images/newsupermariobros.jpg",
             url: "../all-games/new-super-mario-bros"
+    },
+    openfront: {
+       id: "ovo",
+            img: "../images/openfront.jpg",
+            url: "../all-games/openfront" 
     },
     ovo: {
        id: "ovo",
@@ -770,13 +780,18 @@ export const games = {
             img: "../images/pokemonsapphire.jpg",
             url: "../all-games/pokemon-sapphire"
     },
+    powerbadminton: {
+        id: "powerbadminton",
+            img: "../images/powerbadminton.jpg",
+            url: "../all-games/power-badminton"
+    },
     quickdraw: {
         id: "quickdraw",
             img: "../images/quickdraw.jpg",
             url: "../all-games/quick-draw"
     },
-    ragdollbattle: {
-        id: "ragdollbattle",
+    ragdollbattle2: {
+        id: "ragdollbattle2",
             img: "../images/ragdollbattle.jpg",
             url: "../all-games/ragdoll-battle"
     },
@@ -827,13 +842,8 @@ export const games = {
     },
     run: {
        id: "run",
-            img: "../images/run.jpg",
+            img: "../images/run1.jpg",
             url: "../all-games/run" 
-    },
-    sandtris: {
-        id: "sandtris",
-            img: "../images/sandtris.jpg",
-            url: "../all-games/sandris"
     },
     scarymaze: {
         id: "scarymaze",
@@ -919,6 +929,11 @@ export const games = {
         id: "spacebarclicker",
             img: "../images/spacebarclicker.jpg",
             url: "../all-games/spacebar-clicker"
+    },
+    spacewaves: {
+        id: "spacewaves",
+            img: "../images/spacewaves.jpg",
+            url: "../all-games/space-waves"
     },
     stickmergehween: {
         id: "stickmergehween",
@@ -1125,6 +1140,11 @@ export const games = {
             img: "../images/worldshardestgame.jpg",
             url: "../all-games/worlds-hardest-game"
     },
+    wrestlebros: {
+        id: "wrestlebros",
+            img: "../images/wrestlebros.jpg",
+            url: "../all-games/wrestle-bros"
+    },
     youvs100skibidi: {
         id: "youvs100skibidi",
             img: "../images/youvs100skibiditoilets.jpg",
@@ -1244,7 +1264,7 @@ export function loadFavourites() {
     container.innerHTML = "";
 
     if (favs.length === 0) {
-        container.innerHTML = '<img style="height: 300px; margin-left: 4px;" src="../images/favnogamesyet.jpg"></img>';
+        container.innerHTML = '<img style="height: 350px; margin-left: 6px;" src="../images/favnogamesyet.jpg"></img>';
         return;
     }
 
@@ -1286,7 +1306,7 @@ export function loadFavouritesPreview() {
 
     grid.innerHTML = "";
 
-    favs.slice(-4).reverse().forEach(game => {
+    favs.slice(-6).reverse().forEach(game => {
         const card = document.createElement("div");
         card.className = "fav-card";
 
