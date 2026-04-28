@@ -1572,18 +1572,19 @@ hr.rounded {
         transform: translateY(-57px) translateX(-15px);
         height: 113px;
         z-index: 999;
+        backdrop-filter: none;
         width: 100%;
-        background-color: #0b0b0b;
+        background-color: #0b0b0bf8;
     }
     .topbar #menuicon{
         color: #dedede;
         transform: translateY(12px);
-        margin-right: 50px;
+        margin-right: 45px;
         font-size: 27px;
         z-index: 9999;
         padding: 4px;
         width: 40px;
-        outline: 1px solid #454545;
+        outline: 1px solid #353535;
         border-radius: 10px;
         text-align: center;
         background-color: #000000;
@@ -1596,24 +1597,28 @@ hr.rounded {
         margin-left: 35px;
     }
     .topbar .form-search{
-        transform: translateX(0px) translateY(-38px);
-        padding: 29px;
+        transform: translateY(12px);
+        width: 100%;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 .topbar .form-search input{
     height: 40px;
-    width: 100%;
+    width: calc(100% - 50px);
     background-color: #181818;
     border: none;
     outline: 1px solid #464646;
-    border-radius: 14px;
+    border-radius: 16px;
     color: #fff;
+    transform: none;
     font-size: 19px;
     transition: ease 0.5s;
 }
 .topbar .form-search .icon{
     color: #fff;
-    font-size: 20px;
-    transform: translateX(14px) translateY(34px);
+    transform: translateY(10px) translateX(15px);
+    font-size: 21px;
+    position: absolute;
 }
     .right-icons{
         display: none;
@@ -1968,12 +1973,6 @@ hr.rounded {
         transform: translateX(-24px);
         background-color: #101010c8;
     }
-    .mobilehomegrid{
-        padding: 26px;
-    }
-    .mobiledisplay{
-        display: block;
-    }
     .mobhometitle{
         color: #fff;
         font-size: 30px;
@@ -2026,7 +2025,7 @@ hr.rounded {
     margin-bottom: 12px;
     margin-right: 10px;
     outline: 1px solid #363636;
-    height: 90px;
+    height: 80px;
     border-radius: 20px;
     padding-right: 20px;
     transition: 0.5s ease;
@@ -2051,7 +2050,7 @@ hr.rounded {
     color: #fff;
     font-weight: 600;
     font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 33px;
+    font-size: 26px;
     letter-spacing: -0.7px;
 }
 .gameslist .azgame .azgamedesc{
@@ -2079,7 +2078,7 @@ hr.rounded {
 }
 .gameslist .aztitle{
     color: #fff;
-    transform: translateY(7px);
+    transform: translateY(5px);
     margin-left: 0px;
     padding: 10px;
     font-family: 'Cabinet Grotesk', sans-serif;
@@ -2087,19 +2086,6 @@ hr.rounded {
     font-weight: 800;
     letter-spacing: -0.7px;
 }
-    .mobiletitletext{
-        transform: translateY(-30px) translateX(-10px);
-    }
-    .mobiledisplay{
-        display: block;
-    }
-    .mobhometitle{
-        color: #fff;
-        font-size: 28px;
-        font-weight: 800;
-        font-family: 'Cabinet Grotesk', sans-serif;
-        letter-spacing: -0.3px;
-    }
     .ad-box{
         display: none;
     }
