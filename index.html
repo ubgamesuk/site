@@ -47,6 +47,36 @@
         });
         </script>
     <section class="homepage">
+<div id="popupOverlay">
+        <div id="popup">
+            <img onclick="document.location='../updates'" class="popupimg" src="images/updatepopup.jpg">
+            <div class="popupcontrolbuttons">
+                <button onclick="document.location='../updates'" id="popupAction"><i class='bx bx-chevron-right'></i> Follow our socials</button>
+                <button id="closeBtn"><i class='bx bx-x'></i> Dismiss</button>
+            </div>
+        </div>
+        </div>
+
+<script>
+  const overlay = document.getElementById("popupOverlay");
+  const hasClosedPopup = localStorage.getItem("popupClosed");
+
+  if (!hasClosedPopup) {
+    setTimeout(() => {
+      overlay.style.display = "flex"; // ensure it's visible in layout
+      requestAnimationFrame(() => {
+        overlay.classList.add("show");
+      });
+    }, 3000);}
+
+  document.getElementById("closeBtn").addEventListener("click", function () {
+    overlay.classList.remove("show");
+    setTimeout(() => {
+      overlay.style.display = "none";
+    }, 500);
+    localStorage.setItem("popupClosed", "true");
+  });
+</script>
         <div class="topbannersavedgames">
         <div class="slideshow-container">
             <div class="slidewrapper" id="slidesWrapper">
