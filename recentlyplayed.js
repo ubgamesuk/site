@@ -65,6 +65,11 @@ export const games = {
             img: "../images/amongus.jpg",
             url: "../all-games/among-us"
     },
+    arenaking: {
+        id: "arenaking",
+            img: "../images/arenaking.jpg",
+            url: "../all-games/arena-king"
+    },
     badicecream2: {
         id: "badicecream2",
             img: "../images/badicecream2.jpg",
