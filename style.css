@@ -351,14 +351,16 @@ hr.rounded {
     margin-right: 3px;
     font-size: 21px;
     border: none;
-    background-color: #303030;
+    outline: 1px solid #434343;
+    background-color: #1a1a1a;
     color: #fff;
-    border-radius: 10px;
-    transition: 0.5s ease;
+    border-radius: 11px;
+    transition: 0.3s ease;
     cursor: pointer;
 }
 .standardbtn:hover{
-    background-color: #4e4e4e;
+    background-color: #353535;
+    transform: scale(0.95);
 }
 .footer{
     background-color: #ffffff1a;
