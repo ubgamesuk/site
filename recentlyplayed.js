@@ -25,6 +25,11 @@ export const games = {
             img: "../images/colorfill3d.jpg",
             url: "../all-games/color-fill-3d"
     },
+    eightballbilliards: {
+        id: "eightballbilliards",
+            img: "../images/8ballbilliards.jpg",
+            url: "../all-games/8-ball-billiards"
+    },
     eightballpool: {
         id: "8ballpool",
             img: "../images/8ballpool.jpg",
@@ -189,6 +194,11 @@ export const games = {
         id: "boxingrandom",
             img: "../images/boxingrandom.jpg",
             url: "../all-games/boxing-random"
+    },
+    bowmasters: {
+        id: "bowmasters",
+            img: "../images/bowmasters.jpg",
+            url: "../all-games/bowmasters"
     },
     burgerbounty: {
         id: "burgerbounty",
@@ -500,6 +510,11 @@ export const games = {
             img: "../images/gta2.jpg",
             url: "../all-games/gta-2"
     },
+    gobble: {
+        id: "gobble",
+            img: "../images/gobble.jpg",
+            url: "../all-games/gobble"
+    },
     gunspin: {
         id: "gunspin",
             img: "../images/gunspin.jpg",
@@ -589,6 +604,11 @@ export const games = {
         id: "minecraft",
             img: "../images/minecraft.jpg",
             url: "../all-games/minecraft"
+    },
+    minecraftpe: {
+        id: "minecraftpe",
+            img: "../images/minecraftpe.jpg",
+            url: "../all-games/minecraft-pe"
     },
     miniputt: {
         id: "miniputt",
@@ -730,6 +750,16 @@ export const games = {
             img: "../images/penaltykicks.jpg",
             url: "../all-games/penalty-kicks"
     },
+    peggle: {
+        id: "peggle",
+            img: "../images/peggle.jpg",
+            url: "../all-games/peggle"
+    },
+    polytrack: {
+        id: "polytrack",
+            img: "../images/polytrack.jpg",
+            url: "../all-games/polytrack"
+    },
     phantomdash: {
         id: "phantomdash",
             img: "../images/phantomdash.jpg",
@@ -800,10 +830,20 @@ export const games = {
             img: "../images/ragdollbattle.jpg",
             url: "../all-games/ragdoll-battle"
     },
+    recoil: {
+        id: "recoil",
+            img: "../images/recoil.jpg",
+            url: "../all-games/recoil"
+    },
     retrobowl: {
         id: "retrobowl",
             img: "../images/retrobowl.jpg",
             url: "../all-games/retro-bowl"
+    },
+    retrobowlcollege: {
+        id: "retrobowl",
+            img: "../images/retrobowlcollege.jpg",
+            url: "../all-games/retro-bowl-college"
     },
     riddleschool2: {
         id: "riddleschool2",
@@ -1020,6 +1060,11 @@ export const games = {
             img: "../images/tanukisunset.jpg",
             url: "../all-games/tanuki-sunset"
     },
+    tallio: {
+        id: "tallio",
+            img: "../images/tallio.jpg",
+            url: "../all-games/tall-io"
+    },
     templerun2: {
         id: "templerun2",
             img: "../images/templerun2.jpg",
@@ -1039,6 +1084,11 @@ export const games = {
         id: "theimpossiblequiz",
             img: "../images/theimpossiblequiz.jpg",
             url: "../all-games/the-impossible-quiz"
+    },
+    timeshooter: {
+        id: "timeshooter",
+            img: "../images/timeshooter.jpg",
+            url: "../all-games/time-shooter"
     },
     timeshooter2: {
         id: "timeshooter2",
@@ -1114,6 +1164,11 @@ export const games = {
         id: "watermelonmania",
             img: "../images/watermelonmania.jpg",
             url: "../all-games/watermelon-mania"
+    },
+    waterworks: {
+        id: "waterworks",
+            img: "../images/waterworks.jpg",
+            url: "../all-games/waterworks"
     },
     windows11: {
         id: "windows11",
