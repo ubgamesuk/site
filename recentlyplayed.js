@@ -55,6 +55,11 @@ export const games = {
             img: "../images/asmallworldcup.jpg",
             url: "../all-games/a-small-world-cup"
     },
+    asmallworldcup2: {
+        id: "asmallworldcup2",
+            img: "../images/asmallworldcup2.jpg",
+            url: "../all-games/a-small-world-cup-2"
+    },
     ageofwar2: {
         id: "ageofwar2",
             img: "../images/ageofwar2.jpg",
