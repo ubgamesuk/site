@@ -1,4 +1,4 @@
-const BUTTON = document.querySelector('button')
+const BUTTON = document.querySelector('.fullscreen')
 const IFRAME = document.querySelector('.game')
 
 const toggleFullscreen = () => {

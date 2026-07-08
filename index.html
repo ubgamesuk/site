@@ -30,22 +30,32 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="mobilegameplaymenu">
+    <img onclick="openNavigation()" class="menuback" src="../images/mobilemenu.jpg">
+</div>
+<script src="../mobilenav.js"></script>
 
-    <div id="topbar">
+
+<nav class="sidebar close">
+    <img onclick="document.location='..'" class="sidebarlogo" src="../images/ubgames.png">
+    <div class="streak">
+        <h1>Daily Streak</h1>
+        <h2 id="streak-count">0</h2>
+    </div>
+    <button id="restore-btn" class="streakrestore"></button>
+    <div class="form-search">
+            <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
+            <input type="text" id="searchbar" class="search-bar" placeholder="Search">
+        </div>
+    <div id="sidebarlist">
     </div>
     <script>
         $(function(){
-          $("#topbar").load("../nav/topbar.html");
-        });
-    </script>
-
-    <div id="sidebar">
-    </div>
-    <script>
-        $(function(){
-          $("#sidebar").load("../nav/sidebar.html");
+          $("#sidebarlist").load("../nav/sidebarlist.html");
         });
         </script>
+    <script src="streaks.js"></script>
+</nav>
     <section class="homepage">
         <div class="topbannersavedgames">
         <div class="slideshow-container">

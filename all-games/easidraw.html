@@ -35,76 +35,78 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
+<div class="mobilegameplaymenu">
+    <img onclick="openNavigation()" class="menuback" src="../images/mobilemenu.jpg">
+    <script src="../mobilenav.js"></script>
+</div>
 
-    <div id="topbar">
+<nav class="sidebar close">
+    <img onclick="document.location='..'" class="sidebarlogo" src="../images/ubgames.png">
+    <div class="streak">
+        <h1>Daily Streak</h1>
+        <h2 id="streak-count">0</h2>
+    </div>
+    <button id="restore-btn" class="streakrestore"></button>
+    <div class="form-search">
+            <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
+            <input type="text" id="searchbar" class="search-bar" placeholder="Search">
+        </div>
+    <div id="sidebarlist">
     </div>
     <script>
         $(function(){
-          $("#topbar").load("../nav/topbar.html");
-        });
-    </script>
-
-    <div id="sidebar">
-    </div>
-    <script>
-        $(function(){
-          $("#sidebar").load("../nav/sidebar.html");
+          $("#sidebarlist").load("../nav/sidebarlist.html");
         });
         </script>
+    <script src="../streaks.js"></script>
+</nav>
     <section class="homepage">
         <section class="game-wrapper">
             <div class="gameframe">
-                <iframe class="game" src="https://www.autodraw.com" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px"  allowfullscreen></iframe>
+                <div class="gamepanel">
+                    <iframe class="game" src="https://www.autodraw.com" #000 none; name="game" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
+                    <div class="game-controls">
+                        <h1 class="gametitle">EasiDraw</h1>
+                        <div class="controlbuttons">
+                            <button class="fullscreen"><i class='bx bx-fullscreen icon'></i> Fullscreen</button>
+                            <script src="../fullscreen.js"></script>
 
-                <div class="game-controls">
-                    <h1>EasiDraw</h1>
-                    <div class="control-buttons">
-                        <button class="fullscreen"><i class='bx bx-fullscreen icon'></i> Fullscreen</button>
-                        <script src="../fullscreen.js">
-                        </script>
-                        <div class="tooltip">
-                            <button id="favButton" class="fav-btn"></i></button>
-                        </div>
-                        <script type="module">
-                            import { games, addFavourite, removeFavourite, isFavourite, showFavouritePopup } from "../recentlyplayed.js";
-                            const game = games.easidraw;
-                            const favButton = document.getElementById("favButton");
+                            <button id="favButton" class="fav-btn"></button>
+                            <script type="module">
+                                import { games, addFavourite, removeFavourite, isFavourite, showFavouritePopup } from "../recentlyplayed.js";
+                                const game = games.easidraw;
+                                const favButton = document.getElementById("favButton");
 
-                                function updateButton() {
-                            if (isFavourite(game.id)) {
-                                favButton.innerHTML = "<i class='bx bxs-star icon'></i>";
-                                favButton.classList.add("active");
-                            } else {
-                                favButton.innerHTML = "<i class='bx bx-star icon'></i>";
-                                favButton.classList.remove("active");
-                            }}
-                        favButton.addEventListener("click", () => {
-                            if (isFavourite(game.id)) {
-                                removeFavourite(game.id);
-                            } else {
-                                addFavourite(game);
-                                showFavouritePopup();
-                            }
+                                    function updateButton() {
+                                if (isFavourite(game.id)) {
+                                    favButton.innerHTML = "<i class='bx bxs-star icon'></i>";
+                                    favButton.classList.add("active");
+                                } else {
+                                    favButton.innerHTML = "<i class='bx bx-star icon'></i>";
+                                    favButton.classList.remove("active");
+                                }}
+                            favButton.addEventListener("click", () => {
+                                if (isFavourite(game.id)) {
+                                    removeFavourite(game.id);
+                                } else {
+                                    addFavourite(game);
+                                    showFavouritePopup();
+                                }
+                                updateButton();
+                            });
                             updateButton();
-                        });
-                        updateButton();
                 </script>
-                    </div>
-
-                    <div class="tags">
-                        <h2 class="age-rating">4+</h2>
-                        <h2 class="category">UTILITIES</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="ad-box">
                     <h1>Advertisement</h1>
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
                         crossorigin="anonymous"></script>
-
-                        <ins class="adsbygoogle"
-                        style="display:inline-block;width:257px;height:202px"
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:190px;height:535px"
                         data-ad-client="ca-pub-7319072504670835"
-                        data-ad-slot="4023283442"></ins>
+                        data-ad-slot="9462930776"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
@@ -115,7 +117,6 @@
             </div>
             <div class="gameadbox">
                 <h2>Is something not right? <b>Let us know.</b></h2>
-                <h3><b>Email</b> contact@ubgames.uk</h3>
                 <div class="gamefeedbuttons">
                     <a href="https://forms.gle/jmBLdq64SEekh9Lc8">
                         <button class="gamefeedbackbtn"><i class='bx bx-message-detail'></i> Give us feedback</button>
@@ -143,6 +144,7 @@
         <p>Added to Saved Games</p>
     </div>
 </div>
+
 
     <script>
         document.onkeydown = function(e){

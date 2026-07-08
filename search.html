@@ -29,48 +29,30 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="mobilegameplaymenu">
+    <img onclick="openNavigation()" class="menuback" src="../images/mobilemenu.jpg">
+    <script src="../mobilenav.js"></script>
+</div>
 
-    <div id="topbar">
+   <nav class="sidebar close">
+    <img onclick="document.location='..'" class="sidebarlogo" src="../images/ubgames.png">
+    <div class="streak">
+        <h1>Daily Streak</h1>
+        <h2 id="streak-count">0</h2>
+    </div>
+    <button id="restore-btn" class="streakrestore"></button>
+    <div class="form-search">
+            <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
+            <input type="text" id="searchbar" class="search-bar" placeholder="Search">
+        </div>
+    <div id="sidebarlist">
     </div>
     <script>
         $(function(){
-          $("#topbar").load("../nav/topbar.html");
+          $("#sidebarlist").load("../nav/sidebarlist.html");
         });
-    </script>
-
-    <nav class="sidebar close">
-    <div class="menu-bar">
-        <div class="menu">
-            <ul class="menu-links">
-
-                <li class="nav-link">
-                    <a href="../all-games">
-                        <i class='bx bxs-home icon' ><span class="label">Home</span></i>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="../trending">
-                        <i class='bx bxs-hot icon'><span class="label">Popular</span></i>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="../saved">
-                        <i class='bx bxs-star icon' ><span class="label">Saved</span></i>
-                    </a>
-                </li>
-
-            <hr class="rounded">
-
-            <li class="nav-link">
-                <a href="../games-a-z">
-                    <i class='bx bxs-joystick icon' ><span class="label">A-Z</span></i>
-                </a>
-            </li>
-            
-        </div>
-    </div>
+        </script>
+    <script src="streaks.js"></script>
 </nav>
     <section class="homepage">
         <div class="gameslist">
