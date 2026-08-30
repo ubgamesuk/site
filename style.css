@@ -1088,7 +1088,7 @@ hr.rounded {
     cursor: pointer;
     border-radius: 20px;
     outline: 1px solid #6b6a6a;
-    transition: ease 0.4s;
+    transition: ease 0.3s;
   }
   #longslide{
     width: 515px;
@@ -1150,7 +1150,7 @@ hr.rounded {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    transition: ease 0.5s;
+    transition: ease 0.3s;
   }
   
   .slide:hover {
@@ -1258,7 +1258,8 @@ hr.rounded {
         height: 80px;
     }
     .slide-text h1{
-        font-size: 47px;
+        font-size: 42px;
+        line-height: 38px;
         font-weight: 800;
         letter-spacing: -0.5px;
         font-family: 'Cabinet Grotesk', sans-serif;
