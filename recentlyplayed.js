@@ -970,6 +970,11 @@ export const games = {
             img: "../images/solitaire.jpg",
             url: "../all-games/solitaire"
     },
+    songless: {
+        id: "songless",
+            img: "../images/songless.jpg",
+            url: "../all-games/songless"
+    },
     sonicthehedgehog: {
         id: "sonicthehedgehog",
             img: "../images/sonicthehedgehog.jpg",

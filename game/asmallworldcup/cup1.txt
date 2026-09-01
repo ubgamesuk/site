@@ -13,4 +13,4 @@ spa,99,11,1,230,0,0,11,19,81
 por,99,12,1,230,0,0,0,150,100
 usa,99,13,0,11,19,81,255,255,255
 argentina,brazil,croatia,england,france,morocco,senegal,japan,poland,netherlands,australia,spain,portugal,usa
-1,world cup 2026
+1,world cup classic

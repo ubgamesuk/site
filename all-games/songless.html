@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95MX2CCB14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95MX2CCB14');
+</script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+    crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../search.js"></script>
+    <script src="../recentlyplayed.js"></script>
+    <script type="module">
+        import { addRecentlyPlayed, games } from "../recentlyplayed.js";
+
+        addRecentlyPlayed(games.songless);
+    </script>
+    
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="canonical" href="https://ubgames.uk/all-games/songless" />
+    
+    <title>Songless</title>
+    <meta name="description" content="Try to guess the song from its intro as quickly as possible in this unlimited version of the popular web game." />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+<div class="mobilegameplaymenu">
+    <img onclick="openNavigation()" class="menuback" src="../images/mobilemenu.jpg">
+    <script src="../mobilenav.js"></script>
+</div>
+
+<nav class="sidebar close">
+    <img onclick="document.location='..'" class="sidebarlogo" src="../images/ubgames.png">
+    <div class="streak">
+        <h1>Daily Streak</h1>
+        <h2 id="streak-count">0</h2>
+    </div>
+    <button id="restore-btn" class="streakrestore"></button>
+    <div class="form-search">
+            <i onclick="doSearch()" id="searchbutton" class='bx bx-search icon'></i>
+            <input type="text" id="searchbar" class="search-bar" placeholder="Search">
+        </div>
+    <div id="sidebarlist">
+    </div>
+    <script>
+        $(function(){
+          $("#sidebarlist").load("../nav/sidebarlist.html");
+        });
+        </script>
+    <script src="../streaks.js"></script>
+</nav>
+    <section class="homepage">
+        <section class="game-wrapper">
+            <div class="gameframe">
+                <div class="gamepanel">
+                    <iframe class="game" src="https://songless.pro/unlimited" #000 none; name="game" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
+                    <div class="game-controls">
+                        <h1 class="gametitle">Songless</h1>
+                        <div class="controlbuttons">
+                            <button class="fullscreen"><i class='bx bx-fullscreen icon'></i> Fullscreen</button>
+                            <script src="../fullscreen.js"></script>
+
+                            <button id="favButton" class="fav-btn"></button>
+                            <script type="module">
+                                import { games, addFavourite, removeFavourite, isFavourite, showFavouritePopup } from "../recentlyplayed.js";
+                                const game = games.songless;
+                                const favButton = document.getElementById("favButton");
+
+                                    function updateButton() {
+                                if (isFavourite(game.id)) {
+                                    favButton.innerHTML = "<i class='bx bxs-star icon'></i>";
+                                    favButton.classList.add("active");
+                                } else {
+                                    favButton.innerHTML = "<i class='bx bx-star icon'></i>";
+                                    favButton.classList.remove("active");
+                                }}
+                            favButton.addEventListener("click", () => {
+                                if (isFavourite(game.id)) {
+                                    removeFavourite(game.id);
+                                } else {
+                                    addFavourite(game);
+                                    showFavouritePopup();
+                                }
+                                updateButton();
+                            });
+                            updateButton();
+                </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad-box">
+                    <h1>Advertisement</h1>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319072504670835"
+                        crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:190px;height:535px"
+                        data-ad-client="ca-pub-7319072504670835"
+                        data-ad-slot="9462930776"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <div onclick="document.location='../games-a-z'" class="gameazbanner">
+                <img src="../images/gameazbutton.png">
+            </div>
+            <div class="gameadbox">
+                <h2>Is something not right? <b>Let us know.</b></h2>
+                <div class="gamefeedbuttons">
+                    <a href="https://forms.gle/jmBLdq64SEekh9Lc8">
+                        <button class="gamefeedbackbtn"><i class='bx bx-message-detail'></i> Give us feedback</button>
+                    </a>
+                    <a href="mailto:contact@ubgames.uk">
+                        <button class="gamemailbtn"><i class='bx bxs-envelope'></i> Send an email</button>
+                    </a>
+                </div>
+            </div>
+        <br>
+        </section>
+
+        <div id="footer">
+        </div>
+        <script>
+            $(function(){
+              $("#footer").load("../nav/footer.html");
+            });
+            </script>
+    
+    </section>
+    <div id="favOverlay" class="fav-overlay">
+    <div class="fav-message">
+        <div class="fav-icon"><i class='bx bx-check'></i></div>
+        <p>Added to Saved Games</p>
+    </div>
+</div>
+
+
+    <script>
+        document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    if(key===13){
+            if(!document.fullscreen){
+        doSearch()};}
+            }
+    </script>
+
+</body>
+</html>
