@@ -24,6 +24,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="canonical" href="https://ubgames.uk" />
     <meta name="theme-color" content="#0f0f0f">
+    <meta name="mobile-web-app-capable" content="yes">
 
     <title>ubgames | Hundreds of free games, in one place</title>
     <meta name="description" content="Play over 250 high quality games, all in your browser. From the classics to modern favourites - there's a game for everyone on ubgames!" />
@@ -34,7 +35,12 @@
     <img onclick="openNavigation()" class="menuback" src="../images/mobilemenu.jpg">
 </div>
 <script src="../mobilenav.js"></script>
-
+<div id="celebration-modal" class="modal-overlay">
+  <div class="celebration-card">
+    <div class="celebration-flame">🔥</div>
+    <h2 id="celebration-title"></h2>
+  </div>
+</div>
 
 <nav class="sidebar close">
     <img onclick="document.location='..'" class="sidebarlogo" src="../images/ubgames.png">

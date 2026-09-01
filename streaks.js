@@ -1,64 +1,130 @@
 document.addEventListener('DOMContentLoaded', () => {
     const streakCountEl = document.getElementById('streak-count');
     const restoreBtn = document.getElementById('restore-btn');
+    const streakTrigger = document.getElementById('streak-trigger');
+    
+    // Modals
+    const badgeModal = document.getElementById('badge-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const badgeCards = document.querySelectorAll('.badge-card');
+    
+    const celebrationModal = document.getElementById('celebration-modal');
+    const celebrationTitle = document.getElementById('celebration-title');
+    const celebrationBtn = document.getElementById('celebration-btn');
 
     const getLocalDateString = (date) => date.toLocaleDateString('en-CA'); 
-    const today = getLocalDateString(new Date());
+    
+    const todayDate = new Date();
+    const today = getLocalDateString(todayDate);
 
-    const yesterdayDate = new Date();
+    const yesterdayDate = new Date(todayDate);
     yesterdayDate.setDate(yesterdayDate.getDate() - 1);
     const yesterday = getLocalDateString(yesterdayDate);
 
-    // Fetch data
+    const dayBeforeYesterdayDate = new Date(todayDate);
+    dayBeforeYesterdayDate.setDate(dayBeforeYesterdayDate.getDate() - 2);
+    const dayBeforeYesterday = getLocalDateString(dayBeforeYesterdayDate);
+
     const lastVisitDate = localStorage.getItem('lastVisitDate');
     let currentStreak = parseInt(localStorage.getItem('currentStreak'), 10) || 0;
     let previousStreak = parseInt(localStorage.getItem('previousStreak'), 10) || 0;
 
-    // --- Core Streak Logic ---
+    let isNewDayVisit = false;
+
+    // --- Date Logic ---
     if (lastVisitDate === today) {
-        // Visited already today. Do nothing to data.
+        // Same day visit -> No celebration popup
     } else if (lastVisitDate === yesterday) {
-        // Streak maintained! Clear any old backups since they don't need them.
         currentStreak++;
         previousStreak = 0; 
-    } else {
-        // Streak broken. Save the old streak as a backup BEFORE resetting to 1.
-        if (currentStreak > 1) {
-            previousStreak = currentStreak;
-        }
+        isNewDayVisit = true;
+    } else if (lastVisitDate === dayBeforeYesterday) {
+        if (currentStreak > 1) previousStreak = currentStreak;
         currentStreak = 1;
+        isNewDayVisit = true;
+    } else {
+        currentStreak = 1;
+        previousStreak = 0;
+        isNewDayVisit = true;
     }
 
-    // Save states
+    // Save State
     localStorage.setItem('lastVisitDate', today);
     localStorage.setItem('currentStreak', currentStreak);
     localStorage.setItem('previousStreak', previousStreak);
 
-    // --- UI Updates ---
-    streakCountEl.textContent = currentStreak;
+    // Milestone Verification
+    const checkMilestones = (streak) => {
+        badgeCards.forEach(card => {
+            const milestone = parseInt(card.getAttribute('data-milestone'), 10);
+            const statusText = card.querySelector('.badge-status');
 
-    // Show restore button if a backup streak exists
-    if (previousStreak > 0) {
-        restoreBtn.textContent = `Restore ${previousStreak} day streak`;
-        restoreBtn.classList.remove('hidden');
-    } else {
-        restoreBtn.classList.add('hidden');
-    }
+            if (streak >= milestone) {
+                card.classList.remove('locked');
+                statusText.textContent = "Unlocked! 🎉";
+            } else {
+                card.classList.add('locked');
+                statusText.textContent = "Locked";
+            }
+        });
+    };
 
-    // --- Restore Button Click Event ---
+    const refreshUI = () => {
+        streakCountEl.textContent = currentStreak;
+        checkMilestones(currentStreak);
+
+        if (previousStreak > 0) {
+            restoreBtn.textContent = `Restore ${previousStreak}-day streak?`;
+            restoreBtn.classList.remove('hidden');
+        } else {
+            restoreBtn.classList.add('hidden');
+        }
+    };
     restoreBtn.addEventListener('click', () => {
-        // Reclaim old streak + add 1 for today's current visit
-        currentStreak = previousStreak + 1;
-        previousStreak = 0; // Wipe backup so they can't double-restore
-
-        // Save updated records
+        currentStreak = previousStreak;
+        previousStreak = 0;
         localStorage.setItem('currentStreak', currentStreak);
         localStorage.setItem('previousStreak', previousStreak);
 
-        // Update UI
         streakCountEl.textContent = currentStreak;
         restoreBtn.classList.add('hidden');
         
-        alert("Streak successfully recovered!");
+        alert("Streak recovered!");
+    });
+
+let celebrationTimer = null;
+
+const dismissCelebration = () => {
+    if (celebrationTimer) clearTimeout(celebrationTimer);
+    celebrationModal.classList.remove('show'); // Triggers CSS fade & shrink automatically
+};
+
+const launchCelebration = (streak) => {
+    celebrationTitle.textContent = `${streak}-day streak`;
+    celebrationModal.classList.add('show');
+
+    if (celebrationTimer) clearTimeout(celebrationTimer);
+
+    celebrationTimer = setTimeout(() => {
+        celebrationModal.classList.add('hidden');
+    }, 6000);
+};
+    refreshUI();
+
+    if (isNewDayVisit && currentStreak >= 2) {
+    launchCelebration(currentStreak);
+}
+
+    streakTrigger.addEventListener('click', () => badgeModal.classList.remove('hidden'));
+    closeModalBtn.addEventListener('click', () => badgeModal.classList.add('hidden'));
+
+    restoreBtn.addEventListener('click', () => {
+        currentStreak = previousStreak + 1;
+        previousStreak = 0;
+        localStorage.setItem('currentStreak', currentStreak);
+        localStorage.setItem('previousStreak', previousStreak);
+        
+        refreshUI();
+        launchCelebration(currentStreak);
     });
 });
