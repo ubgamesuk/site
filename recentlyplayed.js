@@ -660,11 +660,6 @@ export const games = {
             img: "../images/newsupermariobros.jpg",
             url: "../all-games/new-super-mario-bros"
     },
-    openfront: {
-       id: "ovo",
-            img: "../images/openfront.jpg",
-            url: "../all-games/openfront" 
-    },
     ovo: {
        id: "ovo",
             img: "../images/ovo.jpg",
