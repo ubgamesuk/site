@@ -490,6 +490,11 @@ export const games = {
             img: "../images/geometrydash.jpg",
             url: "../all-games/geometry-dash"
     },
+    geometrydashlite: {
+        id: "geometrydashlite",
+            img: "../images/geometrydashlite.jpg",
+            url: "../all-games/geometry-dash-lite"
+    },
     getawayshootout: {
         id: "getawayshootout",
             img: "../images/getawayshootout.png",
