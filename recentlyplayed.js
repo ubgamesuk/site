@@ -775,6 +775,11 @@ export const games = {
             img: "../images/pixelspeedrun.jpg",
             url: "../all-games/pixel-speedrun"
     },
+    playdaily: {
+        id: "playdaily",
+            img: "../images/playdaily.jpg",
+            url: "../all-games/play-daily"
+    },
     pokemonblack: {
         id: "pokemonblack",
             img: "../images/pokemonblack.jpg",
